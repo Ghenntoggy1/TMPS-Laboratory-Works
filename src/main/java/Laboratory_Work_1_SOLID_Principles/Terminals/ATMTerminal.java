@@ -8,6 +8,8 @@ import Laboratory_Work_1_SOLID_Principles.Transactions.DepositTransaction;
 import Laboratory_Work_1_SOLID_Principles.Transactions.ExchangeTransaction;
 import Laboratory_Work_1_SOLID_Principles.Transactions.WithdrawalTransaction;
 import Laboratory_Work_1_SOLID_Principles.Enums.TransactionTypeEnum;
+import Laboratory_Work_1_SOLID_Principles.Utils.Validators.AccountStatusValidator;
+import Laboratory_Work_1_SOLID_Principles.Utils.Validators.TransactionValidator;
 
 import java.util.List;
 
@@ -20,23 +22,21 @@ public class ATMTerminal implements ITerminal {
 
     @Override
     public void performTransaction(List<IAccount> accounts, TransactionTypeEnum transactionType, double amount) {;
-//        logger.infoLog("Initiated POS Transaction from Account" + accounts.getFirst().getAccountId() + "on Amount" + amount);
         switch (transactionType) {
             case DEPOSIT:
-                ITransaction depositTransaction = new DepositTransaction(accounts.getFirst(), logger, amount);
+                ITransaction depositTransaction = new DepositTransaction(accounts.getFirst(), logger, amount, new AccountStatusValidator(logger));
                 depositTransaction.executeTransaction();
                 break;
             case EXCHANGE:
-                ITransaction exchangeTransaction = new ExchangeTransaction(accounts.getFirst(), accounts.getLast(), logger, amount);
+                ITransaction exchangeTransaction = new ExchangeTransaction(accounts.getFirst(), accounts.getLast(), logger, amount, new TransactionValidator(logger));
                 exchangeTransaction.executeTransaction();
                 break;
             case WITHDRAWAL:
-                ITransaction withdrawalTransaction = new WithdrawalTransaction(accounts.getFirst(), logger, amount);
+                ITransaction withdrawalTransaction = new WithdrawalTransaction(accounts.getFirst(), logger, amount, new TransactionValidator(logger));
                 withdrawalTransaction.executeTransaction();
                 break;
             default:
                 logger.errorLog("Invalid Transaction Type");
         }
-//        logger.infoLog("Closed POS Transaction from Account" + accounts.getFirst().getAccountId() + "on Amount" + amount);
     }
 }

@@ -6,6 +6,7 @@ import Laboratory_Work_1_SOLID_Principles.Interfaces.ITerminal;
 import Laboratory_Work_1_SOLID_Principles.Interfaces.ITransaction;
 import Laboratory_Work_1_SOLID_Principles.Transactions.DepositTransaction;
 import Laboratory_Work_1_SOLID_Principles.Enums.TransactionTypeEnum;
+import Laboratory_Work_1_SOLID_Principles.Utils.Validators.AccountStatusValidator;
 
 import java.util.List;
 
@@ -24,7 +25,7 @@ public class CashInTerminal implements ITerminal {
         }
         int userAccountId = accounts.getFirst().getAccountId();
         this.logger.infoLog("Initiated Cash-In Transaction to Account" + userAccountId + " on Amount " + amount);
-        ITransaction depositTransaction = new DepositTransaction(accounts.getFirst(), logger, amount);
+        ITransaction depositTransaction = new DepositTransaction(accounts.getFirst(), logger, amount, new AccountStatusValidator(logger));
         depositTransaction.executeTransaction();
         this.logger.infoLog("Closed Cash-In Transaction to Account" + userAccountId + " on Amount " + amount);
     }

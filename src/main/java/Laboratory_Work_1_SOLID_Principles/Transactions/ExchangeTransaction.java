@@ -3,21 +3,21 @@ package Laboratory_Work_1_SOLID_Principles.Transactions;
 import Laboratory_Work_1_SOLID_Principles.Interfaces.IAccount;
 import Laboratory_Work_1_SOLID_Principles.Interfaces.ILogger;
 import Laboratory_Work_1_SOLID_Principles.Interfaces.ITransaction;
-import Laboratory_Work_1_SOLID_Principles.Utils.Validator;
+import Laboratory_Work_1_SOLID_Principles.Interfaces.ITransactionValidator;
 
 public class ExchangeTransaction implements ITransaction {
     private IAccount senderAccount;
     private IAccount receiverAccount;
     private double amount;
     private ILogger logger;
-    private Validator validator;
+    private ITransactionValidator validator;
 
-    public ExchangeTransaction(IAccount senderAccount, IAccount receiverAccount, ILogger logger, double amount) {
+    public ExchangeTransaction(IAccount senderAccount, IAccount receiverAccount, ILogger logger, double amount, ITransactionValidator validator) {
         this.senderAccount = senderAccount;
         this.receiverAccount = receiverAccount;
         this.logger = logger;
         this.amount = amount;
-        this.validator = new Validator(this.logger);
+        this.validator = validator;
     }
 
     @Override
