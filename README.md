@@ -1,11 +1,19 @@
-# TMPS-Laboratory-Works
-Laboratory Works done during TMPS (Software Design Techniques and Mechanisms) Course at TUM
+# Software Design Techniques and Mechanisms
 
-**Student:** Gusev Roman
+----
 
-**Group:** FAF-222
+#### **University**: _Technical University of Moldova_
+#### **Faculty**: _FCIM_
+#### **Department**: _ISA_
+#### **Group**: _FAF-222_
+#### **Student**: _Gusev Roman_
+#### **Professors:** _Poștaru Andrei, Furdui Alexandru_
 
-**Professors:** Poștaru Andrei, Furdui Alexandru
+----
+
+## Abstract
+&ensp;&ensp; This repository contains the laboratory works on the SDTM subject at TUM.
+The reports in markdown file and code for each task can be accessed via the links below.
 
 ## Table of Contents
 - [Submission for Laboratory Work 1](src/main/java/Laboratory_Work_1_SOLID_Principles)

@@ -32,60 +32,60 @@ public class Main {
         userAccount3.setAccountStatus(AccountStatusEnum.INACTIVE);
 
         // Create Terminals
-        ATMTerminal atmTerminal = new ATMTerminal();
+        ATMTerminal atmTerminal = new ATMTerminal(logger);
         System.out.println(atmTerminal);
-        POSTerminal posTerminal = new POSTerminal();
+        POSTerminal posTerminal = new POSTerminal(logger);
         System.out.println(posTerminal);
-        CashInTerminal cashInTerminal = new CashInTerminal();
+        CashInTerminal cashInTerminal = new CashInTerminal(logger);
         System.out.println(cashInTerminal);
 
         // User 1 performs transactions
         // ERROR - User 1 tries to withdraw more than the balance
-        atmTerminal.performTransaction(List.of(userAccount1), TransactionTypeEnum.WITHDRAWAL, logger, 100.0);
+        atmTerminal.performTransaction(List.of(userAccount1), TransactionTypeEnum.WITHDRAWAL, 100.0);
 
         // User 1 deposits and withdraws money
-        atmTerminal.performTransaction(List.of(userAccount1), TransactionTypeEnum.DEPOSIT, logger, 200.0);
-        atmTerminal.performTransaction(List.of(userAccount1), TransactionTypeEnum.WITHDRAWAL, logger, 50.0);
+        atmTerminal.performTransaction(List.of(userAccount1), TransactionTypeEnum.DEPOSIT, 200.0);
+        atmTerminal.performTransaction(List.of(userAccount1), TransactionTypeEnum.WITHDRAWAL, 50.0);
 
 
 //        // User 1 exchanges money with User 2
-        atmTerminal.performTransaction(List.of(userAccount1, userAccount2), TransactionTypeEnum.EXCHANGE, logger, 50.0);
+        atmTerminal.performTransaction(List.of(userAccount1, userAccount2), TransactionTypeEnum.EXCHANGE, 50.0);
 
 //        // User 1 deposits money
-        cashInTerminal.performTransaction(List.of(userAccount1), TransactionTypeEnum.DEPOSIT, logger, 100.0);
+        cashInTerminal.performTransaction(List.of(userAccount1), TransactionTypeEnum.DEPOSIT, 100.0);
 
 //        // User 1 pays via POS
-        posTerminal.performTransaction(List.of(userAccount1), TransactionTypeEnum.WITHDRAWAL, logger, 20.0);
+        posTerminal.performTransaction(List.of(userAccount1), TransactionTypeEnum.WITHDRAWAL, 20.0);
 
 //        // User 1 tries to pay via POS with insufficient balance
-        posTerminal.performTransaction(List.of(userAccount1), TransactionTypeEnum.WITHDRAWAL, logger, 500.0);
+        posTerminal.performTransaction(List.of(userAccount1), TransactionTypeEnum.WITHDRAWAL, 500.0);
 
 //        // User 2 deposits money
-        cashInTerminal.performTransaction(List.of(userAccount2), TransactionTypeEnum.DEPOSIT, logger, 200.0);
+        cashInTerminal.performTransaction(List.of(userAccount2), TransactionTypeEnum.DEPOSIT, 200.0);
 
 //        // User 2 pays via POS
-        posTerminal.performTransaction(List.of(userAccount2), TransactionTypeEnum.WITHDRAWAL, logger, 50.0);
+        posTerminal.performTransaction(List.of(userAccount2), TransactionTypeEnum.WITHDRAWAL, 50.0);
 
 //        // User 2 tries to exchange via ATM with insufficient balance
-        atmTerminal.performTransaction(List.of(userAccount2, userAccount1), TransactionTypeEnum.EXCHANGE, logger, 500.0);
+        atmTerminal.performTransaction(List.of(userAccount2, userAccount1), TransactionTypeEnum.EXCHANGE, 500.0);
 
         // User 3 tries to deposit money
-        cashInTerminal.performTransaction(List.of(userAccount3), TransactionTypeEnum.DEPOSIT, logger, 100.0);
+        cashInTerminal.performTransaction(List.of(userAccount3), TransactionTypeEnum.DEPOSIT, 100.0);
 
         // User 3 tries to withdraw money
-        atmTerminal.performTransaction(List.of(userAccount3), TransactionTypeEnum.WITHDRAWAL, logger, 50.0);
+        atmTerminal.performTransaction(List.of(userAccount3), TransactionTypeEnum.WITHDRAWAL, 50.0);
 
         // User 3 tries to exchange money
-        atmTerminal.performTransaction(List.of(userAccount3, userAccount1), TransactionTypeEnum.EXCHANGE, logger, 50.0);
+        atmTerminal.performTransaction(List.of(userAccount3, userAccount1), TransactionTypeEnum.EXCHANGE, 50.0);
 
         userAccount3.setAccountStatus(AccountStatusEnum.ACTIVE);
         // User 3 tries to deposit money
-        cashInTerminal.performTransaction(List.of(userAccount3), TransactionTypeEnum.DEPOSIT, logger, 100.0);
+        cashInTerminal.performTransaction(List.of(userAccount3), TransactionTypeEnum.DEPOSIT, 100.0);
 
         // User 3 tries to withdraw money
-        atmTerminal.performTransaction(List.of(userAccount3), TransactionTypeEnum.WITHDRAWAL, logger, 50.0);
+        atmTerminal.performTransaction(List.of(userAccount3), TransactionTypeEnum.WITHDRAWAL, 50.0);
 
         // User 3 tries to exchange money
-        atmTerminal.performTransaction(List.of(userAccount3, userAccount1), TransactionTypeEnum.EXCHANGE, logger, 50.0);
+        atmTerminal.performTransaction(List.of(userAccount3, userAccount1), TransactionTypeEnum.EXCHANGE, 50.0);
     }
 }

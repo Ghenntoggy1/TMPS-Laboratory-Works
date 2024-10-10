@@ -12,18 +12,14 @@ import Laboratory_Work_1_SOLID_Principles.Enums.TransactionTypeEnum;
 import java.util.List;
 
 public class ATMTerminal implements ITerminal {
-//    private ILogger logger;
-//
-//    public POS(ILogger logger) {
-//        this.logger = logger;
-//    }
-//
-    @Override
-    public void performTransaction(List<IAccount> accounts, TransactionTypeEnum transactionType, ILogger logger, double amount) {
-//        this.logger.infoLog("Initiated POS Transaction from Account" + accounts.getFirst().getAccountId() + "on Amount" + amount);
-//        accounts.getFirst().withdraw(amount);
-//        this.logger.infoLog("Closed POS Transaction from Account" + accounts.getFirst().getAccountId() + "on Amount" + amount);
+    private ILogger logger;
 
+    public ATMTerminal(ILogger logger) {
+        this.logger = logger;
+    }
+
+    @Override
+    public void performTransaction(List<IAccount> accounts, TransactionTypeEnum transactionType, double amount) {;
 //        logger.infoLog("Initiated POS Transaction from Account" + accounts.getFirst().getAccountId() + "on Amount" + amount);
         switch (transactionType) {
             case DEPOSIT:
