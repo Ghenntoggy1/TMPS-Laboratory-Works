@@ -6,14 +6,15 @@ import Laboratory_Work_1_SOLID_Principles.Interfaces.ITransaction;
 import Laboratory_Work_1_SOLID_Principles.Utils.Validator;
 
 public class ExchangeTransaction implements ITransaction {
-    private IAccount fromAccount;
-    private IAccount toAccount;
+    private IAccount senderAccount;
+    private IAccount receiverAccount;
     private double amount;
     private ILogger logger;
     private Validator validator;
 
-    public ExchangeTransaction(IAccount fromAccount, ILogger logger, double amount) {
-        this.fromAccount = fromAccount;
+    public ExchangeTransaction(IAccount senderAccount, IAccount receiverAccount, ILogger logger, double amount) {
+        this.senderAccount = senderAccount;
+        this.receiverAccount = receiverAccount;
         this.logger = logger;
         this.amount = amount;
         this.validator = new Validator(this.logger);
@@ -21,17 +22,19 @@ public class ExchangeTransaction implements ITransaction {
 
     @Override
     public void executeTransaction() {
-        this.logger.infoLog("Initiated Exchange Transaction from Account " + this.fromAccount.getAccountId() +
-                " to Account " + this.toAccount.getAccountId());
-        if (!this.validator.validateTransaction(this.fromAccount, this.amount) && !this.validator.validateAccountStatus(this.toAccount)) {
-            this.fromAccount.withdraw(this.amount);
-            this.toAccount.deposit(this.amount);
-            this.logger.infoLog("Exchanged " + this.amount + " from Account " + this.fromAccount.getAccountId() +
-                    " to Account " + this.toAccount.getAccountId());
+        int senderAccountId = this.senderAccount.getAccountId();
+        int receiverAccountId = this.receiverAccount.getAccountId();
+        this.logger.infoLog("Initiated Exchange Transaction from Account " + senderAccountId +
+                " to Account " + receiverAccountId);
+        if (this.validator.validateTransaction(this.senderAccount, this.amount) && this.validator.validateAccountStatus(this.receiverAccount)) {
+            this.senderAccount.withdraw(this.amount);
+            this.receiverAccount.deposit(this.amount);
+            this.logger.infoLog("Successfully Exchanged " + this.amount + " from Account " + senderAccountId +
+                    " to Account " + receiverAccountId);
         }
         else {
-            this.logger.errorLog("Exchange Transaction failed from Account " + this.fromAccount.getAccountId() +
-                    " to Account " + this.toAccount.getAccountId());
+            this.logger.errorLog("Exchange Transaction failed from Account " + senderAccountId +
+                    " to Account " + receiverAccountId);
         }
     }
 }

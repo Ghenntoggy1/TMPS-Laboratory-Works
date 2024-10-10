@@ -24,13 +24,15 @@ public class DepositTransaction implements ITransaction {
 
     @Override
     public void executeTransaction() {
-        this.logger.infoLog("Initiated Deposit Transaction for Account " + this.account.getAccountId());
+        int userAccountId = this.account.getAccountId();
+        this.logger.infoLog("Initiated Deposit Transaction for Account " + userAccountId);
         if (!this.validator.validateAccountStatus(this.account)) {
-            this.logger.errorLog("Deposit Transaction Failed for Account " + this.account.getAccountId());
+            this.logger.errorLog("Deposit Transaction Failed for Account " + userAccountId + " - Account is not active");
             return;
         }
 
         this.account.deposit(this.amount);
-        this.logger.infoLog("Deposited " + this.amount + " to Account " + this.account.getAccountId());
+        double newBalance = this.account.getBalance();
+        this.logger.infoLog("Deposited " + this.amount + " to Account " + userAccountId + " - New Balance: " + newBalance);
     }
 }

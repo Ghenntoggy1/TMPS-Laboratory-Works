@@ -1,4 +1,4 @@
-package Laboratory_Work_1_SOLID_Principles.Utils;
+package Laboratory_Work_1_SOLID_Principles.Utils.Logging;
 
 import Laboratory_Work_1_SOLID_Principles.Interfaces.ILogger;
 
@@ -20,12 +20,13 @@ public class LoggerImpl implements ILogger {
         consoleHandler.setLevel(Level.ALL);
 
         try {
-            FileHandler fileHandler = new FileHandler("banking.log", true);
+            FileHandler fileHandler = new FileHandler("src/main/java/Laboratory_Work_1_SOLID_Principles/Utils/Logging/Logs/logs.log", true);
             fileHandler.setFormatter(new LogFormatter());
             fileHandler.setLevel(Level.ALL);
             this.logger.addHandler(fileHandler);
         } catch (IOException e) {
-            System.err.println("Failed to initialize file handler for logging: " + e.getMessage());
+            System.out.println("Failed to Initialize File Handler for Logging: " + e.getMessage());
+            this.errorLog("Failed to Initialize File Handler for Logging: " + e.getMessage());
         }
 
         this.logger.addHandler(consoleHandler);

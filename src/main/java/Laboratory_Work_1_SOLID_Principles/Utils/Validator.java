@@ -1,5 +1,6 @@
 package Laboratory_Work_1_SOLID_Principles.Utils;
 
+import Laboratory_Work_1_SOLID_Principles.Enums.AccountStatusEnum;
 import Laboratory_Work_1_SOLID_Principles.Interfaces.IAccount;
 import Laboratory_Work_1_SOLID_Principles.Interfaces.ILogger;
 
@@ -11,27 +12,29 @@ public class Validator {
     }
 
     public boolean validateSufficientFunds(IAccount userAccount, double amount) {
-        if (userAccount.getBalance() < amount) {
-            logger.warningLog("Insufficient funds in account " + userAccount.getAccountId() +
-                    ". Available: " + userAccount.getBalance() + ", required: " + amount);
+        int userAccountId = userAccount.getAccountId();
+        double userAccountBalance = userAccount.getBalance();
+        if (userAccountBalance < amount) {
+            logger.warningLog("Insufficient funds in account " + userAccountId +
+                    ". Available: " + userAccountBalance + ", required: " + amount);
             return false;
         }
-        logger.infoLog("Account " + userAccount.getAccountId() + " has sufficient funds");
+        logger.infoLog("Account " + userAccountId + " has sufficient funds");
         return true;
     }
 
     public boolean validateAccountStatus(IAccount userAccount) {
-        // TODO check if correct .equals or ==
-        if (userAccount.getAccountStatus() != AccountStatusEnum.ACTIVE) {
-            logger.warningLog("Account " + userAccount.getAccountId() + " is " + userAccount.getAccountStatus() +
+        AccountStatusEnum userAccountStatus = userAccount.getAccountStatus();
+        int userAccountId = userAccount.getAccountId();
+        if (userAccountStatus != AccountStatusEnum.ACTIVE) {
+            logger.warningLog("Account " + userAccountId + " is " + userAccountStatus +
                     " and cannot perform transactions");
             return false;
         }
-        logger.infoLog("Account " + userAccount.getAccountId() + " is " + userAccount.getAccountStatus());
+        logger.infoLog("Account " + userAccountId + " is " + userAccountStatus);
         return true;
     }
 
-    // Validate both account status and funds for transaction
     public boolean validateTransaction(IAccount account, double amount) {
         return validateAccountStatus(account) && validateSufficientFunds(account, amount);
     }

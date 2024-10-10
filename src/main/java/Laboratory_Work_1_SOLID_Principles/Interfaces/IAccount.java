@@ -1,6 +1,6 @@
 package Laboratory_Work_1_SOLID_Principles.Interfaces;
 
-import Laboratory_Work_1_SOLID_Principles.Utils.AccountStatusEnum;
+import Laboratory_Work_1_SOLID_Principles.Enums.AccountStatusEnum;
 
 public interface IAccount {
     int getAccountId();

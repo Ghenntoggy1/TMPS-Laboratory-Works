@@ -2,8 +2,7 @@ package Laboratory_Work_1_SOLID_Principles.User;
 
 import Laboratory_Work_1_SOLID_Principles.Interfaces.IAccount;
 import Laboratory_Work_1_SOLID_Principles.Interfaces.ILogger;
-import Laboratory_Work_1_SOLID_Principles.Interfaces.IUser;
-import Laboratory_Work_1_SOLID_Principles.Utils.AccountStatusEnum;
+import Laboratory_Work_1_SOLID_Principles.Enums.AccountStatusEnum;
 
 
 public class UserAccount implements IAccount {
@@ -14,7 +13,7 @@ public class UserAccount implements IAccount {
     private AccountStatusEnum status;
 
     // Constructor - following Dependency Inversion Principle
-    public UserAccount(ILogger logger, int accountId, User user) {
+    public UserAccount(int accountId, User user, ILogger logger) {
         this.accountId = accountId;
         this.user = user;
         this.balance = 0;
@@ -35,32 +34,29 @@ public class UserAccount implements IAccount {
     @Override
     public void deposit(double amount) {
         this.balance += amount;
-        this.logger.infoLog("Deposited " + amount + " to account " + this.accountId);
+//        this.logger.infoLog("Deposited " + amount + " to account " + this.accountId);
     }
 
     // Method to withdraw amount from the account
     @Override
     public double withdraw(double amount) {
         this.balance -= amount;
-        this.logger.infoLog("Withdrew " + amount + " from account " + this.accountId);
+//        this.logger.infoLog("Withdrew " + amount + " from account " + this.accountId);
         return amount;
     }
 
-    // Method to get the account balance
     @Override
     public double getBalance() {
         this.logger.infoLog("Checking balance for account " + this.accountId);
         return this.balance;
     }
 
-    // Method to get account status
     @Override
     public AccountStatusEnum getAccountStatus() {
         this.logger.infoLog("Checking account status for account " + this.accountId);
         return this.status;
     }
 
-    // Method to set account status
     @Override
     public void setAccountStatus(AccountStatusEnum status) {
         this.status = status;

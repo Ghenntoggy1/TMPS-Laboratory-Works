@@ -24,13 +24,19 @@ public class WithdrawalTransaction implements ITransaction {
 
     @Override
     public void executeTransaction() {
-        this.logger.infoLog("Initiated Withdrawal Transaction for Account " + this.account.getAccountId());
+        int userAccountId = this.account.getAccountId();
+        this.logger.infoLog("Initiated Withdrawal Transaction for Account " + userAccountId);
         if (!this.validator.validateAccountStatus(this.account)) {
-            this.logger.errorLog("Withdrawal Transaction failed for Account " + this.account.getAccountId());
+            this.logger.errorLog("Withdrawal Transaction failed for Account " + userAccountId + " - Account is not active");
+            return;
+        }
+        if (!this.validator.validateSufficientFunds(this.account, this.amount)) {
+            this.logger.errorLog("Withdrawal Transaction failed for Account " + userAccountId + " - Insufficient funds");
             return;
         }
 
         this.account.withdraw(this.amount);
-        this.logger.infoLog("Withdrew " + this.amount + " from account " + this.account.getAccountId());
+        double newBalance = this.account.getBalance();
+        this.logger.infoLog("Withdrew " + this.amount + " from account " + userAccountId + " - New balance: " + newBalance);
     }
 }
