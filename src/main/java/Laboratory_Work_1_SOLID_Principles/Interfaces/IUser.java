@@ -1,5 +1,7 @@
 package Laboratory_Work_1_SOLID_Principles.Interfaces;
 
 public interface IUser {
-    String getUserName();
+    String getName();
+    void setName(String name);
+    int getUserId();
 }
