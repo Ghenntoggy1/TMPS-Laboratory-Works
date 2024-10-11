@@ -22,6 +22,7 @@ public class TransactionValidator extends AccountStatusValidator implements ITra
         return true;
     }
 
+    @Override
     public boolean validateTransaction(IAccount account, double amount) {
         return this.validateAccountStatus(account) && this.validateSufficientFunds(account, amount);
     }

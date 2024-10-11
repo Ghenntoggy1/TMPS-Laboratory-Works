@@ -12,7 +12,6 @@ public class UserAccount implements IAccount {
     private ILogger logger;
     private AccountStatusEnum status;
 
-    // Constructor - following Dependency Inversion Principle
     public UserAccount(int accountId, User user, ILogger logger) {
         this.accountId = accountId;
         this.user = user;
@@ -23,25 +22,20 @@ public class UserAccount implements IAccount {
                 + this.user.getName() + " (" + this.user.getUserId() + ")");
     }
 
-    // Method to get account ID
     @Override
     public int getAccountId() {
         this.logger.infoLog("Requested account ID for account " + this.accountId);
         return this.accountId;
     }
 
-    // Method to deposit amount to the account
     @Override
     public void deposit(double amount) {
         this.balance += amount;
-//        this.logger.infoLog("Deposited " + amount + " to account " + this.accountId);
     }
 
-    // Method to withdraw amount from the account
     @Override
     public double withdraw(double amount) {
         this.balance -= amount;
-//        this.logger.infoLog("Withdrew " + amount + " from account " + this.accountId);
         return amount;
     }
 

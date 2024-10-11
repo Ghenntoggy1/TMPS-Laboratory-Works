@@ -1,176 +1,1821 @@
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: User John Doe created with ID 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 with status ACTIVE created for user John Doe (1)
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: User Jane Doe created with ID 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 2 with status ACTIVE created for user Jane Doe (2)
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: User John Smith created with ID 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 3 with status ACTIVE created for user John Smith (3)
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to INACTIVE
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 0.0, required: 100.0
-Fri Oct 11 02:18:44 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 1 - New Balance: 200.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 1 - New balance: 150.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 1 to Account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 1 to Account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account1 on Amount 100.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 1 - New Balance: 200.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account1 on Amount 100.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account1 on Amount 20.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Withdrew 20.0 from account 1 - New balance: 180.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account1 on Amount 20.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account1 on Amount 500.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 180.0, required: 500.0
-Fri Oct 11 02:18:44 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account1 on Amount 500.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account2 on Amount 200.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 2 - New Balance: 250.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account2 on Amount 200.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account2 on Amount 50.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 2 has sufficient funds
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 2 - New balance: 200.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account2 on Amount 50.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 2 to Account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
-Fri Oct 11 02:18:44 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 2. Available: 200.0, required: 500.0
-Fri Oct 11 02:18:44 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 2 to Account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
-Fri Oct 11 02:18:44 EEST 2024 :: [SEVERE] :: errorLog :: Deposit Transaction Failed for Account 3 - Account is not active
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
-Fri Oct 11 02:18:44 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
-Fri Oct 11 02:18:44 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 3 to Account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to ACTIVE
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 3 - New Balance: 100.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 3 - New balance: 50.0
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
-Fri Oct 11 02:18:44 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 3 to Account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: User John Doe created with ID 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 1 with status ACTIVE created for user John Doe (1)
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: User Jane Doe created with ID 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 2 with status ACTIVE created for user Jane Doe (2)
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: User John Smith created with ID 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 3 with status ACTIVE created for user John Smith (3)
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to INACTIVE
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 0.0, required: 100.0
+Fri Oct 11 02:47:06 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 1 - New balance: 150.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 1 to Account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 1 to Account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account1 on Amount 20.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Withdrew 20.0 from account 1 - New balance: 180.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account1 on Amount 20.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account1 on Amount 500.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 180.0, required: 500.0
+Fri Oct 11 02:47:06 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account1 on Amount 500.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 2 - New Balance: 250.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account2 on Amount 50.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 2 has sufficient funds
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 2 - New balance: 200.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account2 on Amount 50.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 2 to Account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 02:47:06 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 2. Available: 200.0, required: 500.0
+Fri Oct 11 02:47:06 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 2 to Account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 02:47:06 EEST 2024 :: [SEVERE] :: errorLog :: Deposit Transaction Failed for Account 3 - Account is not active
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 02:47:06 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 02:47:06 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 3 to Account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to ACTIVE
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 3 - New Balance: 100.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 3 - New balance: 50.0
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 02:47:06 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 3 to Account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: User John Doe created with ID 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 with status ACTIVE created for user John Doe (1)
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: User Jane Doe created with ID 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 2 with status ACTIVE created for user Jane Doe (2)
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: User John Smith created with ID 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 3 with status ACTIVE created for user John Smith (3)
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to INACTIVE
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 0.0, required: 100.0
+Fri Oct 11 03:08:30 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 1 - New balance: 150.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 1 to Account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 1 to Account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account1 on Amount 20.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Withdrew 20.0 from account 1 - New balance: 180.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account1 on Amount 20.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account1 on Amount 500.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 180.0, required: 500.0
+Fri Oct 11 03:08:30 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account1 on Amount 500.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 2 - New Balance: 250.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account2 on Amount 50.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 2 has sufficient funds
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 2 - New balance: 200.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account2 on Amount 50.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 2 to Account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:08:30 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 2. Available: 200.0, required: 500.0
+Fri Oct 11 03:08:30 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 2 to Account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:08:30 EEST 2024 :: [SEVERE] :: errorLog :: Deposit Transaction Failed for Account 3 - Account is not active
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:08:30 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:08:30 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 3 to Account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to ACTIVE
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 3 - New Balance: 100.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 3 - New balance: 50.0
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:08:30 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 3 to Account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: User John Doe created with ID 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 1 with status ACTIVE created for user John Doe (1)
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: User Jane Doe created with ID 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 2 with status ACTIVE created for user Jane Doe (2)
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: User John Smith created with ID 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 3 with status ACTIVE created for user John Smith (3)
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to INACTIVE
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 0.0, required: 100.0
+Fri Oct 11 03:38:26 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 1 - New balance: 150.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 1 to Account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 1 to Account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 1 on Amount 20.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Withdrew 20.0 from account 1 - New balance: 180.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 1 on Amount 20.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 1 on Amount 500.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 180.0, required: 500.0
+Fri Oct 11 03:38:26 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 1 on Amount 500.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 2 - New Balance: 250.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 2 on Amount 50.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 2 has sufficient funds
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 2 - New balance: 200.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 2 on Amount 50.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 2 to Account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:38:26 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 2. Available: 200.0, required: 500.0
+Fri Oct 11 03:38:26 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 2 to Account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:38:26 EEST 2024 :: [SEVERE] :: errorLog :: Deposit Transaction Failed for Account 3 - Account is not active
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:38:26 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:38:26 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 3 to Account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to ACTIVE
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 3 - New Balance: 100.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 3 - New balance: 50.0
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:38:26 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 3 to Account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: User John Doe created with ID 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 with status ACTIVE created for user John Doe (1)
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: User Jane Doe created with ID 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 2 with status ACTIVE created for user Jane Doe (2)
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: User John Smith created with ID 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 3 with status ACTIVE created for user John Smith (3)
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to INACTIVE
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 0.0, required: 100.0
+Fri Oct 11 03:39:30 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 1 - New balance: 150.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 1 to Account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 1 to Account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 1 on Amount 20.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Withdrew 20.0 from account 1 - New balance: 180.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 1 on Amount 20.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 1 on Amount 500.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 180.0, required: 500.0
+Fri Oct 11 03:39:30 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 1 on Amount 500.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 2 - New Balance: 250.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 2 on Amount 50.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 2 has sufficient funds
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 2 - New balance: 200.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 2 on Amount 50.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 2 to Account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:39:30 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 2. Available: 200.0, required: 500.0
+Fri Oct 11 03:39:30 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 2 to Account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:39:30 EEST 2024 :: [SEVERE] :: errorLog :: Deposit Transaction Failed for Account 3 - Account is not active
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:39:30 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:39:30 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 3 to Account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to ACTIVE
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 3 - New Balance: 100.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 3 - New balance: 50.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 3 to Account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 3 on Amount 50.0
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:39:30 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 3. Available: 0.0, required: 50.0
+Fri Oct 11 03:39:30 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 3 to Account 1
+Fri Oct 11 03:39:30 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 3 on Amount 50.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: User John Doe created with ID 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 with status ACTIVE created for user John Doe (1)
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: User Jane Doe created with ID 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 2 with status ACTIVE created for user Jane Doe (2)
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: User John Smith created with ID 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 3 with status ACTIVE created for user John Smith (3)
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to INACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 0.0, required: 100.0
+Fri Oct 11 03:39:44 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 1 - New balance: 150.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 1 to Account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 1 to Account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 1 on Amount 20.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Withdrew 20.0 from account 1 - New balance: 180.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 1 on Amount 20.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 1 on Amount 500.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 180.0, required: 500.0
+Fri Oct 11 03:39:44 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 1 on Amount 500.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 2 - New Balance: 250.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 2 on Amount 50.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 2 has sufficient funds
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 2 - New balance: 200.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 2 on Amount 50.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 2 to Account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:39:44 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 2. Available: 200.0, required: 500.0
+Fri Oct 11 03:39:44 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 2 to Account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:39:44 EEST 2024 :: [SEVERE] :: errorLog :: Deposit Transaction Failed for Account 3 - Account is not active
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:39:44 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:39:44 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 3 to Account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to ACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 3 - New Balance: 100.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 3 - New balance: 50.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 3 to Account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 3 on Amount 0.0
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 0.0 from Account 3 to Account 1
+Fri Oct 11 03:39:44 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 3 on Amount 0.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: User John Doe created with ID 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 1 with status ACTIVE created for user John Doe (1)
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: User Jane Doe created with ID 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 2 with status ACTIVE created for user Jane Doe (2)
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: User John Smith created with ID 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 3 with status ACTIVE created for user John Smith (3)
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to INACTIVE
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 0.0, required: 100.0
+Fri Oct 11 03:42:05 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 1 - New balance: 150.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 1 to Account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 1 to Account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 1 on Amount 20.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Withdrew 20.0 from account 1 - New balance: 180.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 1 on Amount 20.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 1 on Amount 500.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 180.0, required: 500.0
+Fri Oct 11 03:42:05 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 1 on Amount 500.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 2 - New Balance: 250.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 2 on Amount 50.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 2 has sufficient funds
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 2 - New balance: 200.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 2 on Amount 50.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 2 to Account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:05 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 2. Available: 200.0, required: 500.0
+Fri Oct 11 03:42:05 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 2 to Account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:42:05 EEST 2024 :: [SEVERE] :: errorLog :: Deposit Transaction Failed for Account 3 - Account is not active
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:42:05 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:42:05 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 3 to Account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to ACTIVE
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 3 - New Balance: 100.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 3 - New balance: 50.0
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:05 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 3 to Account 1
+Fri Oct 11 03:42:05 EEST 2024 :: [SEVERE] :: errorLog :: Invalid transaction Type: EXCHANGE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: User John Doe created with ID 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 1 with status ACTIVE created for user John Doe (1)
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: User Jane Doe created with ID 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 2 with status ACTIVE created for user Jane Doe (2)
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: User John Smith created with ID 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 3 with status ACTIVE created for user John Smith (3)
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to INACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 0.0, required: 100.0
+Fri Oct 11 03:42:17 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 1 - New balance: 150.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 1 to Account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 1 to Account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 1 on Amount 20.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Withdrew 20.0 from account 1 - New balance: 180.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 1 on Amount 20.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 1 on Amount 500.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 180.0, required: 500.0
+Fri Oct 11 03:42:17 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 1 on Amount 500.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 2 - New Balance: 250.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 2 on Amount 50.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 2 has sufficient funds
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 2 - New balance: 200.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 2 on Amount 50.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 2 to Account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:17 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 2. Available: 200.0, required: 500.0
+Fri Oct 11 03:42:17 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 2 to Account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:42:17 EEST 2024 :: [SEVERE] :: errorLog :: Deposit Transaction Failed for Account 3 - Account is not active
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:42:17 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:42:17 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 3 to Account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to ACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 3 - New Balance: 100.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 3 - New balance: 50.0
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 3 to Account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:17 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 0.0 from Account 3 to Account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: User John Doe created with ID 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 1 with status ACTIVE created for user John Doe (1)
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: User Jane Doe created with ID 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 2 with status ACTIVE created for user Jane Doe (2)
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: User John Smith created with ID 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 3 with status ACTIVE created for user John Smith (3)
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to INACTIVE
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 0.0, required: 100.0
+Fri Oct 11 03:42:23 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 1 - New balance: 150.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 1 to Account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 1 to Account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 1 on Amount 20.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Withdrew 20.0 from account 1 - New balance: 180.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 1 on Amount 20.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 1 on Amount 500.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 180.0, required: 500.0
+Fri Oct 11 03:42:23 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 1 on Amount 500.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 2 - New Balance: 250.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 2 on Amount 50.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 2 has sufficient funds
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 2 - New balance: 200.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 2 on Amount 50.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 2 to Account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:23 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 2. Available: 200.0, required: 500.0
+Fri Oct 11 03:42:23 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 2 to Account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:42:23 EEST 2024 :: [SEVERE] :: errorLog :: Deposit Transaction Failed for Account 3 - Account is not active
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:42:23 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:42:23 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 3 to Account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to ACTIVE
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 3 - New Balance: 100.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 3 - New balance: 50.0
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 3 to Account 1
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:23 EEST 2024 :: [INFO] :: infoLog :: Deposited 0.0 to Account 3 - New Balance: 0.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: User John Doe created with ID 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 1 with status ACTIVE created for user John Doe (1)
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: User Jane Doe created with ID 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 2 with status ACTIVE created for user Jane Doe (2)
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: User John Smith created with ID 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 3 with status ACTIVE created for user John Smith (3)
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to INACTIVE
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 0.0, required: 100.0
+Fri Oct 11 03:42:47 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 1 - New balance: 150.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 1 to Account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 1 to Account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 1 on Amount 20.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Withdrew 20.0 from account 1 - New balance: 180.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 1 on Amount 20.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 1 on Amount 500.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 180.0, required: 500.0
+Fri Oct 11 03:42:47 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 1 on Amount 500.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 2 - New Balance: 250.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 2 on Amount 50.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 2 has sufficient funds
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 2 - New balance: 200.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 2 on Amount 50.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 2 to Account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:47 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 2. Available: 200.0, required: 500.0
+Fri Oct 11 03:42:47 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 2 to Account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:42:47 EEST 2024 :: [SEVERE] :: errorLog :: Deposit Transaction Failed for Account 3 - Account is not active
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:42:47 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:42:47 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 3 to Account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to ACTIVE
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 3 - New Balance: 100.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 3 - New balance: 50.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 3 to Account 1
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 0.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Deposited 0.0 to Account 3 - New Balance: 0.0
+Fri Oct 11 03:42:47 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 0.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: User John Doe created with ID 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 1 with status ACTIVE created for user John Doe (1)
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: User Jane Doe created with ID 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 2 with status ACTIVE created for user Jane Doe (2)
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: User John Smith created with ID 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested name for user 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested ID for user 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 3 with status ACTIVE created for user John Smith (3)
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to INACTIVE
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 0.0, required: 100.0
+Fri Oct 11 03:42:56 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 1 - New balance: 150.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 1 to Account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 1 to Account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 1 - New Balance: 200.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account1 on Amount 100.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 1 on Amount 20.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 1 has sufficient funds
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Withdrew 20.0 from account 1 - New balance: 180.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 1 on Amount 20.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 1 on Amount 500.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 1. Available: 180.0, required: 500.0
+Fri Oct 11 03:42:56 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 1 on Amount 500.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Deposited 200.0 to Account 2 - New Balance: 250.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account2 on Amount 200.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated POS Transaction from Account 2 on Amount 50.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 2 has sufficient funds
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 2 - New balance: 200.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Closed POS Transaction from Account 2 on Amount 50.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 2 to Account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 2 is ACTIVE
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 2
+Fri Oct 11 03:42:56 EEST 2024 :: [WARNING] :: warningLog :: Insufficient funds in account 2. Available: 200.0, required: 500.0
+Fri Oct 11 03:42:56 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 2 to Account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:42:56 EEST 2024 :: [SEVERE] :: errorLog :: Deposit Transaction Failed for Account 3 - Account is not active
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:42:56 EEST 2024 :: [SEVERE] :: errorLog :: Withdrawal Transaction failed for Account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [WARNING] :: warningLog :: Account 3 is INACTIVE and cannot perform transactions
+Fri Oct 11 03:42:56 EEST 2024 :: [SEVERE] :: errorLog :: Exchange Transaction failed from Account 3 to Account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 3 status changed to ACTIVE
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Deposit Transaction for Account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Deposited 100.0 to Account 3 - New Balance: 100.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Closed Cash-In Transaction to Account3 on Amount 100.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Withdrawal Transaction for Account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Withdrew 50.0 from account 3 - New balance: 50.0
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Initiated Exchange Transaction from Account 3 to Account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 3 is ACTIVE
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking balance for account 3
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 3 has sufficient funds
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Checking account status for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Requested account ID for account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Account 1 is ACTIVE
+Fri Oct 11 03:42:56 EEST 2024 :: [INFO] :: infoLog :: Successfully Exchanged 50.0 from Account 3 to Account 1
+Fri Oct 11 03:42:56 EEST 2024 :: [SEVERE] :: errorLog :: Invalid transaction Type: EXCHANGE

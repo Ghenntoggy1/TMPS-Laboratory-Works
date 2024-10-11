@@ -5,6 +5,7 @@ import Laboratory_Work_1_SOLID_Principles.Interfaces.ILogger;
 import Laboratory_Work_1_SOLID_Principles.Terminals.ATMTerminal;
 import Laboratory_Work_1_SOLID_Principles.Terminals.CashInTerminal;
 import Laboratory_Work_1_SOLID_Principles.Terminals.POSTerminal;
+import Laboratory_Work_1_SOLID_Principles.Transactions.TransactionFactory;
 import Laboratory_Work_1_SOLID_Principles.User.User;
 import Laboratory_Work_1_SOLID_Principles.User.UserAccount;
 import Laboratory_Work_1_SOLID_Principles.Utils.Logging.LoggerImpl;
@@ -31,12 +32,15 @@ public class Main {
         UserAccount userAccount3 = new UserAccount(3, user3, logger);
         userAccount3.setAccountStatus(AccountStatusEnum.INACTIVE);
 
+        // Create a Transaction Factory
+        TransactionFactory transactionFactory = new TransactionFactory(logger);
+
         // Create Terminals
-        ATMTerminal atmTerminal = new ATMTerminal(logger);
+        ATMTerminal atmTerminal = new ATMTerminal(logger, transactionFactory);
         System.out.println(atmTerminal);
-        POSTerminal posTerminal = new POSTerminal(logger);
+        POSTerminal posTerminal = new POSTerminal(logger, transactionFactory);
         System.out.println(posTerminal);
-        CashInTerminal cashInTerminal = new CashInTerminal(logger);
+        CashInTerminal cashInTerminal = new CashInTerminal(logger, transactionFactory);
         System.out.println(cashInTerminal);
 
         // User 1 performs transactions
@@ -87,5 +91,9 @@ public class Main {
 
         // User 3 tries to exchange money
         atmTerminal.performTransaction(List.of(userAccount3, userAccount1), TransactionTypeEnum.EXCHANGE, 50.0);
+
+        // User 3 tries to exchange money in POS
+        cashInTerminal.performTransaction(List.of(userAccount3, userAccount1), TransactionTypeEnum.EXCHANGE, 0.0);
+
     }
 }

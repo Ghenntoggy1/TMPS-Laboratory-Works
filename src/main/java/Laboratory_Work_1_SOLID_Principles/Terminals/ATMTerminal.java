@@ -10,33 +10,26 @@ import Laboratory_Work_1_SOLID_Principles.Transactions.WithdrawalTransaction;
 import Laboratory_Work_1_SOLID_Principles.Enums.TransactionTypeEnum;
 import Laboratory_Work_1_SOLID_Principles.Utils.Validators.AccountStatusValidator;
 import Laboratory_Work_1_SOLID_Principles.Utils.Validators.TransactionValidator;
+import Laboratory_Work_1_SOLID_Principles.Transactions.TransactionFactory;
 
 import java.util.List;
 
 public class ATMTerminal implements ITerminal {
     private ILogger logger;
+    private TransactionFactory transactionFactory;
 
-    public ATMTerminal(ILogger logger) {
+    public ATMTerminal(ILogger logger, TransactionFactory transactionFactory) {
         this.logger = logger;
+        this.transactionFactory = transactionFactory;
     }
 
     @Override
-    public void performTransaction(List<IAccount> accounts, TransactionTypeEnum transactionType, double amount) {;
-        switch (transactionType) {
-            case DEPOSIT:
-                ITransaction depositTransaction = new DepositTransaction(accounts.getFirst(), logger, amount, new AccountStatusValidator(logger));
-                depositTransaction.executeTransaction();
-                break;
-            case EXCHANGE:
-                ITransaction exchangeTransaction = new ExchangeTransaction(accounts.getFirst(), accounts.getLast(), logger, amount, new TransactionValidator(logger));
-                exchangeTransaction.executeTransaction();
-                break;
-            case WITHDRAWAL:
-                ITransaction withdrawalTransaction = new WithdrawalTransaction(accounts.getFirst(), logger, amount, new TransactionValidator(logger));
-                withdrawalTransaction.executeTransaction();
-                break;
-            default:
-                logger.errorLog("Invalid Transaction Type");
+    public void performTransaction(List<IAccount> accounts, TransactionTypeEnum transactionType, double amount) {
+        try {
+            ITransaction transaction = transactionFactory.createTransaction(transactionType, accounts, amount);
+            transaction.executeTransaction();
+        } catch (IllegalArgumentException e) {
+            logger.errorLog("Invalid transaction Type: " + e.getMessage());
         }
     }
 }
