@@ -29,7 +29,8 @@ I have chosen to implement more than 2 principles.
     * Single Responsibility Principle
     * Open/Closed Principle
     * Liskov Substitution Principle
-    * Dependency Inversion Principle
+    * Interface Segregation Principle
+    * Dependency Inversion/Injection Principle
 
 * I decided to adhere to the topic of Terminal Interaction and Transaction / Financial Operations on Accounts and between them as 
 well. I have created a simple application that performs operations, such as: 
@@ -214,6 +215,8 @@ it can be implemented by different Terminals, such as ATMTerminal, POSTerminal o
 for modification, because the ITerminal Interface does not change when new Terminals are added. This ensures that the
 new Terminals can be added without changing the code that is dependent on the ITerminal Interface, since it will 
 work with any class that implements this interface and calls the method that is present in all concrete implementations.
+At the same time, by the use of TransactionFactory, we ensure that even if new Transaction Types are added, the code
+for the Terminals will not change, since the TransactionFactory will be responsible for creating the new Transactions.
 ```java
 public interface ITerminal {
   void performTransaction(List<IAccount> account, TransactionTypeEnum transactionType, double amount);
@@ -221,48 +224,61 @@ public interface ITerminal {
 ```
 ```java
 public class POSTerminal implements ITerminal {
-    private ILogger logger;
+  private ILogger logger;
+  private TransactionFactory transactionFactory;
 
-    public POSTerminal(ILogger logger) {
-        this.logger = logger;
+  public POSTerminal(ILogger logger, TransactionFactory transactionFactory) {
+    this.logger = logger;
+    this.transactionFactory = transactionFactory;
+  }
+
+  @Override
+  public void performTransaction(List<IAccount> accounts, TransactionTypeEnum transactionType, double amount) {
+    if (transactionType != TransactionTypeEnum.WITHDRAWAL) {
+      logger.errorLog("Invalid transaction Type: " + transactionType);
+      return;
     }
 
-    @Override
-    public void performTransaction(List<IAccount> accounts, TransactionTypeEnum transactionType, double amount) {
-        if (transactionType != TransactionTypeEnum.WITHDRAWAL) {
-            logger.infoLog("Invalid Transaction Type");
-            return;
-        }
-        int accountId = accounts.getFirst().getAccountId();
-        logger.infoLog("Initiated POS Transaction from Account" + accountId + " on Amount " + amount);
-        ITransaction withdrawalTransaction = new WithdrawalTransaction(accounts.getFirst(), logger, amount, new TransactionValidator(logger));
-        withdrawalTransaction.executeTransaction();
-        logger.infoLog("Closed POS Transaction from Account" + accountId + " on Amount " + amount);
+    try {
+      ITransaction transaction = transactionFactory.createTransaction(transactionType, accounts, amount);
+      int accountId = accounts.getFirst().getAccountId();
+      logger.infoLog("Initiated POS Transaction from Account " + accountId + " on Amount " + amount);
+      transaction.executeTransaction();
+      logger.infoLog("Closed POS Transaction from Account " + accountId + " on Amount " + amount);
+    } catch (IllegalArgumentException e) {
+      logger.errorLog("Failed POS Transaction: " + e.getMessage());
     }
+  }
 }
 ```
 ```java
 public class CashInTerminal implements ITerminal {
-    private ILogger logger;
+  private ILogger logger;
+  private TransactionFactory transactionFactory;
 
-    public CashInTerminal(ILogger logger) {
-        this.logger = logger;
+  public CashInTerminal(ILogger logger, TransactionFactory transactionFactory) {
+    this.logger = logger;
+    this.transactionFactory = transactionFactory;
+  }
+
+  @Override
+  public void performTransaction(List<IAccount> accounts, TransactionTypeEnum transactionType, double amount) {
+    if (transactionType != TransactionTypeEnum.DEPOSIT) {
+      logger.errorLog("Invalid transaction Type: " + transactionType);
+      return;
     }
 
-    @Override
-    public void performTransaction(List<IAccount> accounts, TransactionTypeEnum transactionType, double amount) {
-        if (transactionType != TransactionTypeEnum.DEPOSIT) {
-            this.logger.errorLog("Invalid Transaction Type");
-            return;
-        }
-        int userAccountId = accounts.getFirst().getAccountId();
-        this.logger.infoLog("Initiated Cash-In Transaction to Account" + userAccountId + " on Amount " + amount);
-        ITransaction depositTransaction = new DepositTransaction(accounts.getFirst(), logger, amount, new AccountStatusValidator(logger));
-        depositTransaction.executeTransaction();
-        this.logger.infoLog("Closed Cash-In Transaction to Account" + userAccountId + " on Amount " + amount);
+    try {
+      ITransaction transaction = transactionFactory.createTransaction(transactionType, accounts, amount);
+      int userAccountId = accounts.getFirst().getAccountId();
+      this.logger.infoLog("Initiated Cash-In Transaction to Account" + userAccountId + " on Amount " + amount);
+      transaction.executeTransaction();
+      this.logger.infoLog("Closed Cash-In Transaction to Account" + userAccountId + " on Amount " + amount);
+    } catch (IllegalArgumentException e) {
+      logger.errorLog("Invalid transaction Type: " + e.getMessage());
     }
+  }
 }
-
 ```
 
 * LSP - Liskov Substitution Principle - states that objects of a class should be replaceable with instances of its subclasses
@@ -331,37 +347,29 @@ public class TransactionValidator extends AccountStatusValidator implements ITra
     }
 }
 ```
-* In the following code snippet, the AccountStatusValidator is being used in the ATMTerminal class in the DEPOSIT transaction
+* In the following code snippet, the AccountStatusValidator is being used in the TransactionFactory class in the DEPOSIT transaction
 initialization. The AccountStatusValidator is used to validate the Account Status before the Deposit Transaction is executed.
 Since the TransactionValidator extends the AccountStatusValidator and inherits the behavior of the AccountStatusValidator, 
-it may be used instead of the original AccountStatusValidator and it will perform the same validation that is inherited.
+it may be used instead of the original AccountStatusValidator, and it will perform the same validation that is inherited.
 ```java
-public class ATMTerminal implements ITerminal {
-    private ILogger logger;
+public class TransactionFactory {
+  private ILogger logger;
 
-    public ATMTerminal(ILogger logger) {
-        this.logger = logger;
-    }
+  public TransactionFactory(ILogger logger) {
+    this.logger = logger;
+  }
 
-    @Override
-    public void performTransaction(List<IAccount> accounts, TransactionTypeEnum transactionType, double amount) {
-        switch (transactionType) {
-            case DEPOSIT:
-                ITransaction depositTransaction = new DepositTransaction(accounts.getFirst(), logger, amount, new AccountStatusValidator(logger));
-                depositTransaction.executeTransaction();
-                break;
-            case EXCHANGE:
-                ITransaction exchangeTransaction = new ExchangeTransaction(accounts.getFirst(), accounts.getLast(), logger, amount, new TransactionValidator(logger));
-                exchangeTransaction.executeTransaction();
-                break;
-            case WITHDRAWAL:
-                ITransaction withdrawalTransaction = new WithdrawalTransaction(accounts.getFirst(), logger, amount, new TransactionValidator(logger));
-                withdrawalTransaction.executeTransaction();
-                break;
-            default:
-                logger.errorLog("Invalid Transaction Type");
-        }
-    }
+  public ITransaction createTransaction(TransactionTypeEnum transactionType, List<
+          IAccount> accounts, double amount) {
+    return switch (transactionType) {
+      case DEPOSIT ->
+              new DepositTransaction(accounts.getFirst(), logger, amount, new AccountStatusValidator(logger));
+      case EXCHANGE ->
+              new ExchangeTransaction(accounts.getFirst(), accounts.getLast(), logger, amount, new TransactionValidator(logger));
+      case WITHDRAWAL ->
+              new WithdrawalTransaction(accounts.getFirst(), logger, amount, new TransactionValidator(logger));
+    };
+  }
 }
 ```
 
@@ -392,5 +400,65 @@ both should depend on abstractions. In other words, the classes behavior should 
 be guided by the interfaces or abstract classes, not by the concrete implementations. This principle is usually respected
 by the usage of the Interfaces or Abstract Classes, which are then used in constructors or methods, instead of the concrete
 classes, thus enabling injection of the concrete examples, since those methods or constructors do not need to know about the
-details of the concrete implementations. In the application presented here, 
+details of the concrete implementations. In the application presented here, I have used in the Terminal implementations
+exactly through the usage of Transaction factory, that will provide the appropriate Transaction implementation, thus 
+leaving Terminal classes unaware of details about Transaction and, as a result, respecting the DIP, since it will depend
+only on the abstraction.
+```java
+public class POSTerminal implements ITerminal {
+    private ILogger logger;
+    private TransactionFactory transactionFactory;
+
+    public POSTerminal(ILogger logger, TransactionFactory transactionFactory) {
+        this.logger = logger;
+        this.transactionFactory = transactionFactory;
+    }
+
+    @Override
+    public void performTransaction(List<IAccount> accounts, TransactionTypeEnum transactionType, double amount) {
+        if (transactionType != TransactionTypeEnum.WITHDRAWAL) {
+            logger.errorLog("Invalid transaction Type: " + transactionType);
+            return;
+        }
+
+        try {
+            ITransaction transaction = transactionFactory.createTransaction(transactionType, accounts, amount);
+            int accountId = accounts.getFirst().getAccountId();
+            logger.infoLog("Initiated POS Transaction from Account " + accountId + " on Amount " + amount);
+            transaction.executeTransaction();
+            logger.infoLog("Closed POS Transaction from Account " + accountId + " on Amount " + amount);
+        } catch (IllegalArgumentException e) {
+            logger.errorLog("Failed POS Transaction: " + e.getMessage());
+        }
+    }
+}
+```
+```java
+public class TransactionFactory {
+    private ILogger logger;
+
+    public TransactionFactory(ILogger logger) {
+        this.logger = logger;
+    }
+
+    public ITransaction createTransaction(TransactionTypeEnum transactionType, List<
+            IAccount> accounts, double amount) {
+        return switch (transactionType) {
+            case DEPOSIT ->
+                    new DepositTransaction(accounts.getFirst(), logger, amount, new AccountStatusValidator(logger));
+            case EXCHANGE ->
+                    new ExchangeTransaction(accounts.getFirst(), accounts.getLast(), logger, amount, new TransactionValidator(logger));
+            case WITHDRAWAL ->
+                    new WithdrawalTransaction(accounts.getFirst(), logger, amount, new TransactionValidator(logger));
+        };
+    }
+}
+```
 ## Conclusions / Screenshots / Results
+In conclusion, I want to emphasize that through the implementation of the SOLID principles, the application has become
+more scalable and maintainable. Through the separation of the classes by their responsibilities, the application has become
+more modular, easier to understand and navigate, and the changes in the future may be easier to implement. At the same
+time, by the use of the Interfaces, the application has become more flexible, since the classes are based on abstract definitions
+of the classes rather than on concrete implementations, making them extensible. Also, by the use of Inheritance, application
+has become much more powerful, since the classes can be replaced by their subclasses without affecting the behavior of the
+software.

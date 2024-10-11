@@ -93,7 +93,7 @@ public class Main {
         atmTerminal.performTransaction(List.of(userAccount3, userAccount1), TransactionTypeEnum.EXCHANGE, 50.0);
 
         // User 3 tries to exchange money in POS
-        cashInTerminal.performTransaction(List.of(userAccount3, userAccount1), TransactionTypeEnum.EXCHANGE, 0.0);
+        atmTerminal.performTransaction(List.of(userAccount3, userAccount1), TransactionTypeEnum.WITHDRAWAL, 5.0);
 
     }
 }
