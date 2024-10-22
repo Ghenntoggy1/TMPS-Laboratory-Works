@@ -26,9 +26,17 @@ public class DepositTransaction implements ITransaction {
 
     public DepositTransaction(List<IAccount> account, double amount) {
         this.account = account;
-        this.amount = amount;
-        this.validator = AccountStatusValidator.getInstance();
         this.logger = LoggerImpl.getInstance();
+        if (account == null) {
+            logger.errorLog("Deposit Transaction failed due to invalid account - Account is null");
+            throw new IllegalArgumentException("Account cannot be null");
+        }
+        this.amount = amount;
+        if (amount <= 0) {
+            logger.errorLog("Deposit Transaction failed due to invalid amount - Amount is less than or equal to 0");
+            throw new IllegalArgumentException("Amount cannot be 0");
+        }
+        this.validator = AccountStatusValidator.getInstance();
     }
 
     @Override

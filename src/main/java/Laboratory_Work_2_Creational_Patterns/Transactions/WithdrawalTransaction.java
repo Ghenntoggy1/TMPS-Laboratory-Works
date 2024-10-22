@@ -24,10 +24,18 @@ public class WithdrawalTransaction implements ITransaction {
 //    }
 
     public WithdrawalTransaction(List<IAccount> account, double amount) {
-        this.account = account;
-        this.amount = amount;
-        this.validator = TransactionValidator.getInstance();
         this.logger = LoggerImpl.getInstance();
+        this.account = account;
+        if (account == null) {
+            this.logger.errorLog("Withdrawal Transaction failed due to invalid account - Account is null");
+            throw new IllegalArgumentException("Invalid accounts");
+        }
+        this.amount = amount;
+        if (amount <= 0) {
+            this.logger.errorLog("Withdrawal Transaction failed due to invalid amount - Amount is less than or equal to 0");
+            throw new IllegalArgumentException("Invalid amount");
+        }
+        this.validator = TransactionValidator.getInstance();
     }
 
     @Override

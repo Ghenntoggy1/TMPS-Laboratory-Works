@@ -27,10 +27,18 @@ public class ExchangeTransaction implements ITransaction {
 
 
     public ExchangeTransaction(List<IAccount> accounts, double amount) {
-        this.accounts = accounts;
-        this.amount = amount;
-        this.validator = TransactionValidator.getInstance();
         this.logger = LoggerImpl.getInstance();
+        this.accounts = accounts;
+        if (accounts == null) {
+            this.logger.errorLog("Exchange Transaction failed due to invalid accounts - Accounts are null");
+            throw new IllegalArgumentException("Invalid accounts");
+        }
+        this.amount = amount;
+        if (amount <= 0) {
+            this.logger.errorLog("Exchange Transaction failed due to invalid amount - Amount is less than or equal to 0");
+            throw new IllegalArgumentException("Invalid amount");
+        }
+        this.validator = TransactionValidator.getInstance();
     }
 
     @Override

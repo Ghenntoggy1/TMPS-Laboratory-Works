@@ -47,18 +47,27 @@ public class LoggerImpl implements ILogger {
         return instance;
     }
 
+    // Helper method to get calling class and method
+    private String getCallingClassAndMethod() {
+        StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+        // Index 0: getStackTrace(), Index 1: getCallingClassAndMethod(), Index 2: this method (infoLog, etc.)
+        // Index 3: Caller method
+        StackTraceElement caller = stackTrace[3];
+        return caller.getClassName() + "::" + caller.getMethodName();
+    }
+
     @Override
     public void infoLog(String message) {
-        logger.log(Level.INFO, message);
+        logger.log(Level.INFO, getCallingClassAndMethod() + " :: " + message);
     }
 
     @Override
     public void warningLog(String message) {
-        logger.log(Level.WARNING, message);
+        logger.log(Level.WARNING, getCallingClassAndMethod() + " :: " + message);
     }
 
     @Override
     public void errorLog(String message) {
-        logger.log(Level.SEVERE, message);
+        logger.log(Level.SEVERE, getCallingClassAndMethod() + " :: " + message);
     }
 }

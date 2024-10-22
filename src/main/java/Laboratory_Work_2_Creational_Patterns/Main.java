@@ -8,7 +8,6 @@ import Laboratory_Work_2_Creational_Patterns.Terminals.CashInTerminal;
 import Laboratory_Work_2_Creational_Patterns.Terminals.POSTerminal;
 import Laboratory_Work_2_Creational_Patterns.Transactions.TransactionFactory;
 import Laboratory_Work_2_Creational_Patterns.User.User;
-import Laboratory_Work_2_Creational_Patterns.User.UserAccount;
 import Laboratory_Work_2_Creational_Patterns.Utils.Builders.UserAccountBuilder;
 
 import java.util.List;
