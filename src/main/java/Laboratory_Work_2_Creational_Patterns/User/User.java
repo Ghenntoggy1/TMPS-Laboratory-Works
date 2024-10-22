@@ -1,18 +1,18 @@
 package Laboratory_Work_2_Creational_Patterns.User;
 
-
-import Laboratory_Work_1_SOLID_Principles.Interfaces.ILogger;
-import Laboratory_Work_1_SOLID_Principles.Interfaces.IUser;
-import Laboratory_Work_1_SOLID_Principles.Utils.Logging.LoggerImpl;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.ILogger;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.IUser;
+import Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl;
 
 public class User implements IUser {
     private int userId;
     private String name;
-    private final ILogger logger = LoggerImpl.getInstance();
+    private final ILogger logger;
 
     public User(int userId, String name) {
         this.userId = userId;
         this.name = name;
+        this.logger = LoggerImpl.getInstance();
         this.logger.infoLog("User " + name + " created with ID " + userId);
     }
 

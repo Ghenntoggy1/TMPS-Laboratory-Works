@@ -1,24 +1,19 @@
 package Laboratory_Work_2_Creational_Patterns;
 
-import Laboratory_Work_1_SOLID_Principles.Enums.AccountStatusEnum;
-import Laboratory_Work_1_SOLID_Principles.Interfaces.ILogger;
-import Laboratory_Work_1_SOLID_Principles.Terminals.ATMTerminal;
-import Laboratory_Work_1_SOLID_Principles.Terminals.CashInTerminal;
-import Laboratory_Work_1_SOLID_Principles.Terminals.POSTerminal;
-import Laboratory_Work_1_SOLID_Principles.Transactions.TransactionFactory;
-import Laboratory_Work_1_SOLID_Principles.User.User;
-import Laboratory_Work_1_SOLID_Principles.User.UserAccount;
-import Laboratory_Work_1_SOLID_Principles.Utils.Logging.LoggerImpl;
-import Laboratory_Work_1_SOLID_Principles.Enums.TransactionTypeEnum;
+import Laboratory_Work_2_Creational_Patterns.Enums.AccountStatusEnum;
+import Laboratory_Work_2_Creational_Patterns.Enums.TransactionTypeEnum;
+import Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal;
+import Laboratory_Work_2_Creational_Patterns.Terminals.CashInTerminal;
+import Laboratory_Work_2_Creational_Patterns.Terminals.POSTerminal;
+import Laboratory_Work_2_Creational_Patterns.Transactions.TransactionFactory;
+import Laboratory_Work_2_Creational_Patterns.User.User;
+import Laboratory_Work_2_Creational_Patterns.User.UserAccount;
 
 import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Laboratory Work 1 - SOLID Principles");
-
-        // Singleton Logger
-        ILogger logger = LoggerImpl.getInstance();
+        System.out.println("Laboratory Work 2 - Creational Design Patterns");
 
         // Create a new user
         User user1 = new User(1, "John Doe");

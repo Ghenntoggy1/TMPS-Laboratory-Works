@@ -1,24 +1,20 @@
 package Laboratory_Work_2_Creational_Patterns.Utils.Validators;
 
-import Laboratory_Work_1_SOLID_Principles.Interfaces.ILogger;
-import Laboratory_Work_1_SOLID_Principles.Interfaces.IAccount;
-import Laboratory_Work_1_SOLID_Principles.Interfaces.ITransactionValidator;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccount;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.ITransactionValidator;
 
 public class TransactionValidator extends AccountStatusValidator implements ITransactionValidator {
-    public TransactionValidator(ILogger logger) {
-        super(logger);
-    }
 
     @Override
     public boolean validateSufficientFunds(IAccount userAccount, double amount) {
         int userAccountId = userAccount.getAccountId();
         double userAccountBalance = userAccount.getBalance();
         if (userAccountBalance < amount) {
-            super.getLogger().warningLog("Insufficient funds in account " + userAccountId +
+            logger.warningLog("Insufficient funds in account " + userAccountId +
                     ". Available: " + userAccountBalance + ", required: " + amount);
             return false;
         }
-        super.getLogger().infoLog("Account " + userAccountId + " has sufficient funds");
+        logger.infoLog("Account " + userAccountId + " has sufficient funds");
         return true;
     }
 

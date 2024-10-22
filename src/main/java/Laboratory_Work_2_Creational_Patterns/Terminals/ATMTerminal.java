@@ -1,21 +1,22 @@
 package Laboratory_Work_2_Creational_Patterns.Terminals;
 
-import Laboratory_Work_1_SOLID_Principles.Interfaces.IAccount;
-import Laboratory_Work_1_SOLID_Principles.Interfaces.ILogger;
-import Laboratory_Work_1_SOLID_Principles.Interfaces.ITerminal;
-import Laboratory_Work_1_SOLID_Principles.Interfaces.ITransaction;
-import Laboratory_Work_1_SOLID_Principles.Enums.TransactionTypeEnum;
-import Laboratory_Work_1_SOLID_Principles.Transactions.TransactionFactory;
-import Laboratory_Work_1_SOLID_Principles.Utils.Logging.LoggerImpl;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccount;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.ILogger;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.ITerminal;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.ITransaction;
+import Laboratory_Work_2_Creational_Patterns.Enums.TransactionTypeEnum;
+import Laboratory_Work_2_Creational_Patterns.Transactions.TransactionFactory;
+import Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl;
 
 import java.util.List;
 
 public class ATMTerminal implements ITerminal {
-    private ILogger logger = LoggerImpl.getInstance();
+    private ILogger logger;
     private TransactionFactory transactionFactory;
 
     public ATMTerminal(TransactionFactory transactionFactory) {
         this.transactionFactory = transactionFactory;
+        this.logger = LoggerImpl.getInstance();
     }
 
     @Override

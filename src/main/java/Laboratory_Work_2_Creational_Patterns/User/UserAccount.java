@@ -1,17 +1,16 @@
 package Laboratory_Work_2_Creational_Patterns.User;
 
-import Laboratory_Work_1_SOLID_Principles.Interfaces.IAccount;
-import Laboratory_Work_1_SOLID_Principles.Interfaces.ILogger;
-import Laboratory_Work_1_SOLID_Principles.Enums.AccountStatusEnum;
-import Laboratory_Work_1_SOLID_Principles.User.User;
-import Laboratory_Work_1_SOLID_Principles.Utils.Logging.LoggerImpl;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccount;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.ILogger;
+import Laboratory_Work_2_Creational_Patterns.Enums.AccountStatusEnum;
+import Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl;
 
 
 public class UserAccount implements IAccount {
     private int accountId;
-    private Laboratory_Work_1_SOLID_Principles.User.User user;
+    private User user;
     private double balance;
-    private ILogger logger = LoggerImpl.getInstance();
+    private ILogger logger;
     private AccountStatusEnum status;
 
     public UserAccount(int accountId, User user) {
@@ -19,6 +18,7 @@ public class UserAccount implements IAccount {
         this.user = user;
         this.balance = 0;
         this.status = AccountStatusEnum.ACTIVE;
+        this.logger = LoggerImpl.getInstance();
         this.logger.infoLog("Account " + this.accountId + " with status " + this.status + " created for user "
                 + this.user.getName() + " (" + this.user.getUserId() + ")");
     }

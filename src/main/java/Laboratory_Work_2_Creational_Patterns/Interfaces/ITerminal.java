@@ -1,7 +1,6 @@
 package Laboratory_Work_2_Creational_Patterns.Interfaces;
 
-import Laboratory_Work_1_SOLID_Principles.Enums.TransactionTypeEnum;
-import Laboratory_Work_1_SOLID_Principles.Interfaces.IAccount;
+import Laboratory_Work_2_Creational_Patterns.Enums.TransactionTypeEnum;
 
 import java.util.List;
 

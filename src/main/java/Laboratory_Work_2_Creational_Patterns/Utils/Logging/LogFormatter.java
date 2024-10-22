@@ -1,8 +1,6 @@
 package Laboratory_Work_2_Creational_Patterns.Utils.Logging;
 
-import java.util.Arrays;
 import java.util.Date;
-import java.util.List;
 import java.util.logging.Formatter;
 import java.util.logging.LogRecord;
 

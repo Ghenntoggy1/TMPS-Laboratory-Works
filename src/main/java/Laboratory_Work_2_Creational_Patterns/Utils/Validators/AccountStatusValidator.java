@@ -1,16 +1,13 @@
 package Laboratory_Work_2_Creational_Patterns.Utils.Validators;
 
-import Laboratory_Work_1_SOLID_Principles.Enums.AccountStatusEnum;
-import Laboratory_Work_1_SOLID_Principles.Interfaces.IAccount;
-import Laboratory_Work_1_SOLID_Principles.Interfaces.IAccountStatusValidator;
-import Laboratory_Work_1_SOLID_Principles.Interfaces.ILogger;
+import Laboratory_Work_2_Creational_Patterns.Enums.AccountStatusEnum;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccount;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccountStatusValidator;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.ILogger;
+import Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl;
 
 public class AccountStatusValidator implements IAccountStatusValidator {
-    private final ILogger logger;
-
-    public AccountStatusValidator(ILogger logger) {
-        this.logger = logger;
-    }
+    protected final ILogger logger = LoggerImpl.getInstance();
 
     @Override
     public boolean validateAccountStatus(IAccount userAccount) {
@@ -23,9 +20,5 @@ public class AccountStatusValidator implements IAccountStatusValidator {
         }
         logger.infoLog("Account " + userAccountId + " is " + userAccountStatus);
         return true;
-    }
-
-    public ILogger getLogger() {
-        return this.logger;
     }
 }

@@ -1,9 +1,10 @@
 package Laboratory_Work_2_Creational_Patterns.Transactions;
 
-import Laboratory_Work_1_SOLID_Principles.Interfaces.IAccount;
-import Laboratory_Work_1_SOLID_Principles.Interfaces.IAccountStatusValidator;
-import Laboratory_Work_1_SOLID_Principles.Interfaces.ILogger;
-import Laboratory_Work_1_SOLID_Principles.Interfaces.ITransaction;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccount;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccountStatusValidator;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.ILogger;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.ITransaction;
+import Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl;
 
 public class DepositTransaction implements ITransaction {
     private IAccount account;
@@ -11,11 +12,11 @@ public class DepositTransaction implements ITransaction {
     private ILogger logger;
     private IAccountStatusValidator validator;
 
-    public DepositTransaction(IAccount account, ILogger logger, double amount, IAccountStatusValidator validator) {
+    public DepositTransaction(IAccount account, double amount, IAccountStatusValidator validator) {
         this.account = account;
-        this.logger = logger;
         this.amount = amount;
         this.validator = validator;
+        this.logger = LoggerImpl.getInstance();
     }
 
     @Override

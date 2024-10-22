@@ -1,6 +1,6 @@
 package Laboratory_Work_2_Creational_Patterns.Utils.Logging;
 
-import Laboratory_Work_1_SOLID_Principles.Interfaces.ILogger;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.ILogger;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
