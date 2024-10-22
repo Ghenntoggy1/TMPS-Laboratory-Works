@@ -14,8 +14,8 @@ public class ATMTerminal implements ITerminal {
     private ILogger logger;
     private TransactionFactory transactionFactory;
 
-    public ATMTerminal(TransactionFactory transactionFactory) {
-        this.transactionFactory = transactionFactory;
+    public ATMTerminal() {
+        this.transactionFactory = TransactionFactory.getInstance();
         this.logger = LoggerImpl.getInstance();
     }
 

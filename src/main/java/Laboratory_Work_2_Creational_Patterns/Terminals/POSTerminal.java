@@ -14,8 +14,8 @@ public class POSTerminal implements ITerminal {
     private ILogger logger;
     private TransactionFactory transactionFactory;
 
-    public POSTerminal(TransactionFactory transactionFactory) {
-        this.transactionFactory = transactionFactory;
+    public POSTerminal() {
+        this.transactionFactory = TransactionFactory.getInstance();
         this.logger = LoggerImpl.getInstance();
     }
 

@@ -43,13 +43,11 @@ public class Main {
 //        UserAccount userAccount3 = new UserAccount(3, user3, 0.0, AccountStatusEnum.ACTIVE);
 //        userAccount3.setAccountStatus(AccountStatusEnum.INACTIVE);
 
-        // Create a Transaction Factory
-        TransactionFactory transactionFactory = new TransactionFactory();
 
         // Create Terminals
-        ATMTerminal atmTerminal = new ATMTerminal(transactionFactory);
-        POSTerminal posTerminal = new POSTerminal(transactionFactory);
-        CashInTerminal cashInTerminal = new CashInTerminal(transactionFactory);
+        ATMTerminal atmTerminal = new ATMTerminal();
+        POSTerminal posTerminal = new POSTerminal();
+        CashInTerminal cashInTerminal = new CashInTerminal();
 
         // User 1 performs transactions
         // ERROR - User 1 tries to withdraw more than the balance
