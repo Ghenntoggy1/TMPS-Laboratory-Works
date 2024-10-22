@@ -2,12 +2,14 @@ package Laboratory_Work_2_Creational_Patterns;
 
 import Laboratory_Work_2_Creational_Patterns.Enums.AccountStatusEnum;
 import Laboratory_Work_2_Creational_Patterns.Enums.TransactionTypeEnum;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccount;
 import Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal;
 import Laboratory_Work_2_Creational_Patterns.Terminals.CashInTerminal;
 import Laboratory_Work_2_Creational_Patterns.Terminals.POSTerminal;
 import Laboratory_Work_2_Creational_Patterns.Transactions.TransactionFactory;
 import Laboratory_Work_2_Creational_Patterns.User.User;
 import Laboratory_Work_2_Creational_Patterns.User.UserAccount;
+import Laboratory_Work_2_Creational_Patterns.Utils.Builders.UserAccountBuilder;
 
 import java.util.List;
 
@@ -16,26 +18,39 @@ public class Main {
         System.out.println("Laboratory Work 2 - Creational Design Patterns");
 
         // Create a new user
+        UserAccountBuilder userAccountBuilder = new UserAccountBuilder();
+
         User user1 = new User(1, "John Doe");
-        UserAccount userAccount1 = new UserAccount(1, user1);
+        userAccountBuilder.setAccountId(1);
+        userAccountBuilder.setUser(user1);
+        userAccountBuilder.setBalance(0.0);
+        userAccountBuilder.setStatus(AccountStatusEnum.ACTIVE);
+
+        IAccount userAccount1 =  userAccountBuilder.getResult();
+//        UserAccount userAccount1 = new UserAccount(1, user1, 0.0, AccountStatusEnum.ACTIVE);
 
         User user2 = new User(2, "Jane Doe");
-        UserAccount userAccount2 = new UserAccount(2, user2);
+        userAccountBuilder.setAccountId(2);
+        userAccountBuilder.setUser(user2);
+        userAccountBuilder.setBalance(50.0);
+        userAccountBuilder.setStatus(AccountStatusEnum.ACTIVE);
+        IAccount userAccount2 =  userAccountBuilder.getResult();
+//        UserAccount userAccount2 = new UserAccount(2, user2, 0.0, AccountStatusEnum.ACTIVE);
 
         User user3 = new User(3, "John Smith");
-        UserAccount userAccount3 = new UserAccount(3, user3);
-        userAccount3.setAccountStatus(AccountStatusEnum.INACTIVE);
+        userAccountBuilder.setAccountId(3);
+        userAccountBuilder.setUser(user3);
+        IAccount userAccount3 =  userAccountBuilder.getResult();
+//        UserAccount userAccount3 = new UserAccount(3, user3, 0.0, AccountStatusEnum.ACTIVE);
+//        userAccount3.setAccountStatus(AccountStatusEnum.INACTIVE);
 
         // Create a Transaction Factory
         TransactionFactory transactionFactory = new TransactionFactory();
 
         // Create Terminals
         ATMTerminal atmTerminal = new ATMTerminal(transactionFactory);
-        System.out.println(atmTerminal);
         POSTerminal posTerminal = new POSTerminal(transactionFactory);
-        System.out.println(posTerminal);
         CashInTerminal cashInTerminal = new CashInTerminal(transactionFactory);
-        System.out.println(cashInTerminal);
 
         // User 1 performs transactions
         // ERROR - User 1 tries to withdraw more than the balance

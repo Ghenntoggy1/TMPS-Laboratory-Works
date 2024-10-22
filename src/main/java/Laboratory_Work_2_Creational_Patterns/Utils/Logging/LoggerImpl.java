@@ -8,7 +8,7 @@ import java.util.logging.ConsoleHandler;
 import java.util.logging.FileHandler;
 import java.io.IOException;
 
-public final class LoggerImpl implements ILogger {
+public class LoggerImpl implements ILogger {
     private static LoggerImpl instance;
     private final Logger logger;
 
@@ -21,7 +21,8 @@ public final class LoggerImpl implements ILogger {
         consoleHandler.setLevel(Level.ALL);
 
         try {
-            FileHandler fileHandler = new FileHandler("src/main/java/Laboratory_Work_1_SOLID_Principles/Utils/Logging/Logs/logs.log", true);
+
+            FileHandler fileHandler = new FileHandler("src/main/java/Laboratory_Work_2_Creational_Patterns/Utils/Logging/Logs/logs.log", true);
             fileHandler.setFormatter(new LogFormatter());
             fileHandler.setLevel(Level.ALL);
             this.logger.addHandler(fileHandler);

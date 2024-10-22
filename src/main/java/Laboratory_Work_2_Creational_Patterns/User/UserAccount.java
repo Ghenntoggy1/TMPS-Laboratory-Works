@@ -3,21 +3,28 @@ package Laboratory_Work_2_Creational_Patterns.User;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccount;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.ILogger;
 import Laboratory_Work_2_Creational_Patterns.Enums.AccountStatusEnum;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.IUser;
 import Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl;
 
 
 public class UserAccount implements IAccount {
     private int accountId;
-    private User user;
-    private double balance;
+    private IUser user;
+    private Double balance;
     private ILogger logger;
     private AccountStatusEnum status;
 
-    public UserAccount(int accountId, User user) {
+    public UserAccount(int accountId, IUser user, Double balance, AccountStatusEnum status) {
         this.accountId = accountId;
         this.user = user;
-        this.balance = 0;
-        this.status = AccountStatusEnum.ACTIVE;
+        this.balance = balance;
+        if (balance == null) {
+            this.balance = 0.0;
+        }
+        this.status = status;
+        if (this.status == null) {
+            this.status = AccountStatusEnum.INACTIVE;
+        }
         this.logger = LoggerImpl.getInstance();
         this.logger.infoLog("Account " + this.accountId + " with status " + this.status + " created for user "
                 + this.user.getName() + " (" + this.user.getUserId() + ")");

@@ -7,6 +7,7 @@ import Laboratory_Work_2_Creational_Patterns.Interfaces.ILogger;
 import Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl;
 
 public class AccountStatusValidator implements IAccountStatusValidator {
+    private static AccountStatusValidator instance;
     protected final ILogger logger = LoggerImpl.getInstance();
 
     @Override
@@ -20,5 +21,18 @@ public class AccountStatusValidator implements IAccountStatusValidator {
         }
         logger.infoLog("Account " + userAccountId + " is " + userAccountStatus);
         return true;
+    }
+
+    public static AccountStatusValidator getInstance() {
+        ILogger logger = LoggerImpl.getInstance();
+
+        if (instance == null) {
+            instance = new AccountStatusValidator();
+            logger.infoLog("Account Status Validator Initialized using Singleton Pattern");
+        }
+        else {
+            logger.infoLog("Account Status Validator already initialized - Returning existing instance");
+        }
+        return instance;
     }
 }

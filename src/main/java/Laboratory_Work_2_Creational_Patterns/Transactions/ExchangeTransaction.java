@@ -5,31 +5,45 @@ import Laboratory_Work_2_Creational_Patterns.Interfaces.ILogger;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.ITransaction;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.ITransactionValidator;
 import Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl;
+import Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator;
+
+import java.util.List;
 
 public class ExchangeTransaction implements ITransaction {
-    private IAccount senderAccount;
-    private IAccount receiverAccount;
+//    private IAccount senderAccount;
+//    private IAccount receiverAccount;
+    private List<IAccount> accounts;
     private double amount;
     private ILogger logger;
     private ITransactionValidator validator;
 
-    public ExchangeTransaction(IAccount senderAccount, IAccount receiverAccount, double amount, ITransactionValidator validator) {
-        this.senderAccount = senderAccount;
-        this.receiverAccount = receiverAccount;
+//    public ExchangeTransaction(IAccount senderAccount, IAccount receiverAccount, double amount, ITransactionValidator validator) {
+//        this.senderAccount = senderAccount;
+//        this.receiverAccount = receiverAccount;
+//        this.amount = amount;
+//        this.validator = validator;
+//        this.logger = LoggerImpl.getInstance();
+//    }
+
+
+    public ExchangeTransaction(List<IAccount> accounts, double amount) {
+        this.accounts = accounts;
         this.amount = amount;
-        this.validator = validator;
+        this.validator = TransactionValidator.getInstance();
         this.logger = LoggerImpl.getInstance();
     }
 
     @Override
     public void executeTransaction() {
-        int senderAccountId = this.senderAccount.getAccountId();
-        int receiverAccountId = this.receiverAccount.getAccountId();
+        IAccount senderAccount = this.accounts.getFirst();
+        IAccount receiverAccount = this.accounts.getLast();
+        int senderAccountId = senderAccount.getAccountId();
+        int receiverAccountId = receiverAccount.getAccountId();
         this.logger.infoLog("Initiated Exchange Transaction from Account " + senderAccountId +
                 " to Account " + receiverAccountId);
-        if (this.validator.validateTransaction(this.senderAccount, this.amount) && this.validator.validateAccountStatus(this.receiverAccount)) {
-            this.senderAccount.withdraw(this.amount);
-            this.receiverAccount.deposit(this.amount);
+        if (validator.validateTransaction(senderAccount, this.amount) && this.validator.validateAccountStatus(receiverAccount)) {
+            senderAccount.withdraw(this.amount);
+            receiverAccount.deposit(this.amount);
             this.logger.infoLog("Successfully Exchanged " + this.amount + " from Account " + senderAccountId +
                     " to Account " + receiverAccountId);
         }
