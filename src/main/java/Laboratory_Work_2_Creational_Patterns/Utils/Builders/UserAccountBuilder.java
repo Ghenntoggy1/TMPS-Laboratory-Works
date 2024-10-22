@@ -16,6 +16,7 @@ public class UserAccountBuilder implements IUserAccountBuilder {
         this.reset();
     }
 
+    @Override
     public void reset() {
         this.accountId = 0;
         this.user = null;

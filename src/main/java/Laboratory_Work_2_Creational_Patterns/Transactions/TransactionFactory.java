@@ -10,8 +10,6 @@ import Laboratory_Work_2_Creational_Patterns.Utils.Builders.DepositTransactionBu
 import Laboratory_Work_2_Creational_Patterns.Utils.Builders.ExchangeTransactionBuilder;
 import Laboratory_Work_2_Creational_Patterns.Utils.Builders.WithdrawalTransactionBuilder;
 import Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl;
-import Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator;
-import Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator;
 
 import java.util.List;
 

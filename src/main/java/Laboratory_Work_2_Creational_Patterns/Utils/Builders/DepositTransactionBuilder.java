@@ -17,6 +17,7 @@ public class DepositTransactionBuilder implements ITransactionBuilder {
         this.reset();
     }
 
+    @Override
     public void reset() {
         this.accounts = null;
         this.amount = 0;
