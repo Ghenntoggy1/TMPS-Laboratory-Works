@@ -1,4 +1,4 @@
-# Laboratory Work 2 - Creational Design Patterns
+# Laboratory Work 1 - Creational Design Patterns
 
 
 ## Author: Gusev Roman

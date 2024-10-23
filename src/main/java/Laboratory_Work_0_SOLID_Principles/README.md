@@ -1,4 +1,4 @@
-# Laboratory Work 1 - SOLID Principles
+# Laboratory Work 0 - SOLID Principles
 
 
 ## Author: Gusev Roman
