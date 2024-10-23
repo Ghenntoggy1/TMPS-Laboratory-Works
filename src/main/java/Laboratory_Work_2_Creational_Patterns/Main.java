@@ -2,6 +2,8 @@ package Laboratory_Work_2_Creational_Patterns;
 
 import Laboratory_Work_2_Creational_Patterns.Enums.AccountStatusEnum;
 import Laboratory_Work_2_Creational_Patterns.Enums.TransactionTypeEnum;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.BuilderInterfaces.IBuilder;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.BuilderInterfaces.IUserAccountBuilder;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.IAbstractTerminalTransactionFactory;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccount;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.ITerminal;
@@ -19,7 +21,7 @@ public class Main {
         System.out.println("Laboratory Work 2 - Creational Design Patterns");
 
         // Create a new user
-        UserAccountBuilder userAccountBuilder = new UserAccountBuilder();
+        IUserAccountBuilder userAccountBuilder = new UserAccountBuilder();
 
         User user1 = new User(1, "John Doe");
         userAccountBuilder.setAccountId(1);

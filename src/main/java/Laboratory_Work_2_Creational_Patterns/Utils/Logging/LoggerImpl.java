@@ -12,7 +12,7 @@ public class LoggerImpl implements ILogger {
     private static LoggerImpl instance;
     private final Logger logger;
 
-    public LoggerImpl() {
+    private LoggerImpl() {
         this.logger = Logger.getLogger(LoggerImpl.class.getName());
         this.logger.setLevel(Level.ALL);
 

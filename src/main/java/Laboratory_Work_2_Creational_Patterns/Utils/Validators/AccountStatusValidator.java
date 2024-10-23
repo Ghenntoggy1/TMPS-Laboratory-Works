@@ -10,6 +10,8 @@ public class AccountStatusValidator implements IAccountStatusValidator {
     private static AccountStatusValidator instance;
     protected final ILogger logger = LoggerImpl.getInstance();
 
+    protected AccountStatusValidator() {}
+
     @Override
     public boolean validateAccountStatus(IAccount userAccount) {
         AccountStatusEnum userAccountStatus = userAccount.getAccountStatus();

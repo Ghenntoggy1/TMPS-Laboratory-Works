@@ -8,6 +8,8 @@ import Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl;
 public class TransactionValidator extends AccountStatusValidator implements ITransactionValidator {
     private static TransactionValidator instance;
 
+    private TransactionValidator() {}
+
     @Override
     public boolean validateSufficientFunds(IAccount userAccount, double amount) {
         int userAccountId = userAccount.getAccountId();

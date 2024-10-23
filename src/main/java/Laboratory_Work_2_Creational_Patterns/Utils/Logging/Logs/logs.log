@@ -269,3 +269,536 @@ Wed Oct 23 11:13:29 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creation
 Wed Oct 23 11:13:29 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 3
 Wed Oct 23 11:13:29 EEST 2024 :: [WARNING] :: warningLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Insufficient funds in account 3. Available: 0.0, required: 5.0
 Wed Oct 23 11:13:29 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrawal Transaction failed for Account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger Initialized using Singleton Pattern
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.User::<init> :: User John Doe created with ID 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.User::getName :: Requested name for user 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.User::getUserId :: Requested ID for user 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::<init> :: Account 1 with status ACTIVE created for user John Doe (1)
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.User::<init> :: User Jane Doe created with ID 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.User::getName :: Requested name for user 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.User::getUserId :: Requested ID for user 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::<init> :: Account 2 with status ACTIVE created for user Jane Doe (2)
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.User::<init> :: User John Smith created with ID 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.User::getName :: Requested name for user 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.User::getUserId :: Requested ID for user 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::<init> :: Account 3 with status INACTIVE created for user John Smith (3)
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.TransactionFactory::getInstance :: Logger Initialized using Singleton Pattern
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.TransactionFactory::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.TransactionFactory::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator Initialized using Singleton Pattern
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 1 on Amount 100.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Initiated Withdrawal Transaction for Account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [WARNING] :: warningLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Insufficient funds in account 1. Available: 0.0, required: 100.0
+Wed Oct 23 16:04:30 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrawal Transaction failed for Account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::<init> :: Withdrawal Transaction failed due to invalid amount - Amount is less than or equal to 0
+Wed Oct 23 16:04:30 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Failed ATM Transaction: Transaction is Null - Cannot invoke "Laboratory_Work_2_Creational_Patterns.Interfaces.ITransaction.getAccounts()" because "transaction" is null
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::getInstance :: Account Status Validator Initialized using Singleton Pattern
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 1 on Amount 200.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Initiated Deposit Transaction for Account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Deposited 200.0 to Account 1 - New Balance: 200.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 1 on Amount 50.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Initiated Withdrawal Transaction for Account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 1 has sufficient funds
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrew 50.0 from account 1 - New balance: 150.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 1 on Amount 50.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.ExchangeTransaction::executeTransaction :: Initiated Exchange Transaction from Account 1 to Account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 1 has sufficient funds
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 2 is ACTIVE
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.ExchangeTransaction::executeTransaction :: Successfully Exchanged 50.0 from Account 1 to Account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::getInstance :: Account Status Validator already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.CashInTerminal::performTransaction :: Initiated Cash-In Transaction to Account1 on Amount 100.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Initiated Deposit Transaction for Account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Deposited 100.0 to Account 1 - New Balance: 200.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.POSTerminal::performTransaction :: Initiated POS Transaction from Account 1 on Amount 20.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Initiated Withdrawal Transaction for Account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 1 has sufficient funds
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrew 20.0 from account 1 - New balance: 180.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.POSTerminal::performTransaction :: Closed POS Transaction from Account 1 on Amount 20.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.POSTerminal::performTransaction :: Initiated POS Transaction from Account 1 on Amount 500.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Initiated Withdrawal Transaction for Account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [WARNING] :: warningLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Insufficient funds in account 1. Available: 180.0, required: 500.0
+Wed Oct 23 16:04:30 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrawal Transaction failed for Account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.POSTerminal::performTransaction :: Closed POS Transaction from Account 1 on Amount 500.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::getInstance :: Account Status Validator already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.CashInTerminal::performTransaction :: Initiated Cash-In Transaction to Account2 on Amount 200.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Initiated Deposit Transaction for Account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 2 is ACTIVE
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Deposited 200.0 to Account 2 - New Balance: 300.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.POSTerminal::performTransaction :: Initiated POS Transaction from Account 2 on Amount 50.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Initiated Withdrawal Transaction for Account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 2 is ACTIVE
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 2 has sufficient funds
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrew 50.0 from account 2 - New balance: 250.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.POSTerminal::performTransaction :: Closed POS Transaction from Account 2 on Amount 50.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 2 on Amount 500.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.ExchangeTransaction::executeTransaction :: Initiated Exchange Transaction from Account 2 to Account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 2 is ACTIVE
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 2
+Wed Oct 23 16:04:30 EEST 2024 :: [WARNING] :: warningLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Insufficient funds in account 2. Available: 250.0, required: 500.0
+Wed Oct 23 16:04:30 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Transactions.ExchangeTransaction::executeTransaction :: Exchange Transaction failed from Account 2 to Account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::getInstance :: Account Status Validator already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.CashInTerminal::performTransaction :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Initiated Deposit Transaction for Account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [WARNING] :: warningLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is INACTIVE and cannot perform transactions
+Wed Oct 23 16:04:30 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Deposit Transaction Failed for Account 3 - Account is not active
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 3 on Amount 50.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Initiated Withdrawal Transaction for Account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [WARNING] :: warningLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is INACTIVE and cannot perform transactions
+Wed Oct 23 16:04:30 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrawal Transaction failed for Account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 3 on Amount 50.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.ExchangeTransaction::executeTransaction :: Initiated Exchange Transaction from Account 3 to Account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [WARNING] :: warningLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is INACTIVE and cannot perform transactions
+Wed Oct 23 16:04:30 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Transactions.ExchangeTransaction::executeTransaction :: Exchange Transaction failed from Account 3 to Account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::setAccountStatus :: Account 3 status changed to ACTIVE
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::getInstance :: Account Status Validator already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.CashInTerminal::performTransaction :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Initiated Deposit Transaction for Account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is ACTIVE
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Deposited 100.0 to Account 3 - New Balance: 100.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 3 on Amount 50.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Initiated Withdrawal Transaction for Account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is ACTIVE
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 3 has sufficient funds
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrew 50.0 from account 3 - New balance: 50.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 3 on Amount 50.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.ExchangeTransaction::executeTransaction :: Initiated Exchange Transaction from Account 3 to Account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is ACTIVE
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 3 has sufficient funds
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.ExchangeTransaction::executeTransaction :: Successfully Exchanged 50.0 from Account 3 to Account 1
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 3 on Amount 5.0
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Initiated Withdrawal Transaction for Account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is ACTIVE
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 3
+Wed Oct 23 16:04:30 EEST 2024 :: [WARNING] :: warningLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Insufficient funds in account 3. Available: 0.0, required: 5.0
+Wed Oct 23 16:04:30 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrawal Transaction failed for Account 3
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger Initialized using Singleton Pattern
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.User::<init> :: User John Doe created with ID 1
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.User::getName :: Requested name for user 1
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.User::getUserId :: Requested ID for user 1
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::<init> :: Account 1 with status ACTIVE created for user John Doe (1)
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.User::<init> :: User Jane Doe created with ID 2
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.User::getName :: Requested name for user 2
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.User::getUserId :: Requested ID for user 2
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::<init> :: Account 2 with status ACTIVE created for user Jane Doe (2)
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.User::<init> :: User John Smith created with ID 3
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.User::getName :: Requested name for user 3
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.User::getUserId :: Requested ID for user 3
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::<init> :: Account 3 with status INACTIVE created for user John Smith (3)
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator Initialized using Singleton Pattern
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 1 on Amount 100.0
+Wed Oct 23 18:10:54 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Initiated Withdrawal Transaction for Account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [WARNING] :: warningLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Insufficient funds in account 1. Available: 0.0, required: 100.0
+Wed Oct 23 18:10:55 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrawal Transaction failed for Account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::<init> :: Withdrawal Transaction failed due to invalid amount - Amount is less than or equal to 0
+Wed Oct 23 18:10:55 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Failed ATM Transaction: Transaction is Null - Cannot invoke "Laboratory_Work_2_Creational_Patterns.Interfaces.ITransaction.getAccounts()" because "transaction" is null
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::getInstance :: Account Status Validator Initialized using Singleton Pattern
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 1 on Amount 200.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Initiated Deposit Transaction for Account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Deposited 200.0 to Account 1 - New Balance: 200.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 1 on Amount 50.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Initiated Withdrawal Transaction for Account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 1 has sufficient funds
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrew 50.0 from account 1 - New balance: 150.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 1 on Amount 50.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.ExchangeTransaction::executeTransaction :: Initiated Exchange Transaction from Account 1 to Account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 1 has sufficient funds
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 2 is ACTIVE
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.ExchangeTransaction::executeTransaction :: Successfully Exchanged 50.0 from Account 1 to Account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::getInstance :: Account Status Validator already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.CashInTerminal::performTransaction :: Initiated Cash-In Transaction to Account1 on Amount 100.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Initiated Deposit Transaction for Account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Deposited 100.0 to Account 1 - New Balance: 200.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.POSTerminal::performTransaction :: Initiated POS Transaction from Account 1 on Amount 20.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Initiated Withdrawal Transaction for Account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 1 has sufficient funds
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrew 20.0 from account 1 - New balance: 180.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.POSTerminal::performTransaction :: Initiated POS Transaction from Account 1 on Amount 500.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Initiated Withdrawal Transaction for Account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [WARNING] :: warningLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Insufficient funds in account 1. Available: 180.0, required: 500.0
+Wed Oct 23 18:10:55 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrawal Transaction failed for Account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::getInstance :: Account Status Validator already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.CashInTerminal::performTransaction :: Initiated Cash-In Transaction to Account2 on Amount 200.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Initiated Deposit Transaction for Account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 2 is ACTIVE
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Deposited 200.0 to Account 2 - New Balance: 300.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.POSTerminal::performTransaction :: Initiated POS Transaction from Account 2 on Amount 50.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Initiated Withdrawal Transaction for Account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 2 is ACTIVE
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 2 has sufficient funds
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrew 50.0 from account 2 - New balance: 250.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 2 on Amount 500.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.ExchangeTransaction::executeTransaction :: Initiated Exchange Transaction from Account 2 to Account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 2 is ACTIVE
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 2
+Wed Oct 23 18:10:55 EEST 2024 :: [WARNING] :: warningLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Insufficient funds in account 2. Available: 250.0, required: 500.0
+Wed Oct 23 18:10:55 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Transactions.ExchangeTransaction::executeTransaction :: Exchange Transaction failed from Account 2 to Account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::getInstance :: Account Status Validator already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.CashInTerminal::performTransaction :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Initiated Deposit Transaction for Account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [WARNING] :: warningLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is INACTIVE and cannot perform transactions
+Wed Oct 23 18:10:55 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Deposit Transaction Failed for Account 3 - Account is not active
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 3 on Amount 50.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Initiated Withdrawal Transaction for Account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [WARNING] :: warningLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is INACTIVE and cannot perform transactions
+Wed Oct 23 18:10:55 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrawal Transaction failed for Account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 3 on Amount 50.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.ExchangeTransaction::executeTransaction :: Initiated Exchange Transaction from Account 3 to Account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [WARNING] :: warningLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is INACTIVE and cannot perform transactions
+Wed Oct 23 18:10:55 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Transactions.ExchangeTransaction::executeTransaction :: Exchange Transaction failed from Account 3 to Account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::setAccountStatus :: Account 3 status changed to ACTIVE
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::getInstance :: Account Status Validator already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.CashInTerminal::performTransaction :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Initiated Deposit Transaction for Account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is ACTIVE
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction::executeTransaction :: Deposited 100.0 to Account 3 - New Balance: 100.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 3 on Amount 50.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Initiated Withdrawal Transaction for Account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is ACTIVE
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 3 has sufficient funds
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrew 50.0 from account 3 - New balance: 50.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 3 on Amount 50.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.ExchangeTransaction::executeTransaction :: Initiated Exchange Transaction from Account 3 to Account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is ACTIVE
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 3 has sufficient funds
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.ExchangeTransaction::executeTransaction :: Successfully Exchanged 50.0 from Account 3 to Account 1
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl::getInstance :: Logger already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 3 on Amount 5.0
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Initiated Withdrawal Transaction for Account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is ACTIVE
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [INFO] :: infoLog :: Laboratory_Work_2_Creational_Patterns.User.UserAccount::getBalance :: Checking balance for account 3
+Wed Oct 23 18:10:55 EEST 2024 :: [WARNING] :: warningLog :: Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Insufficient funds in account 3. Available: 0.0, required: 5.0
+Wed Oct 23 18:10:55 EEST 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_2_Creational_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrawal Transaction failed for Account 3

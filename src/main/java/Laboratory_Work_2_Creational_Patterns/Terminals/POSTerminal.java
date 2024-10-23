@@ -1,21 +1,21 @@
 package Laboratory_Work_2_Creational_Patterns.Terminals;
 
-import Laboratory_Work_2_Creational_Patterns.Interfaces.*;
-import Laboratory_Work_2_Creational_Patterns.Interfaces.BuilderInterfaces.ITransactionBuilder;
-import Laboratory_Work_2_Creational_Patterns.Transactions.TransactionFactory;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.ITerminal;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.ILogger;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccount;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.IAbstractTerminalTransactionFactory;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.ITransaction;
+
 import Laboratory_Work_2_Creational_Patterns.Enums.TransactionTypeEnum;
-import Laboratory_Work_2_Creational_Patterns.Utils.Builders.WithdrawalTransactionBuilder;
 import Laboratory_Work_2_Creational_Patterns.Utils.Factories.POSFactory;
 import Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl;
 
 import java.util.List;
 
 public class POSTerminal implements ITerminal {
-    private ILogger logger;
-    private TransactionFactory transactionFactory;
+    private final ILogger logger;
 
     public POSTerminal() {
-        this.transactionFactory = TransactionFactory.getInstance();
         this.logger = LoggerImpl.getInstance();
     }
 
@@ -27,13 +27,11 @@ public class POSTerminal implements ITerminal {
         }
         try {
             IAbstractTerminalTransactionFactory POSFactory = new POSFactory();
-            ITransaction transaction = POSFactory.createTransaction(accounts, amount, transactionType);
-//            ITransaction transaction = transactionFactory.createTransaction(transactionType, accounts, amount);
+            ITransaction withdrawalTransaction = POSFactory.createTransaction(accounts, amount, transactionType);
             int accountId = accounts.getFirst().getAccountId();
             logger.infoLog("Initiated POS Transaction from Account " + accountId + " on Amount " + amount);
-
-            transaction.executeTransaction();
-            logger.infoLog("Closed POS Transaction from Account " + accountId + " on Amount " + amount);
+            withdrawalTransaction.executeTransaction();
+//            logger.infoLog("Closed POS Transaction from Account " + accountId + " on Amount " + amount);
         } catch (IllegalArgumentException e) {
             logger.errorLog("Failed POS Transaction: " + e.getMessage());
         } catch (NullPointerException e) {
@@ -47,12 +45,11 @@ public class POSTerminal implements ITerminal {
             logger.errorLog("Invalid transaction Type: " + withdrawalTransaction.getTransactionType());
             return;
         }
-
         try {
             int accountId = withdrawalTransaction.getAccounts().getFirst().getAccountId();
             logger.infoLog("Initiated POS Transaction from Account " + accountId + " on Amount " + withdrawalTransaction.getAmount());
             withdrawalTransaction.executeTransaction();
-            logger.infoLog("Closed POS Transaction from Account " + accountId + " on Amount " + withdrawalTransaction.getAmount());
+//            logger.infoLog("Closed POS Transaction from Account " + accountId + " on Amount " + withdrawalTransaction.getAmount());
         } catch (IllegalArgumentException e) {
             logger.errorLog("Failed POS Transaction: " + e.getMessage());
         }
