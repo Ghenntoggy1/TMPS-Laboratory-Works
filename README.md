@@ -16,5 +16,5 @@
 The reports in markdown file and code for each task can be accessed via the links below.
 
 ## Table of Contents
-- [Submission for Laboratory Work 1](src/main/java/Laboratory_Work_1_SOLID_Principles)
-- [Submission for Laboratory Work 2](src/main/java/Laboratory_Work_2_Creational_Patterns)
+- [Submission for Laboratory Work 1](src/main/java/Laboratory_Work_0_SOLID_Principles)
+- [Submission for Laboratory Work 2](src/main/java/Laboratory_Work_1_Creational_Patterns)
