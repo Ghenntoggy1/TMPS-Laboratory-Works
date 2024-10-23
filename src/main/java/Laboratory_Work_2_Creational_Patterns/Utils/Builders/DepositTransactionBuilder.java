@@ -1,11 +1,9 @@
 package Laboratory_Work_2_Creational_Patterns.Utils.Builders;
 
-import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccountStatusValidator;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.ITransaction;
 import Laboratory_Work_2_Creational_Patterns.Transactions.DepositTransaction;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.BuilderInterfaces.ITransactionBuilder;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccount;
-import Laboratory_Work_2_Creational_Patterns.Interfaces.ITransactionValidator;
 
 import java.util.List;
 

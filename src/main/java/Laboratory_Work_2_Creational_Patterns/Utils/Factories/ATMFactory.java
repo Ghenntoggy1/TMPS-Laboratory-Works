@@ -1,9 +1,15 @@
 package Laboratory_Work_2_Creational_Patterns.Utils.Factories;
 
 import Laboratory_Work_2_Creational_Patterns.Enums.TransactionTypeEnum;
-import Laboratory_Work_2_Creational_Patterns.Interfaces.*;
+
 import Laboratory_Work_2_Creational_Patterns.Interfaces.BuilderInterfaces.ITransactionBuilder;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.IAbstractTerminalTransactionFactory;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccount;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.ITerminal;
+import Laboratory_Work_2_Creational_Patterns.Interfaces.ITransaction;
+
 import Laboratory_Work_2_Creational_Patterns.Terminals.ATMTerminal;
+
 import Laboratory_Work_2_Creational_Patterns.Utils.Builders.DepositTransactionBuilder;
 import Laboratory_Work_2_Creational_Patterns.Utils.Builders.ExchangeTransactionBuilder;
 import Laboratory_Work_2_Creational_Patterns.Utils.Builders.WithdrawalTransactionBuilder;
@@ -16,7 +22,7 @@ public class ATMFactory implements IAbstractTerminalTransactionFactory {
         switch (transactionType) {
             case DEPOSIT:
                 try {
-                    DepositTransactionBuilder depositTransactionBuilder = new DepositTransactionBuilder();
+                    ITransactionBuilder depositTransactionBuilder = new DepositTransactionBuilder();
                     depositTransactionBuilder.setAccounts(accounts);
                     depositTransactionBuilder.setAmount(amount);
                     return depositTransactionBuilder.getResult();
@@ -26,20 +32,20 @@ public class ATMFactory implements IAbstractTerminalTransactionFactory {
                 }
             case WITHDRAWAL:
                 try {
-                WithdrawalTransactionBuilder withdrawalTransactionBuilder = new WithdrawalTransactionBuilder();
-                withdrawalTransactionBuilder.setAccounts(accounts);
-                withdrawalTransactionBuilder.setAmount(amount);
-                return withdrawalTransactionBuilder.getResult();
+                    ITransactionBuilder withdrawalTransactionBuilder = new WithdrawalTransactionBuilder();
+                    withdrawalTransactionBuilder.setAccounts(accounts);
+                    withdrawalTransactionBuilder.setAmount(amount);
+                    return withdrawalTransactionBuilder.getResult();
                 }
                 catch(IllegalArgumentException e) {
                     return null;
                 }
             case EXCHANGE:
                 try {
-                ExchangeTransactionBuilder exchangeTransactionBuilder = new ExchangeTransactionBuilder();
-                exchangeTransactionBuilder.setAccounts(accounts);
-                exchangeTransactionBuilder.setAmount(amount);
-                return exchangeTransactionBuilder.getResult();
+                    ITransactionBuilder exchangeTransactionBuilder = new ExchangeTransactionBuilder();
+                    exchangeTransactionBuilder.setAccounts(accounts);
+                    exchangeTransactionBuilder.setAmount(amount);
+                    return exchangeTransactionBuilder.getResult();
                 }
                 catch(IllegalArgumentException e) {
                     return null;
