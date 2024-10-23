@@ -2,13 +2,15 @@ package Laboratory_Work_2_Creational_Patterns;
 
 import Laboratory_Work_2_Creational_Patterns.Enums.AccountStatusEnum;
 import Laboratory_Work_2_Creational_Patterns.Enums.TransactionTypeEnum;
-import Laboratory_Work_2_Creational_Patterns.Interfaces.BuilderInterfaces.IBuilder;
+
 import Laboratory_Work_2_Creational_Patterns.Interfaces.BuilderInterfaces.IUserAccountBuilder;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.IAbstractTerminalTransactionFactory;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccount;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.ITerminal;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.ITransaction;
+
 import Laboratory_Work_2_Creational_Patterns.User.User;
+
 import Laboratory_Work_2_Creational_Patterns.Utils.Builders.UserAccountBuilder;
 import Laboratory_Work_2_Creational_Patterns.Utils.Factories.ATMFactory;
 import Laboratory_Work_2_Creational_Patterns.Utils.Factories.CashInFactory;

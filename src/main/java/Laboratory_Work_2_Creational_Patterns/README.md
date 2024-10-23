@@ -23,7 +23,6 @@ Some examples of this kind of design patterns are:
 * Singleton
 * Builder
 * Prototype
-* Object Pooling
 * Factory Method
 * Abstract Factory
 
@@ -103,6 +102,62 @@ their concrete classes.
 * Use the Abstract Factory when you want to provide a class library of products, and you want to reveal just their
   interfaces, not their implementations.
 
+### Factory Method
+Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, 
+but allows subclasses to alter the type of objects that will be created. In other words, it defines an interface for 
+creating an object, but let subclasses decide which class to instantiate. 
+Factory Method lets a class defer instantiation to subclasses.
+
+<p align="center">
+    <img src="https://refactoring.guru/images/patterns/diagrams/factory-method/structure.png?id=4cba0803f42517cfe8548c9bc7dc4c9b" alt="Factory Method Pattern Diagram">
+</p>
+
+#### Participants
+* **Product** - Product declares the interface, which is common to all objects that can be produced by the creator and its subclasses.
+* **Concrete Products** - Concrete Products are different implementations of the product interface.
+* **Creator** - The Creator class declares the factory method that returns new product objects. It’s important that the 
+return type of this method matches the product interface. You can declare the factory method as abstract to force all 
+subclasses to implement their own versions of the method. As an alternative, the base factory method can return some default product type.
+Note, despite its name, product creation is not the primary responsibility of the creator. Usually, the creator class 
+already has some core business logic related to products. The factory method helps to decouple this logic from the 
+concrete product classes.
+* **Concrete Creators** - Concrete Creators override the base factory method, so it returns a different type of product. 
+Note that the factory method does not have to create new instances all the time. It can also return existing objects 
+from a cache, an object pool, or another source.
+
+#### Applicability
+* Use the Factory Method pattern when a class can't anticipate the class of objects it must create.
+* Use the Factory Method pattern when a class wants its subclasses to specify the objects it creates
+* Use the Factory Method pattern when classes delegate responsibility to one of several helper subclasses, and you want to
+localize the knowledge of which helper subclass is the delegate.
+
+### Prototype
+Prototype Creational Design Pattern - Prototype is a creational design pattern that lets you copy existing objects 
+without making your code dependent on their classes. In other words, it allows us to specify the kinds of objects to 
+create using a prototypical instance, and create new objects by copying this prototype.
+
+<p align="center">
+    <img src="https://refactoring.guru/images/patterns/diagrams/prototype/structure.png" alt="Prototype Pattern Diagram">
+</p>
+
+#### Participants
+* **Prototype** - The Prototype interface declares the cloning methods. In most cases, it’s a single clone method.
+* **Concrete Prototype** - The Concrete Prototype class implements the cloning method. In addition to copying the 
+original object’s data to the clone, this method may also handle some edge cases of the cloning process related to 
+cloning linked objects, untangling recursive dependencies, etc.
+* **Client** - The Client can produce a copy of any object that follows the prototype interface.
+
+#### Applicability
+* Use the Prototype pattern when a system should be independent of how its products are
+  created, composed, and represented; and
+* when the classes to instantiate are specified at run-time, for example, by dynamic loading; or
+* to avoid building a class hierarchy of factories that parallels the class hierarchy of
+  products; or
+* when instances of a class can have one of only a few different combinations of
+  state. It may be more convenient to install a corresponding number of prototypes
+  and clone them rather than instantiating the class manually, each time with the
+  appropriate state.
+
 
 [//]: # (## Used Design Patterns:)
 
@@ -116,18 +171,16 @@ their concrete classes.
 
 ## Implementation
 
-* For this Laboratory Work, I had to implement 2 principles of SOLID. 
-I have chosen to implement more than 2 principles.
+* For this Laboratory Work, I had to implement 3 Creational Design Patterns. 
+I have chosen to implement Abstract Factory, Builder and Singleton Patterns.
 
 * The principles that I have implemented are:
-    * Single Responsibility Principle
-    * Open/Closed Principle
-    * Liskov Substitution Principle
-    * Interface Segregation Principle
-    * Dependency Inversion/Injection Principle
+    * Abstract Factory Pattern
+    * Builder Pattern
+    * Singleton Pattern
 
-* I decided to adhere to the topic of Terminal Interaction and Transaction / Financial Operations on Accounts and between them as 
-well. I have created a simple application that performs operations, such as: 
+* I decided to build upon the topic of Terminal Interaction and Transaction / Financial Operations on Accounts and between them as 
+well. I have used previous Laboratory Work that performs operations, such as: 
     * Creating User Entities,
     * Creating User Account Entities,
     * Creating Transaction Entities,
@@ -137,422 +190,620 @@ well. I have created a simple application that performs operations, such as:
     * Transferring money between User Accounts,
     * Logs the financial operations and processes in the application (errors, successful operations, etc.),
     * Validator for Transaction operations.
-  
-* SRP - Single Responsibility Principle - states that every module, class and function should be responsible
-for only one part of the functionality that is provided by the software. More specifically, it is related not only
-to the functionality of the class, module or function, but also to the reasons for changing it, since if the
-previously mentioned elements have more than one responsibility, then the reasons for changing them will be more than 
-one, which is a violation of this principle.
 
-* For this principle, I separated the classes into different packages, each package containing classes that are responsible
-for a specific part of the application. More specifically, I have the following packages:
-  * Enums - contains the enums used in the application ([AccountStatusEnum](Enums/AccountStatusEnum.java), 
-[TransactionTypeEnum](Enums/TransactionTypeEnum.java)). These enums ensure are responsible for different 
-types of transactions and account statuses, which reduces the amount of redundant code and helps for maintaining a scalable
-structure.
+#### Builder Pattern
+* Builder Creational Design Pattern - lets us construct complex objects step by step. The pattern allows you to 
+produce different types and representations of an object using the same construction code. It suggests that we extract 
+the object construction code out of its own class and move it to separate objects called builders. The pattern organizes 
+object construction into a set of steps. To create an object, we execute a series of 
+these steps on a builder object. The important part is that we don’t need to call all the steps. We can call only 
+those steps that are necessary for producing a particular configuration of an object.
+
+* For this pattern, I decided to implement a Builder for the IUserAccount concrete implementation and ITransaction
+concrete implementation. The IUserAccountBuilder concrete implementation is responsible for creating a User Account, 
+while the ITransactionBuilder implementation is responsible for each Transaction type (Deposit, Withdrawal, Exchange)
+creation. 
+  * [IBuilder](Interfaces/BuilderInterfaces/IBuilder.java) - is an interface that contains the reset method, which is responsible for resetting the Builder object.
 ```java
-public enum AccountStatusEnum {
-    ACTIVE,
-    INACTIVE,
-    FROZEN
+public interface IBuilder {
+  void reset();
 }
 ```
-  * Interfaces - contains the interfaces used in the application ([IAccount](Interfaces/IAccount.java),
-[ITransacation](Interfaces/ITransaction.java), [ITerminal](Interfaces/ITerminal.java), etc.). 
-These interfaces are responsible for the abstraction of the project, which allows for the implementation of the
-Open/Closed Principle and Dependency Inversion Principle. Their main responsibility is to provide a template / contract 
-(expecation) for the classes that implement them, that being their only responsibility, and, in particular, these interfaces
-are in different unique contexts, which ensures that they are not redundant and that they are not responsible for more 
-than one domain.
+  * [ITransactionBuilder](Interfaces/BuilderInterfaces/ITransactionBuilder.java) - is an interface that contains the methods for setting the Transaction fields, such as List of 
+Accounts, Amount, and, as specified in the Builder Pattern, the method that will return the formed Transaction.
 ```java
-import java.util.List;
-public interface ITerminal {
-    void performTransaction(List<IAccount> account, TransactionTypeEnum transactionType, double amount);
+public interface ITransactionBuilder extends IBuilder {
+    void setAccounts(List<IAccount> accounts);
+    void setAmount(Double amount);
+    ITransaction getResult();
 }
 ```
-  * Terminals - contains the classes that are responsible for the terminal operations ([ATMTerminal](Terminals/ATMTerminal.java), 
-[CashInTerminal](Terminals/CashInTerminal.java), [POSTerminal](Terminals/POSTerminal.java)). These classes have the
-responsibility to provide the terminal operations, such as Deposit, Withdraw, Exchange between 2 user accounts. They
-encapsulate the Transactions that are processed by the Terminals. For example, in the class POSTerminal, that implements
-ITerminal Interface, the responsibility is to perform a transaction and log the progress, but all the logic behind the
-Transaction is encapsulated in the ITransaction implementation, which ensures the SRP is respected. 
+  * [IUserAccountBuilder](Interfaces/BuilderInterfaces/IUserAccountBuilder.java) - is an interface that contains the methods for setting the User Account fields, such as AccountID, 
+User Entity, Balance, Account Status, and, as specified in the Builder Pattern, the method that will return the formed 
+User Account.
 ```java
-public class POSTerminal implements ITerminal {
-    private ILogger logger;
-    
-    public POSTerminal(ILogger logger) {
-        this.logger = logger;
+public interface IUserAccountBuilder extends IBuilder{
+    void setAccountId(int accountId);
+    void setUser(IUser user);
+    void setBalance(Double balance);
+    void setStatus(AccountStatusEnum status);
+    IAccount getResult();
+}
+```
+  * Concrete Builder Implementations - are the specific Builders that are constructing the User Account and Transaction 
+objects by implementing the IUserAccountBuilder and ITransactionBuilder interfaces and providing methods for setting the
+fields of the objects, as well as returning the built object. At the same time, the Builder classes are specifying the
+order of construction of the objects, as well as the fields that have to be set.
+  * [UserAccountBuilder](Utils/Builders/UserAccountBuilder.java) - is a class that implements the IUserAccountBuilder interface 
+and is responsible for creating the User Account object.
+```java
+public class UserAccountBuilder implements IUserAccountBuilder {
+    private int accountId;
+    private IUser user;
+    private Double balance;
+    private AccountStatusEnum status;
+
+    public UserAccountBuilder() {
+        this.reset();
     }
     
     @Override
-    public void performTransaction(List<IAccount> accounts, TransactionTypeEnum transactionType, double amount) {
-        if (transactionType != TransactionTypeEnum.WITHDRAWAL) {
-          logger.infoLog("Invalid Transaction Type");
-          return;
-        }
-        int accountId = accounts.getFirst().getAccountId();
-        logger.infoLog("Initiated POS Transaction from Account" + accountId + " on Amount " + amount);
-        ITransaction withdrawalTransaction = new WithdrawalTransaction(accounts.getFirst(), logger, amount, new TransactionValidator(logger));
-        withdrawalTransaction.executeTransaction();
-        logger.infoLog("Closed POS Transaction from Account" + accountId + " on Amount " + amount);
-    }
-}
-```
-* Transactions - contains the classes that are responsible for the transaction operations ([DepositTransaction](Transactions/DepositTransaction.java),
-[ExchangeTransaction](Transactions/ExchangeTransaction.java), [WithdrawalTransaction](Transactions/WithdrawalTransaction.java)).
-These classes are responsible for the execution of the transactions and the manipulation with the User Accounts.
-They encapsulate the logic behind the transactions and ensure that the transactions are executed. For example, in the 
-class WithdrawalTransaction, the responsibility is to execute the Withdrawal Transaction and validate if the Transaction
-is possible, but the logic behind the validation is encapsulated in the ITransactionValidator implementation.
-```java
-public class WithdrawalTransaction implements ITransaction {
-    private IAccount account;
-    private double amount;
-    private ILogger logger;
-    private ITransactionValidator validator;
-
-    public WithdrawalTransaction(IAccount account, ILogger logger, double amount, ITransactionValidator validator) {
-        this.account = account;
-        this.logger = logger;
-        this.amount = amount;
-        this.validator = validator;
+    public void reset() {
+        this.accountId = 0;
+        this.user = null;
+        this.balance = null;
+        this.status = null;
     }
 
     @Override
-    public void executeTransaction() {
-        int userAccountId = this.account.getAccountId();
-        this.logger.infoLog("Initiated Withdrawal Transaction for Account " + userAccountId);
+    public void setAccountId(int accountId) {
+        this.accountId = accountId;
+    }
 
-        if (!this.validator.validateTransaction(this.account, this.amount)) {
-            this.logger.errorLog("Withdrawal Transaction failed for Account " + userAccountId);
-            return;
-        }
+    @Override
+    public void setUser(IUser user) {
+        this.user = user;
+    }
 
-        this.account.withdraw(this.amount);
-        double newBalance = this.account.getBalance();
-        this.logger.infoLog("Withdrew " + this.amount + " from account " + userAccountId + " - New balance: " + newBalance);
+    @Override
+    public void setBalance(Double balance) {
+        this.balance = balance;
+    }
+
+    @Override
+    public void setStatus(AccountStatusEnum status) {
+        this.status = status;
+    }
+
+    @Override
+    public IAccount getResult() {
+        IAccount userAccount = new UserAccount(this.accountId, this.user, this.balance, this.status);
+        this.reset();
+        return userAccount;
     }
 }
 ```
-* User - contains the classes that are responsible for the User operations ([User](User/User.java), [UserAccount](User/UserAccount.java)).
-These classes are responsible for the User and User Account entities. They encapsulate the logic behind the User 
-and User Account operations, such as creating a User Account, depositing money, withdrawing money, etc. 
+This class provides the possibility to build the UserAccount as in the following manner:
+```java
+// Create User Entity
+User user1 = new User(1, "John Doe");
+
+// Instantiate UserAccountBuilder
+IUserAccountBuilder userAccountBuilder = new UserAccountBuilder();
+
+// Build User Account
+userAccountBuilder.setAccountId(1);
+userAccountBuilder.setUser(user1);
+userAccountBuilder.setBalance(0.0);
+userAccountBuilder.setStatus(AccountStatusEnum.ACTIVE);
+
+// Retrieve the User Account
+userAccountBuilder.getResult();
+
+// Alternative creation
+User user2 = new User(2, "John Smith");
+userAccountBuilder.setAccountId(2);
+userAccountBuilder.setUser(user2);
+
+// Retrieve the User Account
+IAccount userAccount3 =  userAccountBuilder.getResult();
+```
+Even though the UserAccountBuilder builds an incomplete User Account, it is possible to return a fully functional User Account,
+with some limitations (in this case, it has balance=0.0 and status=INACTIVE).
 ```java
 public class UserAccount implements IAccount {
     private int accountId;
-    private User user;
-    private double balance;
+    private IUser user;
+    private Double balance;
     private ILogger logger;
     private AccountStatusEnum status;
 
-    public UserAccount(int accountId, User user, ILogger logger) {
+    public UserAccount(int accountId, IUser user, Double balance, AccountStatusEnum status) {
         this.accountId = accountId;
         this.user = user;
-        this.balance = 0;
-        this.logger = logger;
-        this.status = AccountStatusEnum.ACTIVE;
+        this.balance = balance;
+        if (balance == null) {
+            this.balance = 0.0;
+        }
+        this.status = status;
+        if (this.status == null) {
+            this.status = AccountStatusEnum.INACTIVE;
+        }
+        this.logger = LoggerImpl.getInstance();
         this.logger.infoLog("Account " + this.accountId + " with status " + this.status + " created for user "
                 + this.user.getName() + " (" + this.user.getUserId() + ")");
     }
+}
+```
 
-    @Override
-    public int getAccountId() {
-        this.logger.infoLog("Requested account ID for account " + this.accountId);
-        return this.accountId;
+* [WithdrawalTransactionBuilder](Utils/Builders/WithdrawalTransactionBuilder) - is a class that implements the ITransactionBuilder interface
+  and is responsible for creating the ITransaction implementation object - in this case, WithdrawalTransaction.
+```java
+public class WithdrawalTransactionBuilder implements ITransactionBuilder {
+    private List<IAccount> accounts;
+    private Double amount;
+  
+    public WithdrawalTransactionBuilder() {
+        this.reset();
     }
-
+  
     @Override
-    public void deposit(double amount) {
-        this.balance += amount;
+    public void reset() {
+        this.accounts = null;
+        this.amount = 0.0;
     }
-
+  
     @Override
-    public double withdraw(double amount) {
-        this.balance -= amount;
-        return amount;
+    public void setAccounts(List<IAccount> accounts) {
+        this.accounts = accounts;
     }
-
+  
     @Override
-    public double getBalance() {
-        this.logger.infoLog("Checking balance for account " + this.accountId);
-        return this.balance;
+    public void setAmount(Double amount) {
+        this.amount = amount;
     }
-
+  
     @Override
-    public AccountStatusEnum getAccountStatus() {
-        this.logger.infoLog("Checking account status for account " + this.accountId);
-        return this.status;
-    }
-
-    @Override
-    public void setAccountStatus(AccountStatusEnum status) {
-        this.status = status;
-        this.logger.infoLog("Account " + this.accountId + " status changed to " + status);
+    public ITransaction getResult() {
+        ITransaction transaction = new WithdrawalTransaction(this.accounts, this.amount);
+        this.reset();
+        return transaction;
     }
 }
 ```
-* Utils - contains the classes that are responsible for the Utility Operations:
-  * [Logging](Utils/Logging),
-  * [Validators](Utils/Validators).
-* These classes are responsible for different tasks.
-    * Logging - is responsible for logging the operations and processes in the application. It is used in the Terminals and 
-    Transactions to log the progress of the operations.
-    * Validators - is responsible for validating the transactions. It is used in the Transactions to validate if the 
-    transaction is possible and, for example, if the User Account has enough balance to perform the transaction.
-
-* OCP - Open/Closed Principle - states that each module, class and function (software pieces) should
-be open for extension, but closed for modification. In other words, the behavior of each component
-should be able to be extended, but not modified, which means that the existing code should not be changed
-when new features are added, unless it is necessary to fix bugs. This principle is implemented in the application 
-by using the Interfaces or Abstract Classes. For example, the ITerminal Interface is open for extension, because
-it can be implemented by different Terminals, such as ATMTerminal, POSTerminal or CashInTerminal, but it is closed
-for modification, because the ITerminal Interface does not change when new Terminals are added. This ensures that the
-new Terminals can be added without changing the code that is dependent on the ITerminal Interface, since it will 
-work with any class that implements this interface and calls the method that is present in all concrete implementations.
-At the same time, by the use of TransactionFactory, we ensure that even if new Transaction Types are added, the code
-for the Terminals will not change, since the TransactionFactory will be responsible for creating the new Transactions.
+This class provides the possibility to build the WithdrawalTransaction as in the following manner. The following method
+is a part of a class that was used for implementing Abstract Factory Pattern and will be described further in the report:
 ```java
-public interface ITerminal {
-  void performTransaction(List<IAccount> account, TransactionTypeEnum transactionType, double amount);
-}
-```
-```java
-public class POSTerminal implements ITerminal {
-  private ILogger logger;
-  private TransactionFactory transactionFactory;
-
-  public POSTerminal(ILogger logger, TransactionFactory transactionFactory) {
-    this.logger = logger;
-    this.transactionFactory = transactionFactory;
-  }
-
-  @Override
-  public void performTransaction(List<IAccount> accounts, TransactionTypeEnum transactionType, double amount) {
+public ITransaction createTransaction(List<IAccount> accounts, double amount, TransactionTypeEnum transactionType) {
     if (transactionType != TransactionTypeEnum.WITHDRAWAL) {
-      logger.errorLog("Invalid transaction Type: " + transactionType);
-      return;
+        return null;
     }
-
-    try {
-      ITransaction transaction = transactionFactory.createTransaction(transactionType, accounts, amount);
-      int accountId = accounts.getFirst().getAccountId();
-      logger.infoLog("Initiated POS Transaction from Account " + accountId + " on Amount " + amount);
-      transaction.executeTransaction();
-      logger.infoLog("Closed POS Transaction from Account " + accountId + " on Amount " + amount);
-    } catch (IllegalArgumentException e) {
-      logger.errorLog("Failed POS Transaction: " + e.getMessage());
-    }
-  }
+    WithdrawalTransactionBuilder withdrawalTransactionBuilder = new WithdrawalTransactionBuilder();
+    withdrawalTransactionBuilder.setAccounts(accounts);
+    withdrawalTransactionBuilder.setAmount(amount);
+    return withdrawalTransactionBuilder.getResult();
 }
 ```
+Even though the UserAccountBuilder builds an incomplete WithdrawalTransaction, it will log the error and will not be
+able to produce the object further.
 ```java
-public class CashInTerminal implements ITerminal {
-  private ILogger logger;
-  private TransactionFactory transactionFactory;
-
-  public CashInTerminal(ILogger logger, TransactionFactory transactionFactory) {
-    this.logger = logger;
-    this.transactionFactory = transactionFactory;
-  }
-
-  @Override
-  public void performTransaction(List<IAccount> accounts, TransactionTypeEnum transactionType, double amount) {
-    if (transactionType != TransactionTypeEnum.DEPOSIT) {
-      logger.errorLog("Invalid transaction Type: " + transactionType);
-      return;
-    }
-
-    try {
-      ITransaction transaction = transactionFactory.createTransaction(transactionType, accounts, amount);
-      int userAccountId = accounts.getFirst().getAccountId();
-      this.logger.infoLog("Initiated Cash-In Transaction to Account" + userAccountId + " on Amount " + amount);
-      transaction.executeTransaction();
-      this.logger.infoLog("Closed Cash-In Transaction to Account" + userAccountId + " on Amount " + amount);
-    } catch (IllegalArgumentException e) {
-      logger.errorLog("Invalid transaction Type: " + e.getMessage());
-    }
-  }
-}
-```
-
-* LSP - Liskov Substitution Principle - states that objects of a class should be replaceable with instances of its subclasses
-without breaking the code that uses the parent class. In other words, the subclasses should be able to replace the parent
-class without affecting the behavior of the application. In my case, I have Validator classes for Account Status and
-Transaction Operations. AccountStatusValidator is a class that implements IAccountStatusValidator and has the responsibility
-to validate the Account Status. At the same, TransactionValidator is a class that implements ITransactionValidator and extends
-the AccountStatusValidator, which means that it is a subclass of AccountStatusValidator, and it should be able to replace
-the AccountStatusValidator without affecting the behavior of the application. Since the TransactionValidator only adds new
-functionality to the AccountStatusValidator, it will not break the code and the logic of the validation of the operations.
-```java
-public interface IAccountStatusValidator {
-    boolean validateAccountStatus(IAccount account);
-}
-```
-```java
-public interface ITransactionValidator extends IAccountStatusValidator {
-  boolean validateSufficientFunds(IAccount account, double amount);
-  boolean validateTransaction(IAccount account, double amount);
-}
-```
-```java
-public class AccountStatusValidator implements IAccountStatusValidator {
-    private final ILogger logger;
-
-    public AccountStatusValidator(ILogger logger) {
-        this.logger = logger;
-    }
-
-    @Override
-    public boolean validateAccountStatus(IAccount userAccount) {
-        AccountStatusEnum userAccountStatus = userAccount.getAccountStatus();
-        int userAccountId = userAccount.getAccountId();
-        if (userAccountStatus != AccountStatusEnum.ACTIVE) {
-            logger.warningLog("Account " + userAccountId + " is " + userAccountStatus +
-                    " and cannot perform transactions");
-            return false;
-        }
-        logger.infoLog("Account " + userAccountId + " is " + userAccountStatus);
-        return true;
-    }
-}
-```
-```java
-public class TransactionValidator extends AccountStatusValidator implements ITransactionValidator {
-    public TransactionValidator(ILogger logger) {
-        super(logger);
-    }
-
-    @Override
-    public boolean validateSufficientFunds(IAccount userAccount, double amount) {
-        int userAccountId = userAccount.getAccountId();
-        double userAccountBalance = userAccount.getBalance();
-        if (userAccountBalance < amount) {
-            super.getLogger().warningLog("Insufficient funds in account " + userAccountId +
-                    ". Available: " + userAccountBalance + ", required: " + amount);
-            return false;
-        }
-        super.getLogger().infoLog("Account " + userAccountId + " has sufficient funds");
-        return true;
-    }
-
-    @Override
-    public boolean validateTransaction(IAccount account, double amount) {
-        return this.validateAccountStatus(account) && this.validateSufficientFunds(account, amount);
-    }
-}
-```
-* In the following code snippet, the AccountStatusValidator is being used in the TransactionFactory class in the DEPOSIT transaction
-initialization. The AccountStatusValidator is used to validate the Account Status before the Deposit Transaction is executed.
-Since the TransactionValidator extends the AccountStatusValidator and inherits the behavior of the AccountStatusValidator, 
-it may be used instead of the original AccountStatusValidator, and it will perform the same validation that is inherited.
-```java
-public class TransactionFactory {
-  private ILogger logger;
-
-  public TransactionFactory(ILogger logger) {
-    this.logger = logger;
-  }
-
-  public ITransaction createTransaction(TransactionTypeEnum transactionType, List<
-          IAccount> accounts, double amount) {
-    return switch (transactionType) {
-      case DEPOSIT ->
-              new DepositTransaction(accounts.getFirst(), logger, amount, new AccountStatusValidator(logger));
-      case EXCHANGE ->
-              new ExchangeTransaction(accounts.getFirst(), accounts.getLast(), logger, amount, new TransactionValidator(logger));
-      case WITHDRAWAL ->
-              new WithdrawalTransaction(accounts.getFirst(), logger, amount, new TransactionValidator(logger));
-    };
-  }
-}
-```
-
-* ISP - Interface Segregation Principle - states that a class should not be forced to implement interfaces or methods that 
-it does not need or use. In other words, if the purpose of a class is to perform a specific operation, then it should not
-implement interfaces or methods that are not related to that operation. In the context of my application, this principle is 
-respected in the same example as above, where DepositTransaction requires a validation of the Account Status, but it does not
-require the validation of the Transaction itself (Balance amount is not an obstacle for the transaction to be made). In this 
-case, I created a new Interface IAccountStatusValidator that is implemented by the AccountStatusValidator class, which 
-validates the Account Status, while another Interface ITransactionValidator extends the IAccountStatusValidator and adds
-new methods for validating the Transaction itself, that is required for the WithdrawalTransaction and ExchangeTransaction. 
-Should be taken in account that TransactionValidator should validate the Transaction by 2 factors: Account Status and
-its Balance.
-```java
-public interface IAccountStatusValidator {
-    boolean validateAccountStatus(IAccount account);
-}
-```
-```java
-public interface ITransactionValidator extends IAccountStatusValidator {
-  boolean validateSufficientFunds(IAccount account, double amount);
-  boolean validateTransaction(IAccount account, double amount);
-}
-```
-
-* DIP - Dependency Inversion/Injection Principle - states that high-level modules should not depend on low-level modules, but 
-both should depend on abstractions. In other words, the classes behavior should be defined or, in other words, should 
-be guided by the interfaces or abstract classes, not by the concrete implementations. This principle is usually respected
-by the usage of the Interfaces or Abstract Classes, which are then used in constructors or methods, instead of the concrete
-classes, thus enabling injection of the concrete examples, since those methods or constructors do not need to know about the
-details of the concrete implementations. In the application presented here, I have used in the Terminal implementations
-exactly through the usage of Transaction factory, that will provide the appropriate Transaction implementation, thus 
-leaving Terminal classes unaware of details about Transaction and, as a result, respecting the DIP, since it will depend
-only on the abstraction.
-```java
-public class POSTerminal implements ITerminal {
+public class WithdrawalTransaction implements ITransaction {
+    private List<IAccount> account;
+    private Double amount;
     private ILogger logger;
-    private TransactionFactory transactionFactory;
+    private ITransactionValidator validator;
+    
+    public WithdrawalTransaction(List<IAccount> account, double amount) {
+        this.logger = LoggerImpl.getInstance();
+        this.account = account;
+        if (account == null) {
+            this.logger.errorLog("Withdrawal Transaction failed due to invalid account - Account is null");
+            throw new IllegalArgumentException("Invalid accounts");
+        }
+        this.amount = amount;
+        if (amount <= 0) {
+            this.logger.errorLog("Withdrawal Transaction failed due to invalid amount - Amount is less than or equal to 0");
+            throw new IllegalArgumentException("Invalid amount");
+        }
+        this.validator = TransactionValidator.getInstance();
+    }
+}
+```
 
-    public POSTerminal(ILogger logger, TransactionFactory transactionFactory) {
-        this.logger = logger;
-        this.transactionFactory = transactionFactory;
+  * [DepositTransactionBuilder](Utils/Builders/DepositTransactionBuilder.java) - is a class that implements the 
+ITransactionBuilder interface and is responsible for creating the ITransaction implementation object - in this case,
+DepositTransaction.
+```java
+public class DepositTransactionBuilder implements ITransactionBuilder {
+    private List<IAccount> accounts;
+    private Double amount;
+
+    public DepositTransactionBuilder() {
+        this.reset();
     }
 
     @Override
-    public void performTransaction(List<IAccount> accounts, TransactionTypeEnum transactionType, double amount) {
-        if (transactionType != TransactionTypeEnum.WITHDRAWAL) {
-            logger.errorLog("Invalid transaction Type: " + transactionType);
-            return;
-        }
+    public void reset() {
+        this.accounts = null;
+        this.amount = 0.0;
+    }
+
+    @Override
+    public void setAccounts(List<IAccount> accounts) {
+        this.accounts = accounts;
+    }
+
+    @Override
+    public void setAmount(Double amount) {
+        this.amount = amount;
+    }
+
+    @Override
+    public ITransaction getResult() {
+        ITransaction transaction = new DepositTransaction(this.accounts, this.amount);
+        this.reset();
+        return transaction;
+    }
+}
+```
+  * [ExchangeTransactionBuilder](Utils/Builders/ExchangeTransactionBuilder.java) - is a class that implements the
+ITransactionBuilder interface and is responsible for creating the ITransaction implementation object - in this case, 
+ExchangeTransaction.
+```java
+public class ExchangeTransactionBuilder implements ITransactionBuilder {
+    private List<IAccount> accounts;
+    private Double amount;
+
+    public ExchangeTransactionBuilder() {
+        this.reset();
+    }
+
+    @Override
+    public void reset() {
+        this.accounts = null;
+        this.amount = 0.0;
+    }
+
+    @Override
+    public void setAccounts(List<IAccount> accounts) {
+        this.accounts = accounts;
+    }
+
+    @Override
+    public void setAmount(Double amount) {
+        this.amount = amount;
+    }
+
+    @Override
+    public ITransaction getResult() {
+        ITransaction transaction = new ExchangeTransaction(this.accounts, this.amount);
+        this.reset();
+        return transaction;
+    }
+}
+```
+For both DepositTransaction and ExchangeTransaction, the process is similar to the WithdrawalTransaction, but the
+product they return is different.
+
+Thus, the Builder Pattern is implemented in the application, thus providing a way to create complex objects step by step,
+by using the Builder classes that are responsible for the construction of the objects. It may be possible to use a new
+class called Director that will hold specific building methods for the objects instead of allowing the client operate
+with those Builders directly. However, in this case, the Builders are simple enough to be used directly by the client.
+
+#### Singleton Pattern
+
+  * Singleton Creational Design Pattern - lets us ensure that a class has only one instance, while providing a global 
+access point to this instance. Just like a global variable, the Singleton pattern lets us access some object from 
+anywhere in the program. However, it also protects that instance from being overwritten by other code, since the implementation
+requires that classes that adhere to Singleton pattern have a private constructor and a static method that returns the
+instance of the class.
+
+  * For this pattern, I decided to implement Singleton for ILogger concrete Implementation, ITransactionValidator and
+IAccountStatusValidator concrete Implementations.
+
+  * [ILogger](Interfaces/ILogger.java) - is an interface that contains the methods for logging information, errors, 
+and warnings.
+```java
+public interface ILogger {
+    void infoLog(String message);
+    void errorLog(String message);
+    void warningLog(String message);
+}
+```
+
+  * [ITransactionValidator](Interfaces/ITransactionValidator.java) - is an interface that contains the method for validating
+the Transaction operations.
+```java
+public interface ITransactionValidator extends IAccountStatusValidator {
+    boolean validateSufficientFunds(IAccount account, double amount);
+    boolean validateTransaction(IAccount account, double amount);
+}
+```
+
+  * [IAccountStatusValidator](Interfaces/IAccountStatusValidator.java) - is an interface that contains the method for validating
+the Account Status.
+```java
+public interface IAccountStatusValidator {
+    boolean validateAccountStatus(IAccount account);
+}
+```
+
+  * Concrete Implementations with Singleton Pattern - are the previously defined implementations (see [Lab-1](../Laboratory_Work_1_SOLID_Principles/README.md))
+that I extended (in compliance with OCP from SOLID) with the Singleton Pattern. The Singleton pattern is implemented 
+via the getInstance() method that returns the instance of the class. The constructor of the class is private, so it is
+accessible only via the getInstance() method, that ensures that only one instance will be passed across the application.
+
+  * [LoggerImpl](Utils/Logging/LoggerImpl.java) - is a class that implements the ILogger interface and is 
+responsible for logging the information, errors, and warnings. In this class, the constructor is private, there is a 
+private field that holds the instance of the LoggerImpl class, and the getInstance() method that returns the instance of
+the LoggerImpl class by checking if the instance is null. If it is null, it creates a new instance, otherwise, it returns
+the field that references the instance of the LoggerImpl class. Since Logger is an object that does not change the state
+of the application and itself, it is safe to use Singleton Pattern for this class.
+
+```java
+public class LoggerImpl implements ILogger {
+    private static LoggerImpl instance;
+    private final Logger logger;
+
+    private LoggerImpl() {
+        this.logger = Logger.getLogger(LoggerImpl.class.getName());
+        this.logger.setLevel(Level.ALL);
+
+        ConsoleHandler consoleHandler = new ConsoleHandler();
+        consoleHandler.setFormatter(new LogFormatter());
+        consoleHandler.setLevel(Level.ALL);
 
         try {
-            ITransaction transaction = transactionFactory.createTransaction(transactionType, accounts, amount);
-            int accountId = accounts.getFirst().getAccountId();
-            logger.infoLog("Initiated POS Transaction from Account " + accountId + " on Amount " + amount);
-            transaction.executeTransaction();
-            logger.infoLog("Closed POS Transaction from Account " + accountId + " on Amount " + amount);
-        } catch (IllegalArgumentException e) {
-            logger.errorLog("Failed POS Transaction: " + e.getMessage());
+
+            FileHandler fileHandler = new FileHandler("src/main/java/Laboratory_Work_2_Creational_Patterns/Utils/Logging/Logs/logs.log", true);
+            fileHandler.setFormatter(new LogFormatter());
+            fileHandler.setLevel(Level.ALL);
+            this.logger.addHandler(fileHandler);
+        } catch (IOException e) {
+            System.out.println("Failed to Initialize File Handler for Logging: " + e.getMessage());
+            this.errorLog("Failed to Initialize File Handler for Logging: " + e.getMessage());
+        }
+
+        this.logger.addHandler(consoleHandler);
+        this.logger.setUseParentHandlers(false);
+    }
+
+    // Singleton Logger
+    public static LoggerImpl getInstance() {
+        if (instance == null) {
+            instance = new LoggerImpl();
+            instance.infoLog("Logger Initialized using Singleton Pattern");
+        }
+        else {
+            instance.infoLog("Logger already initialized - Returning existing instance");
+        }
+        return instance;
+    }
+
+    // Helper method to get calling class and method
+    private String getCallingClassAndMethod() {
+        StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+        // Index 0: getStackTrace(), Index 1: getCallingClassAndMethod(), Index 2: this method (infoLog, etc.)
+        // Index 3: Caller method
+        StackTraceElement caller = stackTrace[3];
+        return caller.getClassName() + "::" + caller.getMethodName();
+    }
+    ...
+}
+```
+This approach allows us to use the logger across the application in the following manner:
+```java
+ILogger logger = LoggerImpl.getInstance();
+```
+As it may be noticed, the method is called, not the constructor, and the instance is created and returned, in case it was never created 
+before at run-time, otherwise - returned the instance that was created already.
+
+  * [TransactionValidator](Utils/Validators/TransactionValidator.java) - is a class that implements the ITransactionValidator
+interface and is responsible for validating the Transaction operations. In this class, the constructor is private, there is a
+private field that holds the instance of the TransactionValidator class, and the getInstance() method that returns the instance.
+It follows the same mechanism as the LoggerImpl class and the same principle of usage too.
+```java
+public class TransactionValidator extends AccountStatusValidator implements ITransactionValidator {
+    private static TransactionValidator instance;
+
+    private TransactionValidator() {}
+    ...
+    public static TransactionValidator getInstance() {
+        ILogger logger = LoggerImpl.getInstance();
+
+        if (instance == null) {
+            instance = new TransactionValidator();
+            logger.infoLog("Transaction Validator Initialized using Singleton Pattern");
+        }
+        else {
+            logger.infoLog("Transaction Validator already initialized - Returning existing instance");
+        }
+        return instance;
+    }
+}
+```
+
+  * [AccountStatusValidator](Utils/Validators/AccountStatusValidator.java) - is a class that implements the IAccountStatusValidator
+interface and is responsible for validating the Account Status. In this class, the constructor is private, there is a
+private field that holds the instance of the AccountStatusValidator class, and the getInstance() method that returns the instance.
+Again, the same principle of creation and usage is used as in the previous classes.
+```java
+public class AccountStatusValidator implements IAccountStatusValidator {
+    private static AccountStatusValidator instance;
+    protected final ILogger logger = LoggerImpl.getInstance();
+
+    protected AccountStatusValidator() {}
+    ...
+    public static AccountStatusValidator getInstance() {
+        ILogger logger = LoggerImpl.getInstance();
+
+        if (instance == null) {
+            instance = new AccountStatusValidator();
+            logger.infoLog("Account Status Validator Initialized using Singleton Pattern");
+        }
+        else {
+            logger.infoLog("Account Status Validator already initialized - Returning existing instance");
+        }
+        return instance;
+    }
+}
+```
+
+#### Abstract Factory Pattern
+
+  * Abstract Factory Creational Design Pattern - lets us produce families of related objects without specifying their 
+concrete classes. The Abstract Factory pattern helps us control the classes of objects that an application creates. 
+Because a factory encapsulates the responsibility and the process of creating product objects, it isolates clients from
+implementation classes. It promotes consistency among products. When product objects in a family are designed to work 
+together, it's important that an application use objects from only one family at a time. AbstractFactory makes this easy 
+to enforce.
+
+  * For this pattern, I decided to implement Abstract Factory that will group families of ITerminal and ITransaction
+implementations, since they are related to cooperative tasks (POSTerminal can perform only WithdrawalTransaction, 
+CashInTerminal - only DepositTransaction and ATMTerminal - all 3 types of Transactions).
+
+  * [IAbstractTerminalTransactionFactory](Interfaces/IAbstractTerminalTransactionFactory.java) - is an interface that
+specifies methods should be present in concrete implementations of the Abstract Factory. In our case, the methods are
+createTransaction(...) and createTerminal(). 
+```java
+public interface IAbstractTerminalTransactionFactory {
+    ITransaction createTransaction(List<IAccount> accounts, double amount, TransactionTypeEnum transactionType);
+    ITerminal createTerminal();
+}
+```
+
+  * [POSFactory](Utils/Factories/POSFactory.java) - is a class that implements the IAbstractTerminalTransactionFactory
+interface and is responsible for creating the POSTerminal and WithdrawalTransaction objects. In this class, the methods
+are implemented to create the objects and return them. The Transaction is of type Withdrawal, since POSTerminal can only
+perform Withdrawal operations, and, at the same time, the POSTerminal is created and returned.
+```java
+public class POSFactory implements IAbstractTerminalTransactionFactory {
+    @Override
+    public ITransaction createTransaction(List<IAccount> accounts, double amount, TransactionTypeEnum transactionType) {
+        if (transactionType != TransactionTypeEnum.WITHDRAWAL) {
+            return null;
+        }
+        ITransactionBuilder withdrawalTransactionBuilder = new WithdrawalTransactionBuilder();
+        withdrawalTransactionBuilder.setAccounts(accounts);
+        withdrawalTransactionBuilder.setAmount(amount);
+        return withdrawalTransactionBuilder.getResult();
+    }
+
+    @Override
+    public ITerminal createTerminal() {
+        return new POSTerminal();
+    }
+}
+```
+This approach allows us to use the POSFactory across the application in the following manner:
+
+```java
+IAbstractTerminalTransactionFactory factory = new POSFactory();
+ITerminal atmTerminal = factory.createTerminal();
+ITransaction atmTransaction = factory.createTransaction(accounts, amount, transactionType);
+```
+As it may be noticed, the implementation requires only the concrete type of Factory to be specified. The Factory will 
+handle the creation of products by itself, thus providing a possibility to create a family of related objects without
+specifying their concrete classes.
+
+  * [ATMFactory](Utils/Factories/ATMFactory.java) - is a class that implements the IAbstractTerminalTransactionFactory
+interface and is responsible for creating the ATMTerminal and all 3 types of Transactions objects, since this type of 
+terminal may perform multiple types of transactions. In this class, the methods are implemented to create different
+Transactions and the ATMTerminal and return them.
+```java
+public class ATMFactory implements IAbstractTerminalTransactionFactory {
+    @Override
+    public ITransaction createTransaction(List<IAccount> accounts, double amount, TransactionTypeEnum transactionType) {
+        switch (transactionType) {
+            case DEPOSIT:
+                try {
+                    ITransactionBuilder depositTransactionBuilder = new DepositTransactionBuilder();
+                    depositTransactionBuilder.setAccounts(accounts);
+                    depositTransactionBuilder.setAmount(amount);
+                    return depositTransactionBuilder.getResult();
+                }
+                catch(IllegalArgumentException e) {
+                    return null;
+                }
+            case WITHDRAWAL:
+                try {
+                    ITransactionBuilder withdrawalTransactionBuilder = new WithdrawalTransactionBuilder();
+                    withdrawalTransactionBuilder.setAccounts(accounts);
+                    withdrawalTransactionBuilder.setAmount(amount);
+                    return withdrawalTransactionBuilder.getResult();
+                }
+                catch(IllegalArgumentException e) {
+                    return null;
+                }
+            case EXCHANGE:
+                try {
+                    ITransactionBuilder exchangeTransactionBuilder = new ExchangeTransactionBuilder();
+                    exchangeTransactionBuilder.setAccounts(accounts);
+                    exchangeTransactionBuilder.setAmount(amount);
+                    return exchangeTransactionBuilder.getResult();
+                }
+                catch(IllegalArgumentException e) {
+                    return null;
+                }
+            default:
+                return null;
         }
     }
+
+    @Override
+    public ITerminal createTerminal() {
+        return new ATMTerminal();
+    }
 }
 ```
+This approach permit us to use the ATMFactory across the application in the following manner:
 ```java
-public class TransactionFactory {
-    private ILogger logger;
+IAbstractTerminalTransactionFactory ATMFactory = new ATMFactory();
+ITerminal atmTerminal = ATMFactory.createTerminal();
+ITransaction depositTransaction = ATMFactory.createTransaction(List.of(userAccount1), 100.0, TransactionTypeEnum.WITHDRAWAL);
+ITransaction withdrawalTransaction = ATMFactory.createTransaction(List.of(userAccount1), 100.0, TransactionTypeEnum.DEPOSIT);
+ITransaction exchangeTransaction = ATMFactory.createTransaction(List.of(userAccount1, userAccount2), 100.0, TransactionTypeEnum.EXCHANGE);
+```
+As it may be noticed, the transactions are created via the same method, but with different parameters. This allows us to
+create different types of transactions without specifying their concrete classes, thus providing a possibility to create
+a family of related objects without specifying their concrete classes.
 
-    public TransactionFactory(ILogger logger) {
-        this.logger = logger;
+  * [CashInFactory](Utils/Factories/CashInFactory.java) - is a class that implements the IAbstractTerminalTransactionFactory
+interface and is responsible for creating the CashInTerminal and DepositTransaction objects. In this class, the methods
+are implemented to create the objects and return them.
+
+```java
+public class CashInFactory implements IAbstractTerminalTransactionFactory {
+    @Override
+    public ITransaction createTransaction(List<IAccount> accounts, double amount, TransactionTypeEnum transactionType) {
+        if (transactionType != TransactionTypeEnum.DEPOSIT) {
+            return null;
+        }
+        ITransactionBuilder depositTransactionBuilder = new DepositTransactionBuilder();
+        depositTransactionBuilder.setAccounts(accounts);
+        depositTransactionBuilder.setAmount(amount);
+        return depositTransactionBuilder.getResult();
     }
 
-    public ITransaction createTransaction(TransactionTypeEnum transactionType, List<
-            IAccount> accounts, double amount) {
-        return switch (transactionType) {
-            case DEPOSIT ->
-                    new DepositTransaction(accounts.getFirst(), logger, amount, new AccountStatusValidator(logger));
-            case EXCHANGE ->
-                    new ExchangeTransaction(accounts.getFirst(), accounts.getLast(), logger, amount, new TransactionValidator(logger));
-            case WITHDRAWAL ->
-                    new WithdrawalTransaction(accounts.getFirst(), logger, amount, new TransactionValidator(logger));
-        };
+    @Override
+    public ITerminal createTerminal() {
+        return new CashInTerminal();
     }
 }
 ```
+As in previous examples, this approach allows us to use the CashInFactory across the application in the following manner:
+```java
+IAbstractTerminalTransactionFactory CashInFactory = new CashInFactory();
+ITerminal cashInTerminal = CashInFactory.createTerminal();
+ITransaction depositTransaction2 = CashInFactory.createTransaction(List.of(userAccount1), 100.0, TransactionTypeEnum.DEPOSIT);
+``` 
+
+
 ## Conclusions / Screenshots / Results
-In conclusion, I want to emphasize that through the implementation of the SOLID principles, the application has become
-more scalable and maintainable. Through the separation of the classes by their responsibilities, the application has become
-more modular, easier to understand and navigate, and the changes in the future may be easier to implement. At the same
-time, by the use of the Interfaces, the application has become more flexible, since the classes are based on abstract definitions
-of the classes rather than on concrete implementations, making them extensible. Also, by the use of Inheritance, application
-has become much more powerful, since the classes can be replaced by their subclasses without affecting the behavior of the
-software.
+In conclusion, I want to emphasize that through the implementation of the Creational Design Patterns, I have managed to
+understand better how the mechanisms behind those patterns work, how they make code easier to maintain and extend, and how
+to use them in practice. The Builder Pattern allowed me to create complex objects step by step, the Singleton Pattern
+to use single instance of an object across the project and reuse it easily and the Abstract Factory Pattern taught me how
+to group families of related objects and create them as a batch without specifying their concrete classes. At the end,
+those patterns, alongside with other Creational Design Patterns make the creation of objects easier, more flexible and
+more maintainable, thus improving the overall quality of the code.
