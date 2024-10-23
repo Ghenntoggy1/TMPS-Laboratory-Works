@@ -5,7 +5,7 @@ import Laboratory_Work_2_Creational_Patterns.Interfaces.ILogger;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.ITransactionValidator;
 import Laboratory_Work_2_Creational_Patterns.Utils.Logging.LoggerImpl;
 
-public final class TransactionValidator extends AccountStatusValidator implements ITransactionValidator {
+public class TransactionValidator extends AccountStatusValidator implements ITransactionValidator {
     private static TransactionValidator instance;
 
     @Override

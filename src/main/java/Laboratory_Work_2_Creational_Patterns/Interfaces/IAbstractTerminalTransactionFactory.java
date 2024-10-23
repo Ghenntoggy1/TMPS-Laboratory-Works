@@ -1,6 +1,10 @@
 package Laboratory_Work_2_Creational_Patterns.Interfaces;
 
+import Laboratory_Work_2_Creational_Patterns.Enums.TransactionTypeEnum;
+
+import java.util.List;
+
 public interface IAbstractTerminalTransactionFactory {
-    ITransaction createTransaction();
+    ITransaction createTransaction(List<IAccount> accounts, double amount, TransactionTypeEnum transactionType);
     ITerminal createTerminal();
 }

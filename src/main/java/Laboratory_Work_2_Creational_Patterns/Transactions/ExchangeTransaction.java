@@ -1,5 +1,6 @@
 package Laboratory_Work_2_Creational_Patterns.Transactions;
 
+import Laboratory_Work_2_Creational_Patterns.Enums.TransactionTypeEnum;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccount;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.ILogger;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.ITransaction;
@@ -10,23 +11,12 @@ import Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidat
 import java.util.List;
 
 public class ExchangeTransaction implements ITransaction {
-//    private IAccount senderAccount;
-//    private IAccount receiverAccount;
     private List<IAccount> accounts;
-    private double amount;
+    private Double amount;
     private ILogger logger;
     private ITransactionValidator validator;
 
-//    public ExchangeTransaction(IAccount senderAccount, IAccount receiverAccount, double amount, ITransactionValidator validator) {
-//        this.senderAccount = senderAccount;
-//        this.receiverAccount = receiverAccount;
-//        this.amount = amount;
-//        this.validator = validator;
-//        this.logger = LoggerImpl.getInstance();
-//    }
-
-
-    public ExchangeTransaction(List<IAccount> accounts, double amount) {
+    public ExchangeTransaction(List<IAccount> accounts, Double amount) {
         this.logger = LoggerImpl.getInstance();
         this.accounts = accounts;
         if (accounts == null) {
@@ -49,7 +39,7 @@ public class ExchangeTransaction implements ITransaction {
         int receiverAccountId = receiverAccount.getAccountId();
         this.logger.infoLog("Initiated Exchange Transaction from Account " + senderAccountId +
                 " to Account " + receiverAccountId);
-        if (validator.validateTransaction(senderAccount, this.amount) && this.validator.validateAccountStatus(receiverAccount)) {
+        if (this.validator.validateTransaction(senderAccount, this.amount) && this.validator.validateAccountStatus(receiverAccount)) {
             senderAccount.withdraw(this.amount);
             receiverAccount.deposit(this.amount);
             this.logger.infoLog("Successfully Exchanged " + this.amount + " from Account " + senderAccountId +
@@ -59,5 +49,20 @@ public class ExchangeTransaction implements ITransaction {
             this.logger.errorLog("Exchange Transaction failed from Account " + senderAccountId +
                     " to Account " + receiverAccountId);
         }
+    }
+
+    @Override
+    public TransactionTypeEnum getTransactionType() {
+        return TransactionTypeEnum.EXCHANGE;
+    }
+
+    @Override
+    public List<IAccount> getAccounts() {
+        return this.accounts;
+    }
+
+    @Override
+    public Double getAmount() {
+        return this.amount;
     }
 }

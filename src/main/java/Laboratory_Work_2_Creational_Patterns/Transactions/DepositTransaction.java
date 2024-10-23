@@ -1,5 +1,6 @@
 package Laboratory_Work_2_Creational_Patterns.Transactions;
 
+import Laboratory_Work_2_Creational_Patterns.Enums.TransactionTypeEnum;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccount;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccountStatusValidator;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.ILogger;
@@ -10,21 +11,12 @@ import Laboratory_Work_2_Creational_Patterns.Utils.Validators.AccountStatusValid
 import java.util.List;
 
 public class DepositTransaction implements ITransaction {
-//    private IAccount account;
     private List<IAccount> account;
-    private double amount;
+    private Double amount;
     private ILogger logger;
     private IAccountStatusValidator validator;
 
-//    public DepositTransaction(IAccount account, double amount, IAccountStatusValidator validator) {
-//        this.account = account;
-//        this.amount = amount;
-//        this.validator = validator;
-//        this.logger = LoggerImpl.getInstance();
-//    }
-
-
-    public DepositTransaction(List<IAccount> account, double amount) {
+    public DepositTransaction(List<IAccount> account, Double amount) {
         this.account = account;
         this.logger = LoggerImpl.getInstance();
         if (account == null) {
@@ -52,5 +44,21 @@ public class DepositTransaction implements ITransaction {
         account.deposit(this.amount);
         double newBalance = account.getBalance();
         this.logger.infoLog("Deposited " + this.amount + " to Account " + userAccountId + " - New Balance: " + newBalance);
+    }
+
+    @Override
+    public TransactionTypeEnum getTransactionType() {
+        return TransactionTypeEnum.DEPOSIT;
+    }
+
+    @Override
+    public List<IAccount> getAccounts() {
+        return account;
+    }
+
+
+    @Override
+    public Double getAmount() {
+        return amount;
     }
 }

@@ -11,7 +11,7 @@ import java.util.List;
 
 public class DepositTransactionBuilder implements ITransactionBuilder {
     private List<IAccount> accounts;
-    private double amount;
+    private Double amount;
 
     public DepositTransactionBuilder() {
         this.reset();
@@ -20,7 +20,7 @@ public class DepositTransactionBuilder implements ITransactionBuilder {
     @Override
     public void reset() {
         this.accounts = null;
-        this.amount = 0;
+        this.amount = 0.0;
     }
 
     @Override
@@ -29,7 +29,7 @@ public class DepositTransactionBuilder implements ITransactionBuilder {
     }
 
     @Override
-    public void setAmount(double amount) {
+    public void setAmount(Double amount) {
         this.amount = amount;
     }
 

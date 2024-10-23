@@ -1,5 +1,6 @@
 package Laboratory_Work_2_Creational_Patterns.Transactions;
 
+import Laboratory_Work_2_Creational_Patterns.Enums.TransactionTypeEnum;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.IAccount;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.ILogger;
 import Laboratory_Work_2_Creational_Patterns.Interfaces.ITransaction;
@@ -10,18 +11,10 @@ import Laboratory_Work_2_Creational_Patterns.Utils.Validators.TransactionValidat
 import java.util.List;
 
 public class WithdrawalTransaction implements ITransaction {
-//    private IAccount account;
     private List<IAccount> account;
-    private double amount;
+    private Double amount;
     private ILogger logger;
     private ITransactionValidator validator;
-
-//    public WithdrawalTransaction(IAccount account, double amount, ITransactionValidator validator) {
-//        this.account = account;
-//        this.amount = amount;
-//        this.validator = validator;
-//        this.logger = LoggerImpl.getInstance();
-//    }
 
     public WithdrawalTransaction(List<IAccount> account, double amount) {
         this.logger = LoggerImpl.getInstance();
@@ -52,5 +45,20 @@ public class WithdrawalTransaction implements ITransaction {
         account.withdraw(this.amount);
         double newBalance = account.getBalance();
         this.logger.infoLog("Withdrew " + this.amount + " from account " + userAccountId + " - New balance: " + newBalance);
+    }
+
+    @Override
+    public TransactionTypeEnum getTransactionType() {
+        return TransactionTypeEnum.WITHDRAWAL;
+    }
+
+    @Override
+    public List<IAccount> getAccounts() {
+        return this.account;
+    }
+
+    @Override
+    public Double getAmount() {
+        return this.amount;
     }
 }
