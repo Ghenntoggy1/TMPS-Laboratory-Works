@@ -48,7 +48,7 @@ well. I have created a simple application that performs operations, such as:
 for only one part of the functionality that is provided by the software. More specifically, it is related not only
 to the functionality of the class, module or function, but also to the reasons for changing it, since if the
 previously mentioned elements have more than one responsibility, then the reasons for changing them will be more than 
-one, which is a violation of this principle.
+one, which is a violation of this principle. [[1]](#bib1)
 
 * For this principle, I separated the classes into different packages, each package containing classes that are responsible
 for a specific part of the application. More specifically, I have the following packages:
@@ -216,7 +216,7 @@ for modification, because the ITerminal Interface does not change when new Termi
 new Terminals can be added without changing the code that is dependent on the ITerminal Interface, since it will 
 work with any class that implements this interface and calls the method that is present in all concrete implementations.
 At the same time, by the use of TransactionFactory, we ensure that even if new Transaction Types are added, the code
-for the Terminals will not change, since the TransactionFactory will be responsible for creating the new Transactions.
+for the Terminals will not change, since the TransactionFactory will be responsible for creating the new Transactions. [[2]](#bib2)
 ```java
 public interface ITerminal {
   void performTransaction(List<IAccount> account, TransactionTypeEnum transactionType, double amount);
@@ -288,7 +288,7 @@ Transaction Operations. AccountStatusValidator is a class that implements IAccou
 to validate the Account Status. At the same, TransactionValidator is a class that implements ITransactionValidator and extends
 the AccountStatusValidator, which means that it is a subclass of AccountStatusValidator, and it should be able to replace
 the AccountStatusValidator without affecting the behavior of the application. Since the TransactionValidator only adds new
-functionality to the AccountStatusValidator, it will not break the code and the logic of the validation of the operations.
+functionality to the AccountStatusValidator, it will not break the code and the logic of the validation of the operations. [[3]](#bib3)
 ```java
 public interface IAccountStatusValidator {
     boolean validateAccountStatus(IAccount account);
@@ -382,7 +382,7 @@ case, I created a new Interface IAccountStatusValidator that is implemented by t
 validates the Account Status, while another Interface ITransactionValidator extends the IAccountStatusValidator and adds
 new methods for validating the Transaction itself, that is required for the WithdrawalTransaction and ExchangeTransaction. 
 Should be taken in account that TransactionValidator should validate the Transaction by 2 factors: Account Status and
-its Balance.
+its Balance. [[4]](#bib4)
 ```java
 public interface IAccountStatusValidator {
     boolean validateAccountStatus(IAccount account);
@@ -403,7 +403,7 @@ classes, thus enabling injection of the concrete examples, since those methods o
 details of the concrete implementations. In the application presented here, I have used in the Terminal implementations
 exactly through the usage of Transaction factory, that will provide the appropriate Transaction implementation, thus 
 leaving Terminal classes unaware of details about Transaction and, as a result, respecting the DIP, since it will depend
-only on the abstraction.
+only on the abstraction. [[5]](#bib5)
 ```java
 public class POSTerminal implements ITerminal {
     private ILogger logger;
@@ -462,3 +462,14 @@ time, by the use of the Interfaces, the application has become more flexible, si
 of the classes rather than on concrete implementations, making them extensible. Also, by the use of Inheritance, application
 has become much more powerful, since the classes can be replaced by their subclasses without affecting the behavior of the
 software.
+
+## References
+<a id="bib1"></a>[1] G. Moeller, “The Single Responsibility Principle (SRP) of SOLID,” Medium, Feb. 08, 2024. https://giovannamoeller.medium.com/the-single-responsibility-principle-srp-of-solid-eb2feed0c64b
+
+<a id="bib2"></a>[2] “Open-Closed Principle – SOLID Architecture Concept Explained,” freeCodeCamp.org, Feb. 22, 2023. https://www.freecodecamp.org/news/open-closed-principle-solid-architecture-concept-explained/
+
+<a id="bib2"></a>[3] T. Ghosh, “Liskov Substitution Principle (LSP),” Medium, Feb. 20, 2023. https://tusharghosh09006.medium.com/liskov-substitution-principle-lsp-744eceb29e8
+
+<a id="bib2"></a>[4] Ramdhas, “4. Interface Segregation Principle (ISP): SOLID Principle,” Medium, Mar. 12, 2024. https://medium.com/@ramdhas/4-interface-segregation-principle-isp-solid-principle-39e477bae2e3
+
+<a id="bib2"></a>[5] M. Schenk, “SOLID — Dependency Inversion Principle (Part 5) - Matthias Schenk - Medium,” Medium, Jul. 09, 2023. https://medium.com/@inzuael/solid-dependency-inversion-principle-part-5-f5bec43ab22e
