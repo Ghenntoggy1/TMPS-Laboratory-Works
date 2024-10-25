@@ -29,7 +29,7 @@ Some examples of this kind of design patterns are:
 ### Singleton
 Singleton is a creational design pattern, which ensures that only one object of its kind exists and 
 provides a single point of access to it for any other code. In other words, it ensures that a class has only one instance, 
-while providing a global access point to this instance.
+while providing a global access point to this instance. [[1]](#bib1)
 
 <p align="center">
     <img src="https://refactoring.guru/images/patterns/diagrams/singleton/structure-en.png" alt="Singleton Pattern Diagram">
@@ -47,13 +47,13 @@ for example, a single database object shared by different parts of the program.
 * Use the Singleton pattern when there must be exactly one instance of a class, and it must be accessible to clients
   from a well-known access point.
 * Use the Singleton pattern when the sole instance should be extensible by subclassing, and clients should be
-  able to use an extended instance without modifying their code
+  able to use an extended instance without modifying their code [[2]](#bib2)
 
 ### Builder
 Builder is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to 
 produce different types and representations of an object using the same construction code. In other words, it separates 
 the construction of a complex object from its representation so that the same construction process can create different 
-representations.
+representations. [[3]](#bib3)
 
 <p align="center">
     <img src="https://refactoring.guru/images/patterns/diagrams/builder/structure.png" alt="Builder Pattern Diagram">
@@ -74,12 +74,12 @@ representations.
 * Use the Builder pattern when the algorithm for creating a complex object should be independent of the parts that
   make up the object and how they're assembled.
 * Use the Builder pattern when the construction process must allow different representations for the object that's
-  constructed.
+  constructed.[[4]](#bib4)
 
 ### Abstract Factory
 Abstract Factory is a creational design pattern that lets you produce families of related objects without specifying 
 their concrete classes. In other words, it provides an interface for creating families of related or dependent objects without specifying
-their concrete classes.
+their concrete classes. [[5]](#bib5)
 
 <p align="center">
     <img src="https://refactoring.guru/images/patterns/diagrams/abstract-factory/structure.png" alt="Abstract Factory Pattern Diagram">
@@ -100,13 +100,13 @@ their concrete classes.
 * Use the Abstract Factory when a family of related product objects is designed to be used together, and you need to
   enforce this constraint.
 * Use the Abstract Factory when you want to provide a class library of products, and you want to reveal just their
-  interfaces, not their implementations.
+  interfaces, not their implementations. [[6]](#bib6)
 
 ### Factory Method
 Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, 
 but allows subclasses to alter the type of objects that will be created. In other words, it defines an interface for 
 creating an object, but let subclasses decide which class to instantiate. 
-Factory Method lets a class defer instantiation to subclasses.
+Factory Method lets a class defer instantiation to subclasses.[[7]](#bib7)
 
 <p align="center">
     <img src="https://refactoring.guru/images/patterns/diagrams/factory-method/structure.png?id=4cba0803f42517cfe8548c9bc7dc4c9b" alt="Factory Method Pattern Diagram">
@@ -129,12 +129,12 @@ from a cache, an object pool, or another source.
 * Use the Factory Method pattern when a class can't anticipate the class of objects it must create.
 * Use the Factory Method pattern when a class wants its subclasses to specify the objects it creates
 * Use the Factory Method pattern when classes delegate responsibility to one of several helper subclasses, and you want to
-localize the knowledge of which helper subclass is the delegate.
+localize the knowledge of which helper subclass is the delegate. [[8]](#bib8)
 
 ### Prototype
 Prototype Creational Design Pattern - Prototype is a creational design pattern that lets you copy existing objects 
 without making your code dependent on their classes. In other words, it allows us to specify the kinds of objects to 
-create using a prototypical instance, and create new objects by copying this prototype.
+create using a prototypical instance, and create new objects by copying this prototype. [[9]](#bib9)
 
 <p align="center">
     <img src="https://refactoring.guru/images/patterns/diagrams/prototype/structure.png" alt="Prototype Pattern Diagram">
@@ -156,7 +156,7 @@ cloning linked objects, untangling recursive dependencies, etc.
 * when instances of a class can have one of only a few different combinations of
   state. It may be more convenient to install a corresponding number of prototypes
   and clone them rather than instantiating the class manually, each time with the
-  appropriate state.
+  appropriate state. [[10]](#bib10)
 
 
 [//]: # (## Used Design Patterns:)
@@ -807,3 +807,26 @@ to use single instance of an object across the project and reuse it easily and t
 to group families of related objects and create them as a batch without specifying their concrete classes. At the end,
 those patterns, alongside with other Creational Design Patterns make the creation of objects easier, more flexible and
 more maintainable, thus improving the overall quality of the code.
+
+
+## References
+<a id="bib1"></a>[1] Refactoring Guru, “Singleton,” Refactoring.guru, 2014. https://refactoring.guru/design-patterns/singleton
+
+<a id="bib2"></a>[2] “Creational Patterns.” pg.127 Available: https://www.javier8a.com/itc/bd1/articulo.pdf
+
+<a id="bib2"></a>[3] Refactoring Guru, “Builder,” Refactoring.guru, 2014. https://refactoring.guru/design-patterns/builder
+
+<a id="bib2"></a>[4] “Creational Patterns.” pg.97 Available: https://www.javier8a.com/itc/bd1/articulo.pdf
+
+<a id="bib2"></a>[5] “Abstract Factory,” refactoring.guru. https://refactoring.guru/design-patterns/abstract-factory
+
+<a id="bib2"></a>[6] “Creational Patterns.” pg.87 Available: https://www.javier8a.com/itc/bd1/articulo.pdf
+
+<a id="bib2"></a>[7] Refactoring Guru, “Factory Method,” Refactoring.guru, 2014. https://refactoring.guru/design-patterns/factory-method
+
+<a id="bib2"></a>[8] “Creational Patterns.” pg.107 Available: https://www.javier8a.com/itc/bd1/articulo.pdf
+
+<a id="bib2"></a>[9] “Prototype,” refactoring.guru. https://refactoring.guru/design-patterns/prototype
+
+<a id="bib2"></a>[10] “Creational Patterns.” pg.117 Available: https://www.javier8a.com/itc/bd1/articulo.pdf
+
