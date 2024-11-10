@@ -1,6 +1,7 @@
 package Laboratory_Work_3_Structural_Patterns.Utils.Adapters;
 
 import Laboratory_Work_3_Structural_Patterns.Interfaces.ILogger;
+import org.apache.logging.log4j.Level;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -25,26 +26,27 @@ public class Log4jAdapter implements ILogger {
         return instance;
     }
 
+    // Helper method to get calling class and method
+    private String getCallingClassAndMethod() {
+        StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
+        // Index 0: getStackTrace(), Index 1: getCallingClassAndMethod(), Index 2: this method (infoLog, etc.)
+        // Index 3: Caller method
+        StackTraceElement caller = stackTrace[3];
+        return caller.getClassName() + "::" + caller.getMethodName();
+    }
+
     @Override
     public void infoLog(String message) {
-        logger.info(getCallerClassAndMethod() + " :: " + message);
+        logger.log(Level.INFO, getCallingClassAndMethod() + " :: " + message);
     }
 
     @Override
     public void warningLog(String message) {
-        logger.warn(getCallerClassAndMethod() + " :: " + message);
+        logger.log(Level.WARN, getCallingClassAndMethod() + " :: " + message);
     }
 
     @Override
     public void errorLog(String message) {
-        logger.error(getCallerClassAndMethod() + " :: " + message);
-    }
-
-    // Helper method to extract the calling class and method
-    private String getCallerClassAndMethod() {
-        StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
-        // Index 3: This should give us the caller method, which called the logging method.
-        StackTraceElement caller = stackTrace[3];
-        return caller.getClassName() + "::" + caller.getMethodName();
+        logger.log(Level.ERROR, getCallingClassAndMethod() + " :: " + message);
     }
 }
