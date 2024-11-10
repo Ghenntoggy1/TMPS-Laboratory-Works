@@ -3,30 +3,31 @@ package Laboratory_Work_3_Structural_Patterns.Utils.Builders;
 import Laboratory_Work_3_Structural_Patterns.Enums.AccountStatusEnum;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.BuilderInterfaces.IUserAccountBuilder;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.IAccount;
+import Laboratory_Work_3_Structural_Patterns.Interfaces.ILogger;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.IUser;
 import Laboratory_Work_3_Structural_Patterns.User.UserAccount;
+import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerImpl;
 
 public class UserAccountBuilder implements IUserAccountBuilder {
+    private ILogger logger;
+    private static int idCounter = 1;
     private int accountId;
     private IUser user;
     private Double balance;
     private AccountStatusEnum status;
 
     public UserAccountBuilder() {
+        this.logger = LoggerImpl.getInstance();
         this.reset();
     }
 
     @Override
     public void reset() {
-        this.accountId = 0;
+        this.accountId = idCounter;
+        idCounter++;
         this.user = null;
         this.balance = null;
         this.status = null;
-    }
-
-    @Override
-    public void setAccountId(int accountId) {
-        this.accountId = accountId;
     }
 
     @Override
@@ -36,7 +37,12 @@ public class UserAccountBuilder implements IUserAccountBuilder {
 
     @Override
     public void setBalance(Double balance) {
-        this.balance = balance;
+        if (balance >= 0) {
+            this.balance = balance;
+        } else {
+            logger.errorLog("Attempt to set negative balance for account " + this.accountId + " - balance set to 0.0");
+            this.balance = 0.0;
+        }
     }
 
     @Override

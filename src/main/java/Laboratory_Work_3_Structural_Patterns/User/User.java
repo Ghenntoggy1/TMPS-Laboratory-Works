@@ -5,12 +5,14 @@ import Laboratory_Work_3_Structural_Patterns.Interfaces.IUser;
 import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerImpl;
 
 public class User implements IUser {
+    private static int idCounter = 1;
     private int userId;
     private String name;
     private final ILogger logger;
 
-    public User(int userId, String name) {
-        this.userId = userId;
+    public User(String name) {
+        this.userId = idCounter;
+        idCounter++;
         this.name = name;
         this.logger = LoggerImpl.getInstance();
         this.logger.infoLog("User " + name + " created with ID " + userId);

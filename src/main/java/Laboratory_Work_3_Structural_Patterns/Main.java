@@ -1,6 +1,7 @@
 package Laboratory_Work_3_Structural_Patterns;
 
 import Laboratory_Work_3_Structural_Patterns.ClientAbstraction.TerminalAbstraction;
+import Laboratory_Work_3_Structural_Patterns.ClientAbstraction.UserAccountAbstraction;
 import Laboratory_Work_3_Structural_Patterns.Enums.AccountStatusEnum;
 import Laboratory_Work_3_Structural_Patterns.Enums.TransactionTypeEnum;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.BuilderInterfaces.IUserAccountBuilder;
@@ -15,32 +16,42 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Laboratory Work 2 - Creational Design Patterns");
+        System.out.println("Laboratory Work 3 - Structural Design Patterns");
 
         // Create a new user
         IUserAccountBuilder userAccountBuilder = new UserAccountBuilder();
 
-        User user1 = new User(1, "John Doe");
-        userAccountBuilder.setAccountId(1);
-        userAccountBuilder.setUser(user1);
-        userAccountBuilder.setBalance(0.0);
-        userAccountBuilder.setStatus(AccountStatusEnum.ACTIVE);
+        User user1 = new User("John Doe");
+        // OLD WAY
+//        userAccountBuilder.setUser(user1);
+//        userAccountBuilder.setBalance(0.0);
+//        userAccountBuilder.setStatus(AccountStatusEnum.ACTIVE);
+//
+//        IAccount userAccount1 =  userAccountBuilder.getResult();
 
-        IAccount userAccount1 =  userAccountBuilder.getResult();
+        // NEW WAY
+        UserAccountAbstraction userAccountAbstraction = new UserAccountAbstraction(userAccountBuilder);
+        IAccount userAccount1 = userAccountAbstraction.createEmptyActiveUserAccount(user1);
 
-        User user2 = new User(2, "Jane Doe");
-        userAccountBuilder.setAccountId(2);
-        userAccountBuilder.setUser(user2);
-        userAccountBuilder.setBalance(50.0);
-        userAccountBuilder.setStatus(AccountStatusEnum.ACTIVE);
+        User user2 = new User("Jane Doe");
+        // OLD WAY
+//        userAccountBuilder.setUser(user2);
+//        userAccountBuilder.setBalance(50.0);
+//        userAccountBuilder.setStatus(AccountStatusEnum.ACTIVE);
+//
+//        IAccount userAccount2 =  userAccountBuilder.getResult();
 
-        IAccount userAccount2 =  userAccountBuilder.getResult();
+        // NEW WAY
+        IAccount userAccount2 = userAccountAbstraction.createUserAccountWithBalance(user2, 50.0);
 
-        User user3 = new User(3, "John Smith");
-        userAccountBuilder.setAccountId(3);
-        userAccountBuilder.setUser(user3);
+        User user3 = new User("John Smith");
+        // OLD WAY
+//        userAccountBuilder.setUser(user3);
+//
+//        IAccount userAccount3 =  userAccountBuilder.getResult();
 
-        IAccount userAccount3 =  userAccountBuilder.getResult();
+        // NEW WAY
+        IAccount userAccount3 = userAccountAbstraction.createInactiveUserAccount(user3);
 
 
         // OLD WAY

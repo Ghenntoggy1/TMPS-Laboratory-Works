@@ -250,9 +250,10 @@ that actually dictates how it should be done, thus enabling the implementation t
 In my case, the Abstract, or High-Level Logic, part is represented by TerminalAbstraction, that has a reference to the 
 Implementation part, that can be substituted by various concrete implementations of Abstract Factory for Terminal/Transaction
 creation.
-
-![BridgeUML](ReportImages/BridgeDiagram.png)
-
+* 
+<p align="center">
+    <img src="ReportImages/BridgePattern1.png" alt="Bridge Implementation Diagram - Terminal/Transaction">
+</p>
 
 * As in the diagram above, I adjusted the classes for concrete Abstract Factory implementation, by adding several low-level
 logic inside of it, that will help achieve high-level logic from abstraction, since it relies on the implementation object and its methods,
@@ -351,6 +352,84 @@ ITerminal atmTerminal = ATMFactory.createTerminal();
 
 ITransaction depositTransaction = ATMFactory.createTransaction(List.of(userAccount1), 100.0, TransactionTypeEnum.WITHDRAWAL);
 atmTerminal.performTransaction(depositTransaction);
+```
+
+* At the same time, I implemented the Bridge Pattern for handling User Account creation. Exactly, I designed a new class
+that has a reference to IUserAccountBuilder interface, that is implemented by UserAccountBuilder class, and will provide several
+methods to create different types of accounts - Inactive, Active with Empty Balance and Active with Initial Balance:
+<p align="center">
+    <img src="ReportImages/BridgePattern2.png" alt="Bridge Implementation Diagram - User Account">
+</p>
+
+* [UserAccountAbstraction](ClientAbstraction/UserAccountAbstraction.java) - is the Abstraction class that references the
+Builder Implementation class and provides methods for creating different types of User Accounts, as mentioned above. This class,
+inside its methods, builds different types of UserAccounts by calling methods from low-level class. This ensures that client
+only specifies the information about IUser object, but not about the details of the User Account creation process, this being
+handled by the Builder Implementation.
+
+```java
+public class UserAccountAbstraction {
+    private IUserAccountBuilder userAccountBuilder;
+
+    public UserAccountAbstraction(IUserAccountBuilder userAccountBuilder) {
+        this.userAccountBuilder = userAccountBuilder;
+    }
+
+    public IAccount createInactiveUserAccount(IUser user) {
+        userAccountBuilder.setUser(user);
+        return userAccountBuilder.getResult();
+    }
+
+    public IAccount createEmptyActiveUserAccount(IUser user) {
+        userAccountBuilder.setUser(user);
+        userAccountBuilder.setStatus(AccountStatusEnum.ACTIVE);
+        userAccountBuilder.setBalance(0.0);
+        return userAccountBuilder.getResult();
+    }
+
+    public IAccount createUserAccountWithBalance(IUser user, double balance) {
+        userAccountBuilder.setUser(user);
+        userAccountBuilder.setStatus(AccountStatusEnum.ACTIVE);
+        userAccountBuilder.setBalance(balance);
+        return userAccountBuilder.getResult();
+    }
+}
+```
+
+As in the previous case, the client code is simplified and the logic between abstraction and implementor is decoupled, 
+thus providing a way to create different types in the following manner. Suppose I have 2 users:
+```java
+User user1 = new User("John Doe");
+User user2 = new User("Jane Doe");
+```
+I need to instantiate a builder object:
+```java
+IUserAccountBuilder userAccountBuilder = new UserAccountBuilder();
+```
+Then, I can create different types of User Accounts by using the Abstraction class:
+```java
+// NEW WAY
+UserAccountAbstraction userAccountAbstraction = new UserAccountAbstraction(userAccountBuilder);
+IAccount userAccount1 = userAccountAbstraction.createEmptyActiveUserAccount(user1);
+
+IAccount userAccount2 = userAccountAbstraction.createUserAccountWithBalance(user2, 50.0);
+User user3 = new User("John Smith");
+```
+Compared to the previous version of the implementation, where besides the preparation of the User Account Builder, the client
+had to build the User Account by passing through each step of the User Account creation process, becoming strongly coupled to
+the low-level logic of the User Account Builder:
+```java
+// OLD WAY
+userAccountBuilder.setUser(user1);
+userAccountBuilder.setBalance(0.0);
+userAccountBuilder.setStatus(AccountStatusEnum.ACTIVE);
+IAccount userAccount1 =  userAccountBuilder.getResult();
+
+// OLD WAY
+userAccountBuilder.setUser(user2);
+userAccountBuilder.setBalance(50.0);
+userAccountBuilder.setStatus(AccountStatusEnum.ACTIVE);
+IAccount userAccount2 =  userAccountBuilder.getResult();
 ```
 
 Thus, the Bridge Pattern is implemented in the application, thus providing a way to give Clients as much abstraction as possible,
