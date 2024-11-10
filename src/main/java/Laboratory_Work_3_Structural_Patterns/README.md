@@ -1,4 +1,4 @@
-# Laboratory Work 1 - Creational Design Patterns
+# Laboratory Work 2 - Structural Design Patterns
 
 
 ## Author: Gusev Roman
@@ -7,157 +7,209 @@
 
 ## Objectives:
 
-* Study and understand the Creational Design Patterns.
+* Study and understand the Structural Design Patterns.
 * Choose a domain, define its main classes/models/entities and choose the appropriate instantiation 
 mechanisms.
-* Implement 3 Creational Design Patterns in the project.
+* Implement 3 Structural Design Patterns in the project.
 
 
 ## Theory:
-In software engineering, the creational design patterns are the general solutions that 
-deal with object creation, trying to create objects in a manner suitable to the situation. The basic 
-form of object creation could result in design problems or added complexity to the design. Creational 
-design patterns solve this problem by optimizing, hiding or controlling the object creation.
+In software engineering, the Structural Design Patterns are concerned with how classes and 
+objects are composed to form larger structures. Structural class patterns use 
+inheritance to create a hierarchy of classes/abstractions, but the structural object 
+patterns use composition which is generally a more flexible alternative to inheritance.
 
 Some examples of this kind of design patterns are:
-* Singleton
-* Builder
-* Prototype
-* Factory Method
-* Abstract Factory
+* Adapter
+* Bridge
+* Composite
+* Decorator
+* Facade
+* Flyweight
+* Proxy
 
-### Singleton
-Singleton is a creational design pattern, which ensures that only one object of its kind exists and 
-provides a single point of access to it for any other code. In other words, it ensures that a class has only one instance, 
-while providing a global access point to this instance. [[1]](#bib1)
+### Adapter
+Adapter is a structural design pattern that allows objects with incompatible interfaces to collaborate. In other words,
+it converts the interface of a class into another interface clients expect, in such way that no errors appear when they
+are connected. Usually, it is done when some 3rd party libraries are deprecated or modified and methods used in the client
+code is still dependent on the previous version of that library, thus Adapter can help with this. [[1]](#bib1)
 
 <p align="center">
-    <img src="https://refactoring.guru/images/patterns/diagrams/singleton/structure-en.png" alt="Singleton Pattern Diagram">
+    <img src="https://refactoring.guru/images/patterns/diagrams/adapter/structure-object-adapter.png?id=33dffbe3aece294162440c7ddd3d5d4f" alt="Adapter Pattern Diagram">
 </p>
 
 #### Participants
-* **Singleton** - The Singleton class declares the static method getInstance that returns the same instance of its own class.
-The Singleton’s constructor should be hidden from the client code. Calling the getInstance method should be the only way of 
-getting the Singleton object.
+* **Client Interface** - describes a protocol that other classes must follow to be able to collaborate with the client code. Defines the domain-specific interface that Client uses.
+* **Adapter** - is a class that’s able to work with both the client and the service: it implements the client interface, while wrapping the service object. 
+The adapter receives calls from the client via the client interface and translates them into calls to the wrapped service object 
+in a format it can understand. Adapts the interface of Service to the Client Interface.
+* **Service** - is some useful class (usually 3rd-party or legacy). The client can’t use this class directly because it 
+has an incompatible interface. Defines an existing interface that needs adapting.
+* **Client** - is a class that contains the existing business logic of the program. Collaborates with objects conforming to 
+the ClientInterface.
+
 
 #### Applicability
-* Use the Singleton pattern when a class in your program should have just a single instance available to all clients; 
-for example, a single database object shared by different parts of the program.
-* Use the Singleton pattern when you need stricter control over global variables.
-* Use the Singleton pattern when there must be exactly one instance of a class, and it must be accessible to clients
-  from a well-known access point.
-* Use the Singleton pattern when the sole instance should be extensible by subclassing, and clients should be
-  able to use an extended instance without modifying their code [[2]](#bib2)
+* Use the Adapter pattern when you want to use an existing class, and its interface does not match the one you
+  need.
+* Use the Adapter pattern when you want to create a reusable class that cooperates with unrelated or unforeseen
+  classes, that is, classes that don't necessarily have compatible interfaces.
+* Use the Adapter pattern when (object adapter only) you need to use several existing subclasses, but it's impractical
+  to adapt their interface by subclassing every one. An object adapter can adapt the
+  interface of its parent class. [[2]](#bib2)
 
-### Builder
-Builder is a creational design pattern that lets you construct complex objects step by step. The pattern allows you to 
-produce different types and representations of an object using the same construction code. In other words, it separates 
-the construction of a complex object from its representation so that the same construction process can create different 
-representations. [[3]](#bib3)
+### Bridge
+Bridge is a structural design pattern that lets you split a large class or a set of closely related classes into two 
+separate hierarchies—abstraction and implementation—which can be developed independently of each other. In other words,
+it decouples an abstraction from its implementation so that the two can vary independently. [[3]](#bib3)
 
 <p align="center">
-    <img src="https://refactoring.guru/images/patterns/diagrams/builder/structure.png" alt="Builder Pattern Diagram">
+    <img src="https://refactoring.guru/images/patterns/diagrams/bridge/structure-en.png?id=827afa4b40008dc29d26fe0f4d41b9cc" alt="Bridge Pattern Diagram">
 </p>
 
 #### Participants
-* **Builder** - The Builder interface declares product construction steps that are common to all types of builders.
-* **ConcreteBuilder** - Concrete Builders provide different implementations of the construction steps. Concrete builders may produce products that don’t follow the common interface.
-* **Product** - Products are resulting objects. Products constructed by different builders don’t have to belong to the same class hierarchy or interface.
-* **Director** - The Director class defines the order in which to call construction steps, so you can create and reuse specific configurations of products.
-* **Client** - The Client must associate one of the builder objects with the director. Usually, it’s done just once, via parameters of the director’s constructor. Then the director uses that builder object for all further construction. However, there’s an alternative approach for when the client passes the builder object to the production method of the director. In this case, you can use a different builder each time you produce something with the director.
+* **Abstraction** - provides high-level control logic. It relies on the implementation object to do the actual low-level work.
+* **Implementation** - The Implementation declares the interface that’s common for all concrete implementations. An abstraction can only communicate with an implementation object via methods that are declared here. The abstraction may list the same methods as the implementation, but usually the abstraction declares some complex behaviors that rely on a wide variety of primitive operations declared by the implementation.
+* **Concrete Implementations** - implements the Implementor interface and defines its concrete implementation.
+* **Refined Abstractions** - provide variants of control logic. Like their parent, they work with different implementations via the general implementation interface.
+* **Client** - Usually, is only interested in working with the abstraction.H owever, it’s the client’s job to link the abstraction object with one of the implementation objects.
 
 #### Applicability
-* Use the Builder pattern to get rid of a “telescoping constructor”.
-* Use the Builder pattern when you want your code to be able to create different representations of some product 
-(for example, stone and wooden houses).
-* Use the Builder to construct Composite trees or other complex objects.
-* Use the Builder pattern when the algorithm for creating a complex object should be independent of the parts that
-  make up the object and how they're assembled.
-* Use the Builder pattern when the construction process must allow different representations for the object that's
-  constructed.[[4]](#bib4)
+* Use the Bridge pattern you want to avoid a permanent binding between an abstraction and its
+  implementation. This might be the case, for example, when the implementation
+  must be selected or switched at run-time.
+* Use the Bridge pattern when both the abstractions and their implementations should be extensible by
+  subclassing. In this case, the Bridge pattern lets you combine the different
+  abstractions and implementations and extend them independently
+* Use the Bridge when changes in the implementation of an abstraction should have no impact on clients;
+  that is, their code should not have to be recompiled.
+* Use the Bridge pattern when you want to share an implementation among multiple objects (perhaps using
+  reference counting), and this fact should be hidden from the client. [[4]](#bib4)
 
-### Abstract Factory
-Abstract Factory is a creational design pattern that lets you produce families of related objects without specifying 
-their concrete classes. In other words, it provides an interface for creating families of related or dependent objects without specifying
-their concrete classes. [[5]](#bib5)
+### Composite
+Composite is a structural design pattern that lets you compose objects into tree structures and then work with these structures as if they were individual objects.
+In other words, it composes objects into tree structures to represent part-whole hierarchies. Composite lets
+clients treat individual objects and compositions of objects uniformly. [[5]](#bib5)
 
 <p align="center">
-    <img src="https://refactoring.guru/images/patterns/diagrams/abstract-factory/structure.png" alt="Abstract Factory Pattern Diagram">
+    <img src="https://refactoring.guru/images/patterns/diagrams/composite/structure-en.png?id=b7f114558b594dfb220d225398b2b744" alt="Composite Pattern Diagram">
 </p>
 
 #### Participants
-* **Abstract Products** - Abstract Products declare interfaces for a set of distinct but related products which make up a product family.
-* **Concrete Products** - Concrete Products are various implementations of abstract products, grouped by variants. Each abstract product (chair/sofa) must be implemented in all given variants (Victorian/Modern).
-* **Abstract Factory** - The Abstract Factory interface declares a set of methods for creating each of the abstract products.
-* **Concrete Factories** - Concrete Factories implement creation methods of the abstract factory. Each concrete factory corresponds to a specific variant of products and creates only those product variants.
-* **Client** - The Client works with factories and products only through abstract types. Although concrete factories instantiate concrete products, signatures of their creation methods must return corresponding abstract products. This way the client code that uses a factory doesn’t get coupled to the specific variant of the product it gets from a factory. The Client can work with any concrete factory/product variant, as long as it communicates with their objects via abstract interfaces.
+* **Component** - describes operations that are common to both simple and complex elements of the tree.
+* **Leaf** - is a basic element of a tree that doesn’t have sub-elements.
+* **Container** - is an element that has sub-elements: leaves or other containers. A container doesn’t know the concrete classes of its children. It works with all sub-elements only via the component interface. Upon receiving a request, a container delegates the work to its sub-elements, processes intermediate results and then returns the final result to the client.
+* **Client** - works with all elements through the component interface. As a result, the client can work in the same way with both simple or complex elements of the tree.
 
 #### Applicability
-* Use the Abstract Factory when your code needs to work with various families of related products, but you don’t want it to depend on the concrete classes of those products—they might be unknown beforehand or you simply want to allow for future extensibility.
-* Consider implementing the Abstract Factory when you have a class with a set of Factory Methods that blur its primary responsibility.
-* Use the Abstract Factory pattern when a system should be independent of how its products are created, composed, and represented.
-* Use the Abstract Factory when a system should be configured with one of multiple families of products.
-* Use the Abstract Factory when a family of related product objects is designed to be used together, and you need to
-  enforce this constraint.
-* Use the Abstract Factory when you want to provide a class library of products, and you want to reveal just their
-  interfaces, not their implementations. [[6]](#bib6)
+* Use the Composite when you want to represent part-whole hierarchies of objects.
+* Use the Composite when you want clients to be able to ignore the difference between compositions of objects
+  and individual objects. Clients will treat all objects in the composite structure
+  uniformly. [[6]](#bib6)
 
-### Factory Method
-Factory Method is a creational design pattern that provides an interface for creating objects in a superclass, 
-but allows subclasses to alter the type of objects that will be created. In other words, it defines an interface for 
-creating an object, but let subclasses decide which class to instantiate. 
-Factory Method lets a class defer instantiation to subclasses.[[7]](#bib7)
+### Decorator
+Decorator is a structural design pattern that lets you attach new behaviors to objects by placing these objects inside special wrapper objects that contain the behaviors. 
+In other words, it allows to attach additional responsibilities to an object dynamically. Decorators provide a flexible
+alternative to subclassing for extending functionality. [[7]](#bib7)
 
 <p align="center">
-    <img src="https://refactoring.guru/images/patterns/diagrams/factory-method/structure.png?id=4cba0803f42517cfe8548c9bc7dc4c9b" alt="Factory Method Pattern Diagram">
+    <img src="https://refactoring.guru/images/patterns/diagrams/decorator/structure.png?id=8c95d894aecce5315cc1b12093a7ea0c" alt="Decorator Pattern Diagram">
 </p>
 
 #### Participants
-* **Product** - Product declares the interface, which is common to all objects that can be produced by the creator and its subclasses.
-* **Concrete Products** - Concrete Products are different implementations of the product interface.
-* **Creator** - The Creator class declares the factory method that returns new product objects. It’s important that the 
-return type of this method matches the product interface. You can declare the factory method as abstract to force all 
-subclasses to implement their own versions of the method. As an alternative, the base factory method can return some default product type.
-Note, despite its name, product creation is not the primary responsibility of the creator. Usually, the creator class 
-already has some core business logic related to products. The factory method helps to decouple this logic from the 
-concrete product classes.
-* **Concrete Creators** - Concrete Creators override the base factory method, so it returns a different type of product. 
-Note that the factory method does not have to create new instances all the time. It can also return existing objects 
-from a cache, an object pool, or another source.
+* **Component** - declares the common interface for both wrappers and wrapped objects.
+* **Concrete Component** - is a class of objects being wrapped. It defines the basic behavior, which can be altered by decorators.
+* **Base Decorator** - has a field for referencing a wrapped object. The field’s type should be declared as the component interface so it can contain both concrete components and decorators. The base decorator delegates all operations to the wrapped object.
+* **Concrete Decorators** - define extra behaviors that can be added to components dynamically. Concrete decorators override methods of the base decorator and execute their behavior either before or after calling the parent method.
+* **Client** - can wrap components in multiple layers of decorators, as long as it works with all objects via the component interface.
+
 
 #### Applicability
-* Use the Factory Method pattern when a class can't anticipate the class of objects it must create.
-* Use the Factory Method pattern when a class wants its subclasses to specify the objects it creates
-* Use the Factory Method pattern when classes delegate responsibility to one of several helper subclasses, and you want to
-localize the knowledge of which helper subclass is the delegate. [[8]](#bib8)
+* Use the Decorator pattern to add responsibilities to individual objects dynamically and transparently, that is,
+  without affecting other objects.
+* Use the Decorator pattern for responsibilities that can be withdrawn.
+* Use the Decorator pattern when extension by subclassing is impractical. Sometimes a large number of
+  independent extensions are possible and would produce an explosion of subclasses
+  to support every combination. Or a class definition may be hidden or otherwise
+  unavailable for subclassing. [[8]](#bib8)
 
-### Prototype
-Prototype Creational Design Pattern - Prototype is a creational design pattern that lets you copy existing objects 
-without making your code dependent on their classes. In other words, it allows us to specify the kinds of objects to 
-create using a prototypical instance, and create new objects by copying this prototype. [[9]](#bib9)
+### Facade
+Facade is a structural design pattern that provides a simplified interface to a library, a framework, or any other complex set of classes.
+In other words, it provides a unified interface to a set of interfaces in a subsystem. Facade defines a higherlevel interface that makes the subsystem easier to use. [[9]](#bib9)
 
 <p align="center">
-    <img src="https://refactoring.guru/images/patterns/diagrams/prototype/structure.png" alt="Prototype Pattern Diagram">
+    <img src="https://refactoring.guru/images/patterns/diagrams/facade/structure.png?id=258401362234ac77a2aaf1cde62339e7" alt="Facade Pattern Diagram">
 </p>
 
 #### Participants
-* **Prototype** - The Prototype interface declares the cloning methods. In most cases, it’s a single clone method.
-* **Concrete Prototype** - The Concrete Prototype class implements the cloning method. In addition to copying the 
-original object’s data to the clone, this method may also handle some edge cases of the cloning process related to 
-cloning linked objects, untangling recursive dependencies, etc.
-* **Client** - The Client can produce a copy of any object that follows the prototype interface.
+* **Facade** - provides convenient access to a particular part of the subsystem’s functionality. It knows where to direct the client’s request and how to operate all the moving parts.
+* **Additional Facade** - can be created to prevent polluting a single facade with unrelated features that might make it yet another complex structure. Additional facades can be used by both clients and other facades.
+* **Complex Subsystem** - consists of dozens of various objects. To make them all do something meaningful, you have to dive deep into the subsystem’s implementation details, such as initializing objects in the correct order and supplying them with data in the proper format. Subsystem classes aren’t aware of the facade’s existence. They operate within the system and work with each other directly.
+* **Client** - uses the facade instead of calling the subsystem objects directly.
+
 
 #### Applicability
-* Use the Prototype pattern when a system should be independent of how its products are
-  created, composed, and represented; and
-* when the classes to instantiate are specified at run-time, for example, by dynamic loading; or
-* to avoid building a class hierarchy of factories that parallels the class hierarchy of
-  products; or
-* when instances of a class can have one of only a few different combinations of
-  state. It may be more convenient to install a corresponding number of prototypes
-  and clone them rather than instantiating the class manually, each time with the
-  appropriate state. [[10]](#bib10)
+* Use the Facade pattern when you want to provide a simple interface to a complex subsystem. Subsystems often
+  get more complex as they evolve. Most patterns, when applied, result in more and
+  smaller classes. This makes the subsystem more reusable and easier to customize,
+  but it also becomes harder to use for clients that don't need to customize it. A
+  facade can provide a simple default view of the subsystem that is good enough for
+  most clients. Only clients needing more customizability will need to look beyond the
+  facade.
+* Use the Facade pattern when there are many dependencies between clients and the implementation classes of an
+  abstraction. Introduce a facade to decouple the subsystem from clients and other
+  subsystems, thereby promoting subsystem independence and portability.
+* Use the Facade pattern when you want to layer your subsystems. Use a facade to define an entry point to each
+  subsystem level. If subsystems are dependent, then you can simplify the
+  dependencies between them by making them communicate with each other solely
+  through their facades. [[10]](#bib10)
 
+### Flyweight
+Flyweight is a structural design pattern that lets you fit more objects into the available amount of RAM by sharing common parts of state between multiple objects instead of keeping all of the data in each object.
+In other words, it uses sharing to support large numbers of fine-grained objects efficiently [[11]](#bib11)
+
+<p align="center">
+    <img src="https://refactoring.guru/images/patterns/diagrams/flyweight/structure.png?id=c1e7e1748f957a4792822f902bc1d420" alt="Flyweight Pattern Diagram">
+</p>
+
+#### Participants
+* **Flyweight Factory** - manages a pool of existing flyweights. With the factory, clients don’t create flyweights directly. Instead, they call the factory, passing it bits of the intrinsic state of the desired flyweight. The factory looks over previously created flyweights and either returns an existing one that matches search criteria or creates a new one if nothing is found.
+* **Flyweight** - contains the portion of the original object’s state that can be shared between multiple objects. The same flyweight object can be used in many different contexts. The state stored inside a flyweight is called intrinsic. The state passed to the flyweight’s methods is called extrinsic.
+* **Context** - contains the extrinsic state, unique across all original objects. When a context is paired with one of the flyweight objects, it represents the full state of the original object.
+* **Client** - uses the facade instead of calling the subsystem objects directly.
+
+#### Applicability
+The Flyweight pattern's effectiveness depends heavily on how and where it's used. Apply the
+Flyweight pattern when all the following are true:
+* An application uses a large number of objects.
+* Storage costs are high because of the sheer quantity of objects.
+* Most object state can be made extrinsic.
+* Many groups of objects may be replaced by relatively few shared objects once
+  extrinsic state is removed.
+* The application doesn't depend on object identity. Since flyweight objects may be
+  shared, identity tests will return true for conceptually distinct objects. [[12]](#bib12)
+
+### Proxy
+Proxy is a structural design pattern that lets you provide a substitute or placeholder for another object. A proxy controls access to the original object, allowing you to perform something either before or after the request gets through to the original object.
+In other words, it provides a surrogate or placeholder for another object to control access to it. [[13]](#bib13)
+
+<p align="center">
+    <img src="https://refactoring.guru/images/patterns/diagrams/proxy/structure.png?id=f2478a82a84e1a1e512a8414bf1abd1c" alt="Proxy Pattern Diagram">
+</p>
+
+#### Participants
+* **Service Interface** - declares the interface of the Service. The proxy must follow this interface to be able to disguise itself as a service object.
+* **Service** - is a class that provides some useful business logic.
+* **Proxy** - has a reference field that points to a service object. After the proxy finishes its processing (e.g., lazy initialization, logging, access control, caching, etc.), it passes the request to the service object. Usually, proxies manage the full lifecycle of their service objects.
+* **Client** - should work with both services and proxies via the same interface. This way you can pass a proxy into any code that expects a service object.
+
+#### Applicability
+* Lazy initialization (virtual proxy). This is when you have a heavyweight service object that wastes system resources by being always up, even though you only need it from time to time.
+* Access control (protection proxy). This is when you want only specific clients to be able to use the service object; for instance, when your objects are crucial parts of an operating system and clients are various launched applications (including malicious ones).
+* Local execution of a remote service (remote proxy). This is when the service object is located on a remote server.
+* Logging requests (logging proxy). This is when you want to keep a history of requests to the service object.
+* Caching request results (caching proxy). This is when you need to cache results of client requests and manage the life cycle of this cache, especially if results are quite large. 
+* Smart reference. This is when you need to be able to dismiss a heavyweight object once there are no clients that use it. [[14]](#bib14)
 
 [//]: # (## Used Design Patterns:)
 
@@ -171,16 +223,11 @@ cloning linked objects, untangling recursive dependencies, etc.
 
 ## Implementation
 
-* For this Laboratory Work, I had to implement 3 Creational Design Patterns. 
-I have chosen to implement Abstract Factory, Builder and Singleton Patterns.
-
-* The principles that I have implemented are:
-    * Abstract Factory Pattern
-    * Builder Pattern
-    * Singleton Pattern
+* For this Laboratory Work, I had to implement 3 Structural Design Patterns. 
+I have chosen to implement Bridge, Adapter and Proxy Structural Design Patterns.
 
 * I decided to build upon the topic of Terminal Interaction and Transaction / Financial Operations on Accounts and between them as 
-well. I have used previous Laboratory Work that performs operations, such as: 
+well. I have used previous Laboratory Works that performs operations, such as: 
     * Creating User Entities,
     * Creating User Account Entities,
     * Creating Transaction Entities,
@@ -190,305 +237,126 @@ well. I have used previous Laboratory Work that performs operations, such as:
     * Transferring money between User Accounts,
     * Logs the financial operations and processes in the application (errors, successful operations, etc.),
     * Validator for Transaction operations.
+    * Implements Abstract Factory for Terminal and Transaction creation.
+    * Implements Builder for User Account and Transaction creation.
+    * Implements Singleton for Logger, Transaction Validator and Account Status Validator.
 
-#### Builder Pattern
-* Builder Creational Design Pattern - lets us construct complex objects step by step. The pattern allows you to 
-produce different types and representations of an object using the same construction code. It suggests that we extract 
-the object construction code out of its own class and move it to separate objects called builders. The pattern organizes 
-object construction into a set of steps. To create an object, we execute a series of 
-these steps on a builder object. The important part is that we don’t need to call all the steps. We can call only 
-those steps that are necessary for producing a particular configuration of an object.
+#### Bridge Pattern
+* Bridge Structural Design Pattern - lets separate the abstraction (high-level/business logic) from the implementation (low-level/platform-specific logic),
+so that they can evolve separately, without affecting each other. This is useful when business logic is strongly dependent on the medium
+that actually dictates how it should be done, thus enabling the implementation to be extended in such way that will not affect the abstraction.
 
-* For this pattern, I decided to implement a Builder for the IUserAccount concrete implementation and ITransaction
-concrete implementation. The IUserAccountBuilder concrete implementation is responsible for creating a User Account, 
-while the ITransactionBuilder implementation is responsible for each Transaction type (Deposit, Withdrawal, Exchange)
-creation. 
-  * [IBuilder](Interfaces/BuilderInterfaces/IBuilder.java) - is an interface that contains the reset method, which is responsible for resetting the Builder object.
+* First, I started by modelling the UML Diagram for that purpose. I followed the classical structure of the Bridge Pattern.
+In my case, the Abstract, or High-Level Logic, part is represented by TerminalAbstraction, that has a reference to the 
+Implementation part, that can be substituted by various concrete implementations of Abstract Factory for Terminal/Transaction
+creation.
+
+![BridgeUML](ReportImages/BridgeDiagram.png)
+
+
+* As in the diagram above, I adjusted the classes for concrete Abstract Factory implementation, by adding several low-level
+logic inside of it, that will help achieve high-level logic from abstraction, since it relies on the implementation object and its methods,
+that will fulfill client's needs.
+  * [ATMFactory](Utils/Factories/ATMFactory.java) - is responsible for creation of Transactions by Transaction Type (all of them),
+and creation of ATM Terminal. The building process was separated into several steps, to ensure the low-level logic behind the abstraction,
+that is done "under the hood" of the implementation.
 ```java
-public interface IBuilder {
-  void reset();
+public class ATMFactory implements IAbstractTerminalTransactionFactory {
+    private ITransactionBuilder transactionBuilder;
+    ...
+    @Override
+    public ITransaction createTransaction(List<IAccount> accounts, double amount, TransactionTypeEnum transactionType) {
+        ...
+        try {
+            setAccounts(accounts);
+            setAmount(amount);
+            return getTransaction();
+        } catch (IllegalArgumentException e) {
+            this.logger.errorLog("Failed ATM Transaction: " + e.getMessage());
+            return null;
+        }
+    }
+    ...
+    private void setAccounts(List<IAccount> accounts) {
+        this.transactionBuilder.setAccounts(accounts);
+    }
+    private void setAmount(Double amount) {
+        this.transactionBuilder.setAmount(amount);
+    }
+    private ITransaction getTransaction() {
+        return this.transactionBuilder.getResult();
+    }
 }
 ```
-  * [ITransactionBuilder](Interfaces/BuilderInterfaces/ITransactionBuilder.java) - is an interface that contains the methods for setting the Transaction fields, such as List of 
-Accounts, Amount, and, as specified in the Builder Pattern, the method that will return the formed Transaction.
+  * [POSFactory](Utils/Factories/POSFactory.java) - is responsible for creation of Transactions by Transaction Type (only Withdrawal),
+and creation of POS Terminal. The building process was separated into several steps for the same reason as in previous case.
+The only difference is that POS Terminal can perform only Withdrawal Transactions, thus the implementation is only for that type.
+The same structure is applied for [CashInFactory](Utils/Factories/CashInFactory.java).
 ```java
-public interface ITransactionBuilder extends IBuilder {
-    void setAccounts(List<IAccount> accounts);
-    void setAmount(Double amount);
-    ITransaction getResult();
-}
-```
-  * [IUserAccountBuilder](Interfaces/BuilderInterfaces/IUserAccountBuilder.java) - is an interface that contains the methods for setting the User Account fields, such as AccountID, 
-User Entity, Balance, Account Status, and, as specified in the Builder Pattern, the method that will return the formed 
-User Account.
-```java
-public interface IUserAccountBuilder extends IBuilder{
-    void setAccountId(int accountId);
-    void setUser(IUser user);
-    void setBalance(Double balance);
-    void setStatus(AccountStatusEnum status);
-    IAccount getResult();
-}
-```
-  * Concrete Builder Implementations - are the specific Builders that are constructing the User Account and Transaction 
-objects by implementing the IUserAccountBuilder and ITransactionBuilder interfaces and providing methods for setting the
-fields of the objects, as well as returning the built object. At the same time, the Builder classes are specifying the
-order of construction of the objects, as well as the fields that have to be set.
-  * [UserAccountBuilder](Utils/Builders/UserAccountBuilder.java) - is a class that implements the IUserAccountBuilder interface 
-and is responsible for creating the User Account object.
-```java
-public class UserAccountBuilder implements IUserAccountBuilder {
-    private int accountId;
-    private IUser user;
-    private Double balance;
-    private AccountStatusEnum status;
-
-    public UserAccountBuilder() {
-        this.reset();
+public class POSFactory implements IAbstractTerminalTransactionFactory {
+    ITransactionBuilder transactionBuilder;
+    ...
+    @Override
+    public ITerminal createTerminal() {
+        return new POSTerminal();
     }
     
-    @Override
-    public void reset() {
-        this.accountId = 0;
-        this.user = null;
-        this.balance = null;
-        this.status = null;
+    private void setAccounts(List<IAccount> accounts) {
+        this.transactionBuilder.setAccounts(accounts);
     }
-
-    @Override
-    public void setAccountId(int accountId) {
-        this.accountId = accountId;
-    }
-
-    @Override
-    public void setUser(IUser user) {
-        this.user = user;
-    }
-
-    @Override
-    public void setBalance(Double balance) {
-        this.balance = balance;
-    }
-
-    @Override
-    public void setStatus(AccountStatusEnum status) {
-        this.status = status;
-    }
-
-    @Override
-    public IAccount getResult() {
-        IAccount userAccount = new UserAccount(this.accountId, this.user, this.balance, this.status);
-        this.reset();
-        return userAccount;
-    }
-}
-```
-This class provides the possibility to build the UserAccount as in the following manner:
-```java
-// Create User Entity
-User user1 = new User(1, "John Doe");
-
-// Instantiate UserAccountBuilder
-IUserAccountBuilder userAccountBuilder = new UserAccountBuilder();
-
-// Build User Account
-userAccountBuilder.setAccountId(1);
-userAccountBuilder.setUser(user1);
-userAccountBuilder.setBalance(0.0);
-userAccountBuilder.setStatus(AccountStatusEnum.ACTIVE);
-
-// Retrieve the User Account
-userAccountBuilder.getResult();
-
-// Alternative creation
-User user2 = new User(2, "John Smith");
-userAccountBuilder.setAccountId(2);
-userAccountBuilder.setUser(user2);
-
-// Retrieve the User Account
-IAccount userAccount3 =  userAccountBuilder.getResult();
-```
-Even though the UserAccountBuilder builds an incomplete User Account, it is possible to return a fully functional User Account,
-with some limitations (in this case, it has balance=0.0 and status=INACTIVE).
-```java
-public class UserAccount implements IAccount {
-    private int accountId;
-    private IUser user;
-    private Double balance;
-    private ILogger logger;
-    private AccountStatusEnum status;
-
-    public UserAccount(int accountId, IUser user, Double balance, AccountStatusEnum status) {
-        this.accountId = accountId;
-        this.user = user;
-        this.balance = balance;
-        if (balance == null) {
-            this.balance = 0.0;
-        }
-        this.status = status;
-        if (this.status == null) {
-            this.status = AccountStatusEnum.INACTIVE;
-        }
-        this.logger = LoggerImpl.getInstance();
-        this.logger.infoLog("Account " + this.accountId + " with status " + this.status + " created for user "
-                + this.user.getName() + " (" + this.user.getUserId() + ")");
-    }
-}
-```
-
-* [WithdrawalTransactionBuilder](Utils/Builders/WithdrawalTransactionBuilder) - is a class that implements the ITransactionBuilder interface
-  and is responsible for creating the ITransaction implementation object - in this case, WithdrawalTransaction.
-```java
-public class WithdrawalTransactionBuilder implements ITransactionBuilder {
-    private List<IAccount> accounts;
-    private Double amount;
-  
-    public WithdrawalTransactionBuilder() {
-        this.reset();
-    }
-  
-    @Override
-    public void reset() {
-        this.accounts = null;
-        this.amount = 0.0;
-    }
-  
-    @Override
-    public void setAccounts(List<IAccount> accounts) {
-        this.accounts = accounts;
-    }
-  
-    @Override
-    public void setAmount(Double amount) {
-        this.amount = amount;
-    }
-  
-    @Override
-    public ITransaction getResult() {
-        ITransaction transaction = new WithdrawalTransaction(this.accounts, this.amount);
-        this.reset();
-        return transaction;
-    }
-}
-```
-This class provides the possibility to build the WithdrawalTransaction as in the following manner. The following method
-is a part of a class that was used for implementing Abstract Factory Pattern and will be described further in the report:
-```java
-public ITransaction createTransaction(List<IAccount> accounts, double amount, TransactionTypeEnum transactionType) {
-    if (transactionType != TransactionTypeEnum.WITHDRAWAL) {
-        return null;
-    }
-    WithdrawalTransactionBuilder withdrawalTransactionBuilder = new WithdrawalTransactionBuilder();
-    withdrawalTransactionBuilder.setAccounts(accounts);
-    withdrawalTransactionBuilder.setAmount(amount);
-    return withdrawalTransactionBuilder.getResult();
-}
-```
-Even though the UserAccountBuilder builds an incomplete WithdrawalTransaction, it will log the error and will not be
-able to produce the object further.
-```java
-public class WithdrawalTransaction implements ITransaction {
-    private List<IAccount> account;
-    private Double amount;
-    private ILogger logger;
-    private ITransactionValidator validator;
     
-    public WithdrawalTransaction(List<IAccount> account, double amount) {
-        this.logger = LoggerImpl.getInstance();
-        this.account = account;
-        if (account == null) {
-            this.logger.errorLog("Withdrawal Transaction failed due to invalid account - Account is null");
-            throw new IllegalArgumentException("Invalid accounts");
-        }
-        this.amount = amount;
-        if (amount <= 0) {
-            this.logger.errorLog("Withdrawal Transaction failed due to invalid amount - Amount is less than or equal to 0");
-            throw new IllegalArgumentException("Invalid amount");
-        }
-        this.validator = TransactionValidator.getInstance();
+    private void setAmount(Double amount) {
+        this.transactionBuilder.setAmount(amount);
+    }
+    
+    private ITransaction getTransaction() {
+        return this.transactionBuilder.getResult();
     }
 }
 ```
-
-  * [DepositTransactionBuilder](Utils/Builders/DepositTransactionBuilder.java) - is a class that implements the 
-ITransactionBuilder interface and is responsible for creating the ITransaction implementation object - in this case,
-DepositTransaction.
+  * [TerminalAbstraction](ClientAbstraction/TerminalAbstraction.java) - is the Abstraction class that is responsible for
+providing methods for High-Level Business Logic, in this case - creation and performing of Transactions by the use of
+Transaction Factories, as they provide the Low-Level logic for the Abstraction. The Abstraction class has a reference to the
+Implementation class, as in the general UML Diagram.
 ```java
-public class DepositTransactionBuilder implements ITransactionBuilder {
-    private List<IAccount> accounts;
-    private Double amount;
-
-    public DepositTransactionBuilder() {
-        this.reset();
+public class TerminalAbstraction {
+    private IAbstractTerminalTransactionFactory transactionFactory;
+  
+    public TerminalAbstraction(IAbstractTerminalTransactionFactory transactionFactory) {
+        this.transactionFactory = transactionFactory;
     }
-
-    @Override
-    public void reset() {
-        this.accounts = null;
-        this.amount = 0.0;
-    }
-
-    @Override
-    public void setAccounts(List<IAccount> accounts) {
-        this.accounts = accounts;
-    }
-
-    @Override
-    public void setAmount(Double amount) {
-        this.amount = amount;
-    }
-
-    @Override
-    public ITransaction getResult() {
-        ITransaction transaction = new DepositTransaction(this.accounts, this.amount);
-        this.reset();
-        return transaction;
+  
+    public void initiateTransaction(List<IAccount> accounts, double amount, TransactionTypeEnum transactionType) {
+        ITransaction transaction = transactionFactory.createTransaction(accounts, amount, transactionType);
+        ITerminal terminal = transactionFactory.createTerminal();
+        terminal.performTransaction(transaction);
     }
 }
 ```
-  * [ExchangeTransactionBuilder](Utils/Builders/ExchangeTransactionBuilder.java) - is a class that implements the
-ITransactionBuilder interface and is responsible for creating the ITransaction implementation object - in this case, 
-ExchangeTransaction.
+
+The collaboration between those classes provides the possibility to use the Abstraction class to perform the Transaction, where
+client knows only about the details of Transaction, but not about the Terminal or Transaction creation process:
 ```java
-public class ExchangeTransactionBuilder implements ITransactionBuilder {
-    private List<IAccount> accounts;
-    private Double amount;
+// NEW WAY
+TerminalAbstraction ATMTerminalClient = new TerminalAbstraction(new ATMFactory());
 
-    public ExchangeTransactionBuilder() {
-        this.reset();
-    }
-
-    @Override
-    public void reset() {
-        this.accounts = null;
-        this.amount = 0.0;
-    }
-
-    @Override
-    public void setAccounts(List<IAccount> accounts) {
-        this.accounts = accounts;
-    }
-
-    @Override
-    public void setAmount(Double amount) {
-        this.amount = amount;
-    }
-
-    @Override
-    public ITransaction getResult() {
-        ITransaction transaction = new ExchangeTransaction(this.accounts, this.amount);
-        this.reset();
-        return transaction;
-    }
-}
+ATMTerminalClient.initiateTransaction(List.of(userAccount1), 100.0, TransactionTypeEnum.WITHDRAWAL);
 ```
-For both DepositTransaction and ExchangeTransaction, the process is similar to the WithdrawalTransaction, but the
-product they return is different.
+Compared to the previous version of the implementation, where the client had to know the exact implementation of the ITerminal
+concrete implementations and, at the same time, the logic of Factory classes for Transaction/Terminal creation:
+```java
+// OLD WAY
+IAbstractTerminalTransactionFactory ATMFactory = new ATMFactory();
+ITerminal atmTerminal = ATMFactory.createTerminal();
 
-Thus, the Builder Pattern is implemented in the application, thus providing a way to create complex objects step by step,
-by using the Builder classes that are responsible for the construction of the objects. It may be possible to use a new
-class called Director that will hold specific building methods for the objects instead of allowing the client operate
-with those Builders directly. However, in this case, the Builders are simple enough to be used directly by the client.
+ITransaction depositTransaction = ATMFactory.createTransaction(List.of(userAccount1), 100.0, TransactionTypeEnum.WITHDRAWAL);
+atmTerminal.performTransaction(depositTransaction);
+```
+
+Thus, the Bridge Pattern is implemented in the application, thus providing a way to give Clients as much abstraction as possible,
+leaving behind the scenes the low-level implementation that is responsible to ensuring that client will get the desired
+result, without making him know the details of the implementation, thus decoupling the logic between them, making code more
+scalable, flexible and easier to maintain in case of new implementations.
 
 #### Singleton Pattern
 
@@ -810,23 +678,30 @@ more maintainable, thus improving the overall quality of the code.
 
 
 ## References
-<a id="bib1"></a>[1] Refactoring Guru, “Singleton,” Refactoring.guru, 2014. https://refactoring.guru/design-patterns/singleton
+<a id="bib1"></a>[1] Refactoring Guru, “Adapter” Refactoring.guru, 2014. https://refactoring.guru/design-patterns/adapter
 
-<a id="bib2"></a>[2] “Creational Patterns.” pg.127 Available: https://www.javier8a.com/itc/bd1/articulo.pdf
+<a id="bib2"></a>[2] “Creational Patterns.” pg.140 Available: https://www.javier8a.com/itc/bd1/articulo.pdf
 
-<a id="bib2"></a>[3] Refactoring Guru, “Builder,” Refactoring.guru, 2014. https://refactoring.guru/design-patterns/builder
+<a id="bib3"></a>[3] Refactoring Guru, “Bridge” Refactoring.guru, 2014. https://refactoring.guru/design-patterns/bridge
 
-<a id="bib2"></a>[4] “Creational Patterns.” pg.97 Available: https://www.javier8a.com/itc/bd1/articulo.pdf
+<a id="bib4"></a>[4] “Creational Patterns.” pg.153 Available: https://www.javier8a.com/itc/bd1/articulo.pdf
 
-<a id="bib2"></a>[5] “Abstract Factory,” refactoring.guru. https://refactoring.guru/design-patterns/abstract-factory
+<a id="bib5"></a>[5] Refactoring Guru, “Composite” Refactoring.guru, 2014. https://refactoring.guru/design-patterns/composite
 
-<a id="bib2"></a>[6] “Creational Patterns.” pg.87 Available: https://www.javier8a.com/itc/bd1/articulo.pdf
+<a id="bib6"></a>[6] “Creational Patterns.” pg.164 Available: https://www.javier8a.com/itc/bd1/articulo.pdf
 
-<a id="bib2"></a>[7] Refactoring Guru, “Factory Method,” Refactoring.guru, 2014. https://refactoring.guru/design-patterns/factory-method
+<a id="bib7"></a>[7] Refactoring Guru, “Decorator,” Refactoring.guru, 2014. https://refactoring.guru/design-patterns/decorator
 
-<a id="bib2"></a>[8] “Creational Patterns.” pg.107 Available: https://www.javier8a.com/itc/bd1/articulo.pdf
+<a id="bib8"></a>[8] “Creational Patterns.” pg.177 Available: https://www.javier8a.com/itc/bd1/articulo.pdf
 
-<a id="bib2"></a>[9] “Prototype,” refactoring.guru. https://refactoring.guru/design-patterns/prototype
+<a id="bib9"></a>[9] Refactoring Guru, “Facade” Refactoring.guru, 2014. https://refactoring.guru/design-patterns/facade
 
-<a id="bib2"></a>[10] “Creational Patterns.” pg.117 Available: https://www.javier8a.com/itc/bd1/articulo.pdf
+<a id="bib10"></a>[10] “Creational Patterns.” pg.186 Available: https://www.javier8a.com/itc/bd1/articulo.pdf
 
+<a id="bib11"></a>[11] Refactoring Guru, “Flyweight” Refactoring.guru, 2014. https://refactoring.guru/design-patterns/flyweight
+
+<a id="bib12"></a>[12] “Creational Patterns.” pg.197 Available: https://www.javier8a.com/itc/bd1/articulo.pdf
+
+<a id="bib13"></a>[13] Refactoring Guru, “Proxy” Refactoring.guru, 2014. https://refactoring.guru/design-patterns/proxy
+
+<a id="bib14"></a>[14] “Creational Patterns.” pg.208-209 Available: https://www.javier8a.com/itc/bd1/articulo.pdf
