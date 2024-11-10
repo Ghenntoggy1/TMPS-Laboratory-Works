@@ -5,7 +5,7 @@ import Laboratory_Work_3_Structural_Patterns.Interfaces.IAccount;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.IAccountStatusValidator;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.ILogger;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.ITransaction;
-import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerImpl;
+import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerUtil;
 import Laboratory_Work_3_Structural_Patterns.Utils.Validators.AccountStatusValidator;
 
 import java.util.List;
@@ -18,7 +18,7 @@ public class DepositTransaction implements ITransaction {
 
     public DepositTransaction(List<IAccount> account, Double amount) {
         this.account = account;
-        this.logger = LoggerImpl.getInstance();
+        this.logger = LoggerUtil.getInstance();
         if (account == null) {
             logger.errorLog("Deposit Transaction failed due to invalid account - Account is null");
             throw new IllegalArgumentException("Account cannot be null");

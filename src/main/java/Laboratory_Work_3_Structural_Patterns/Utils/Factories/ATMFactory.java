@@ -14,7 +14,7 @@ import Laboratory_Work_3_Structural_Patterns.Terminals.ATMTerminal;
 import Laboratory_Work_3_Structural_Patterns.Utils.Builders.DepositTransactionBuilder;
 import Laboratory_Work_3_Structural_Patterns.Utils.Builders.ExchangeTransactionBuilder;
 import Laboratory_Work_3_Structural_Patterns.Utils.Builders.WithdrawalTransactionBuilder;
-import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerImpl;
+import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerUtil;
 
 import java.util.List;
 
@@ -23,7 +23,7 @@ public class ATMFactory implements IAbstractTerminalTransactionFactory {
     private ITransactionBuilder transactionBuilder;
 
     public ATMFactory() {
-        this.logger = LoggerImpl.getInstance();
+        this.logger = LoggerUtil.getInstance();
     }
 
     @Override

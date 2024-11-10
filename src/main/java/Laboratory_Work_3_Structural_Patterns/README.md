@@ -250,9 +250,9 @@ that actually dictates how it should be done, thus enabling the implementation t
 In my case, the Abstract, or High-Level Logic, part is represented by TerminalAbstraction, that has a reference to the 
 Implementation part, that can be substituted by various concrete implementations of Abstract Factory for Terminal/Transaction
 creation.
-* 
+
 <p align="center">
-    <img src="ReportImages/BridgePattern1.png" alt="Bridge Implementation Diagram - Terminal/Transaction">
+    <img src="ReportUML/BridgePattern1.png" alt="Bridge Implementation Diagram - Terminal/Transaction">
 </p>
 
 * As in the diagram above, I adjusted the classes for concrete Abstract Factory implementation, by adding several low-level
@@ -358,7 +358,7 @@ atmTerminal.performTransaction(depositTransaction);
 that has a reference to IUserAccountBuilder interface, that is implemented by UserAccountBuilder class, and will provide several
 methods to create different types of accounts - Inactive, Active with Empty Balance and Active with Initial Balance:
 <p align="center">
-    <img src="ReportImages/BridgePattern2.png" alt="Bridge Implementation Diagram - User Account">
+    <img src="ReportUML/BridgePattern2.png" alt="Bridge Implementation Diagram - User Account">
 </p>
 
 * [UserAccountAbstraction](ClientAbstraction/UserAccountAbstraction.java) - is the Abstraction class that references the
@@ -480,7 +480,7 @@ that I extended (in compliance with OCP from SOLID) with the Singleton Pattern. 
 via the getInstance() method that returns the instance of the class. The constructor of the class is private, so it is
 accessible only via the getInstance() method, that ensures that only one instance will be passed across the application.
 
-  * [LoggerImpl](Utils/Logging/LoggerImpl.java) - is a class that implements the ILogger interface and is 
+  * [LoggerImpl](Utils/Logging/LoggingLoggerAdapter.java) - is a class that implements the ILogger interface and is 
 responsible for logging the information, errors, and warnings. In this class, the constructor is private, there is a 
 private field that holds the instance of the LoggerImpl class, and the getInstance() method that returns the instance of
 the LoggerImpl class by checking if the instance is null. If it is null, it creates a new instance, otherwise, it returns

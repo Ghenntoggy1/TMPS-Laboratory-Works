@@ -1,6 +1,7 @@
-package Laboratory_Work_3_Structural_Patterns.Utils.Logging;
+package Laboratory_Work_3_Structural_Patterns.Utils.Adapters;
 
 import Laboratory_Work_3_Structural_Patterns.Interfaces.ILogger;
+import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LogFormatter;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -8,12 +9,12 @@ import java.util.logging.ConsoleHandler;
 import java.util.logging.FileHandler;
 import java.io.IOException;
 
-public class LoggerImpl implements ILogger {
-    private static LoggerImpl instance;
+public class LoggingLoggerAdapter implements ILogger {
+    private static LoggingLoggerAdapter instance;
     private final Logger logger;
 
-    private LoggerImpl() {
-        this.logger = Logger.getLogger(LoggerImpl.class.getName());
+    private LoggingLoggerAdapter() {
+        this.logger = Logger.getLogger(LoggingLoggerAdapter.class.getName());
         this.logger.setLevel(Level.ALL);
 
         ConsoleHandler consoleHandler = new ConsoleHandler();
@@ -21,7 +22,6 @@ public class LoggerImpl implements ILogger {
         consoleHandler.setLevel(Level.ALL);
 
         try {
-
             FileHandler fileHandler = new FileHandler("src/main/java/Laboratory_Work_3_Structural_Patterns/Utils/Logging/Logs/logs.log", true);
             fileHandler.setFormatter(new LogFormatter());
             fileHandler.setLevel(Level.ALL);
@@ -36,13 +36,13 @@ public class LoggerImpl implements ILogger {
     }
 
     // Singleton Logger
-    public static LoggerImpl getInstance() {
+    public static LoggingLoggerAdapter getInstance() {
         if (instance == null) {
-            instance = new LoggerImpl();
-            instance.infoLog("Logger Initialized using Singleton Pattern");
+            instance = new LoggingLoggerAdapter();
+            instance.infoLog("Java Logging Logger Initialized using Singleton Pattern");
         }
         else {
-            instance.infoLog("Logger already initialized - Returning existing instance");
+            instance.infoLog("Java Logging Logger already initialized - Returning existing instance");
         }
         return instance;
     }

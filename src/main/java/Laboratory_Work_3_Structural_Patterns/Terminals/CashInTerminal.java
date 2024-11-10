@@ -9,7 +9,7 @@ import Laboratory_Work_3_Structural_Patterns.Interfaces.IAbstractTerminalTransac
 import Laboratory_Work_3_Structural_Patterns.Interfaces.ITransaction;
 
 import Laboratory_Work_3_Structural_Patterns.Utils.Factories.CashInFactory;
-import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerImpl;
+import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerUtil;
 
 import java.util.List;
 
@@ -17,7 +17,7 @@ public class CashInTerminal implements ITerminal {
     private ILogger logger;
 
     public CashInTerminal() {
-        this.logger = LoggerImpl.getInstance();
+        this.logger = LoggerUtil.getInstance();
     }
 
     @Override

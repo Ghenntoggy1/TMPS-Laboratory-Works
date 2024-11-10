@@ -8,7 +8,7 @@ import Laboratory_Work_3_Structural_Patterns.Interfaces.ITransaction;
 
 import Laboratory_Work_3_Structural_Patterns.Enums.TransactionTypeEnum;
 import Laboratory_Work_3_Structural_Patterns.Utils.Factories.ATMFactory;
-import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerImpl;
+import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerUtil;
 
 import java.util.List;
 
@@ -16,13 +16,12 @@ public class ATMTerminal implements ITerminal {
     private ILogger logger;
 
     public ATMTerminal() {
-        this.logger = LoggerImpl.getInstance();
+        this.logger = LoggerUtil.getInstance();
     }
 
     // TODO: Implement COMPOSITE pattern - ATM Terminal is a leaf node in the composite pattern tree structure of the terminal hierarchy,
     //  may contain container for money, and may contain money of various value.
 
-    // TODO: Implement BRIDGE pattern
     @Override
     public void performTransaction(List<IAccount> accounts, TransactionTypeEnum transactionType, double amount) {
         try {

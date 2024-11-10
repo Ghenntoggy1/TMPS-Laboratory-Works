@@ -4,7 +4,7 @@ import Laboratory_Work_3_Structural_Patterns.Interfaces.IAccount;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.ILogger;
 import Laboratory_Work_3_Structural_Patterns.Enums.AccountStatusEnum;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.IUser;
-import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerImpl;
+import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerUtil;
 
 
 public class UserAccount implements IAccount {
@@ -25,7 +25,7 @@ public class UserAccount implements IAccount {
         if (this.status == null) {
             this.status = AccountStatusEnum.INACTIVE;
         }
-        this.logger = LoggerImpl.getInstance();
+        this.logger = LoggerUtil.getInstance();
         this.logger.infoLog("Account " + this.accountId + " with status " + this.status + " created for user "
                 + this.user.getName() + " (" + this.user.getUserId() + ")");
     }

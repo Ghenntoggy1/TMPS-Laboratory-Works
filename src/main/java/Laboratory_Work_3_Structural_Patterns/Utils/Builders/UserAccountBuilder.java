@@ -6,7 +6,7 @@ import Laboratory_Work_3_Structural_Patterns.Interfaces.IAccount;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.ILogger;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.IUser;
 import Laboratory_Work_3_Structural_Patterns.User.UserAccount;
-import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerImpl;
+import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerUtil;
 
 public class UserAccountBuilder implements IUserAccountBuilder {
     private ILogger logger;
@@ -17,7 +17,7 @@ public class UserAccountBuilder implements IUserAccountBuilder {
     private AccountStatusEnum status;
 
     public UserAccountBuilder() {
-        this.logger = LoggerImpl.getInstance();
+        this.logger = LoggerUtil.getInstance();
         this.reset();
     }
 

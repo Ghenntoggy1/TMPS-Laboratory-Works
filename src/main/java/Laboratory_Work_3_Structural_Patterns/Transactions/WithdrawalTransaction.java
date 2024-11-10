@@ -5,7 +5,7 @@ import Laboratory_Work_3_Structural_Patterns.Interfaces.IAccount;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.ILogger;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.ITransaction;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.ITransactionValidator;
-import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerImpl;
+import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerUtil;
 import Laboratory_Work_3_Structural_Patterns.Utils.Validators.TransactionValidator;
 
 import java.util.List;
@@ -17,7 +17,7 @@ public class WithdrawalTransaction implements ITransaction {
     private ITransactionValidator validator;
 
     public WithdrawalTransaction(List<IAccount> account, double amount) {
-        this.logger = LoggerImpl.getInstance();
+        this.logger = LoggerUtil.getInstance();
         this.account = account;
         if (account == null) {
             this.logger.errorLog("Withdrawal Transaction failed due to invalid account - Account is null");

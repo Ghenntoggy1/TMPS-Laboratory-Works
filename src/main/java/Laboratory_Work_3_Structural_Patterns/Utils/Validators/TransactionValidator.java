@@ -3,7 +3,7 @@ package Laboratory_Work_3_Structural_Patterns.Utils.Validators;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.IAccount;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.ILogger;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.ITransactionValidator;
-import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerImpl;
+import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerUtil;
 
 public class TransactionValidator extends AccountStatusValidator implements ITransactionValidator {
     private static TransactionValidator instance;
@@ -29,7 +29,7 @@ public class TransactionValidator extends AccountStatusValidator implements ITra
     }
 
     public static TransactionValidator getInstance() {
-        ILogger logger = LoggerImpl.getInstance();
+        ILogger logger = LoggerUtil.getInstance();
 
         if (instance == null) {
             instance = new TransactionValidator();

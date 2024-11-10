@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{EEE MMM dd HH:mm:ss Z yyyy} :: [%level] :: %M :: %msg%n"/>
+        </Console>
+
+        <!-- File Appender -->
+        <File name="File" fileName="src/main/java/Laboratory_Work_3_Structural_Patterns/Utils/Logging/Logs/logs.log" append="true">
+            <PatternLayout pattern="%d{EEE MMM dd HH:mm:ss Z yyyy} :: [%level] :: %M :: %msg%n"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <!-- Root Logger -->
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
+</Configuration>
