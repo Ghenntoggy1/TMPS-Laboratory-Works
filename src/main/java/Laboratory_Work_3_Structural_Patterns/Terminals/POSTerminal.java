@@ -8,7 +8,7 @@ import Laboratory_Work_3_Structural_Patterns.Interfaces.ITransaction;
 
 import Laboratory_Work_3_Structural_Patterns.Enums.TransactionTypeEnum;
 import Laboratory_Work_3_Structural_Patterns.Utils.Factories.POSFactory;
-import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerUtil;
+import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerProxy;
 
 import java.util.List;
 
@@ -16,7 +16,7 @@ public class POSTerminal implements ITerminal {
     private final ILogger logger;
 
     public POSTerminal() {
-        this.logger = LoggerUtil.getInstance();
+        this.logger = LoggerProxy.getInstance();
     }
 
     @Override

@@ -2,7 +2,7 @@ package Laboratory_Work_3_Structural_Patterns.User;
 
 import Laboratory_Work_3_Structural_Patterns.Interfaces.ILogger;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.IUser;
-import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerUtil;
+import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerProxy;
 
 public class User implements IUser {
     private static int idCounter = 1;
@@ -14,7 +14,7 @@ public class User implements IUser {
         this.userId = idCounter;
         idCounter++;
         this.name = name;
-        this.logger = LoggerUtil.getInstance();
+        this.logger = LoggerProxy.getInstance();
         this.logger.infoLog("User " + name + " created with ID " + userId);
     }
 

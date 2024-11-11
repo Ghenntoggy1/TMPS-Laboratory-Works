@@ -4,11 +4,11 @@ import Laboratory_Work_3_Structural_Patterns.Enums.AccountStatusEnum;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.IAccount;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.IAccountStatusValidator;
 import Laboratory_Work_3_Structural_Patterns.Interfaces.ILogger;
-import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerUtil;
+import Laboratory_Work_3_Structural_Patterns.Utils.Logging.LoggerProxy;
 
 public class AccountStatusValidator implements IAccountStatusValidator {
     private static AccountStatusValidator instance;
-    protected final ILogger logger = LoggerUtil.getInstance();
+    protected final ILogger logger = LoggerProxy.getInstance();
 
     protected AccountStatusValidator() {}
 
@@ -26,7 +26,7 @@ public class AccountStatusValidator implements IAccountStatusValidator {
     }
 
     public static AccountStatusValidator getInstance() {
-        ILogger logger = LoggerUtil.getInstance();
+        ILogger logger = LoggerProxy.getInstance();
 
         if (instance == null) {
             instance = new AccountStatusValidator();
