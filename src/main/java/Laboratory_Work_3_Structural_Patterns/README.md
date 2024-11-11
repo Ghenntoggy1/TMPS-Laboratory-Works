@@ -615,11 +615,13 @@ the Adapter will handle the binding the methods between them so that they can wo
 
 #### Proxy Pattern
 
-  * Proxy Structural Design Pattern - lets us provide a placeholder for the 
+  * Proxy Structural Design Pattern - lets us provide a placeholder for a real service object, that will handle the logic
+of the service object, but at the same time, will provide additional functionality, such as logging, caching, access control and other functionalities.
 
-  * For this pattern, I decided to implement Abstract Factory that will group families of ITerminal and ITransaction
-implementations, since they are related to cooperative tasks (POSTerminal can perform only WithdrawalTransaction, 
-CashInTerminal - only DepositTransaction and ATMTerminal - all 3 types of Transactions).
+  * For this pattern, I decided to model first of all the UML Diagram. I followed the structure of a protection proxy pattern
+diagram (method for access control to ILogger implementation):
+
+
 
   * [IAbstractTerminalTransactionFactory](Interfaces/IAbstractTerminalTransactionFactory.java) - is an interface that
 specifies methods should be present in concrete implementations of the Abstract Factory. In our case, the methods are

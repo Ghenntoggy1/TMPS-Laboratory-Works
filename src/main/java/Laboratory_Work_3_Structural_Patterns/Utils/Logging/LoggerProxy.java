@@ -10,6 +10,12 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class LoggerProxy implements ILogger {
+    ILogger logger;
+
+    public LoggerProxy() {
+        this.logger = LoggingLoggerAdapter.getInstance();
+    }
+
     private static boolean checkRole() {
         String content;
         try {
