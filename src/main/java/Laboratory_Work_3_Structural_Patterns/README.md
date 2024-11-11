@@ -437,19 +437,27 @@ leaving behind the scenes the low-level implementation that is responsible to en
 result, without making him know the details of the implementation, thus decoupling the logic between them, making code more
 scalable, flexible and easier to maintain in case of new implementations.
 
-#### Singleton Pattern
+#### Adapter Pattern
 
-  * Singleton Creational Design Pattern - lets us ensure that a class has only one instance, while providing a global 
-access point to this instance. Just like a global variable, the Singleton pattern lets us access some object from 
-anywhere in the program. However, it also protects that instance from being overwritten by other code, since the implementation
-requires that classes that adhere to Singleton pattern have a private constructor and a static method that returns the
-instance of the class.
+  * Adapter Structural Design Pattern - helps to make two incompatible interfaces compatible, by converting the methods
+of a Target class so that they can operate with methods of an Adaptee class via an Adapter class. This is useful when
+some libraries are modified/deprecated, but the client still wants to use those methods. This ensures that the only modification
+will be done in the Adapter class, while the rest of the code will remain the same, reducing the amount of code modification.
 
-  * For this pattern, I decided to implement Singleton for ILogger concrete Implementation, ITransactionValidator and
-IAccountStatusValidator concrete Implementations.
+  * For this task, I started with modelling the UML Diagram. I followed the classical structure of the Adapter Pattern, 
+making the Adaptee - 2 types of Loggers, and the Target - ILogger interface.
+
+<p align="center">
+    <img src="ReportUML/AdapterPattern1.png" alt="Adapter Pattern Diagram - Logger">
+</p>
+
+  * As in the diagram from above, I adjusted the already existing implementation of LoggerAdapter, that was responsible
+for binding together Logger from Java Util Logging library and ILogger interface that is used across the application. I
+used a joining class - LoggerUtil responsible for the specification of a certain ILogger concrete implementor, to be easier
+to switch between them, without modifying the client code.
 
   * [ILogger](Interfaces/ILogger.java) - is an interface that contains the methods for logging information, errors, 
-and warnings.
+and warnings. It remained unmodified from the previous Laboratory Work.
 ```java
 public interface ILogger {
     void infoLog(String message);
@@ -458,42 +466,27 @@ public interface ILogger {
 }
 ```
 
-  * [ITransactionValidator](Interfaces/ITransactionValidator.java) - is an interface that contains the method for validating
-the Transaction operations.
+  * [LoggerUtil](Utils/Logging/LoggerUtil.java) - is a class that contains a single method that will return the required
+ILogger Implementation. In this case, everywhere in the client code, the instance of ILogger will be replaced with
+LoggingLoggerAdapter.
 ```java
-public interface ITransactionValidator extends IAccountStatusValidator {
-    boolean validateSufficientFunds(IAccount account, double amount);
-    boolean validateTransaction(IAccount account, double amount);
+public class LoggerUtil {
+  public static ILogger getInstance() {
+    return LoggingLoggerAdapter.getInstance();
+  }
 }
 ```
 
-  * [IAccountStatusValidator](Interfaces/IAccountStatusValidator.java) - is an interface that contains the method for validating
-the Account Status.
+  * [LoggingLoggerAdapter](Utils/Adapters/LoggingLoggerAdapter.java) - is a class that implements the ILogger interface
+connecting this with the Logger from Java Util Logging library. It contains several methods for message logging used across the 
+application, and separate configuration of the format of the log messages, that stayed the same from the previous laboratory work.
 ```java
-public interface IAccountStatusValidator {
-    boolean validateAccountStatus(IAccount account);
-}
-```
-
-  * Concrete Implementations with Singleton Pattern - are the previously defined implementations (see [Lab-1](../Laboratory_Work_1_SOLID_Principles/README.md))
-that I extended (in compliance with OCP from SOLID) with the Singleton Pattern. The Singleton pattern is implemented 
-via the getInstance() method that returns the instance of the class. The constructor of the class is private, so it is
-accessible only via the getInstance() method, that ensures that only one instance will be passed across the application.
-
-  * [LoggerImpl](Utils/Logging/LoggingLoggerAdapter.java) - is a class that implements the ILogger interface and is 
-responsible for logging the information, errors, and warnings. In this class, the constructor is private, there is a 
-private field that holds the instance of the LoggerImpl class, and the getInstance() method that returns the instance of
-the LoggerImpl class by checking if the instance is null. If it is null, it creates a new instance, otherwise, it returns
-the field that references the instance of the LoggerImpl class. Since Logger is an object that does not change the state
-of the application and itself, it is safe to use Singleton Pattern for this class.
-
-```java
-public class LoggerImpl implements ILogger {
-    private static LoggerImpl instance;
+public class LoggingLoggerAdapter implements ILogger {
+    private static LoggingLoggerAdapter instance;
     private final Logger logger;
 
-    private LoggerImpl() {
-        this.logger = Logger.getLogger(LoggerImpl.class.getName());
+    private LoggingLoggerAdapter() {
+        this.logger = Logger.getLogger(LoggingLoggerAdapter.class.getName());
         this.logger.setLevel(Level.ALL);
 
         ConsoleHandler consoleHandler = new ConsoleHandler();
@@ -501,8 +494,7 @@ public class LoggerImpl implements ILogger {
         consoleHandler.setLevel(Level.ALL);
 
         try {
-
-            FileHandler fileHandler = new FileHandler("src/main/java/Laboratory_Work_2_Creational_Patterns/Utils/Logging/Logs/logs.log", true);
+            FileHandler fileHandler = new FileHandler("src/main/java/Laboratory_Work_3_Structural_Patterns/Utils/Logging/Logs/logs.log", true);
             fileHandler.setFormatter(new LogFormatter());
             fileHandler.setLevel(Level.ALL);
             this.logger.addHandler(fileHandler);
@@ -514,87 +506,112 @@ public class LoggerImpl implements ILogger {
         this.logger.addHandler(consoleHandler);
         this.logger.setUseParentHandlers(false);
     }
-
-    // Singleton Logger
-    public static LoggerImpl getInstance() {
-        if (instance == null) {
-            instance = new LoggerImpl();
-            instance.infoLog("Logger Initialized using Singleton Pattern");
-        }
-        else {
-            instance.infoLog("Logger already initialized - Returning existing instance");
-        }
-        return instance;
+    ...
+    @Override
+    public void infoLog(String message) {
+        logger.log(Level.INFO, getCallingClassAndMethod() + " :: " + message);
     }
 
-    // Helper method to get calling class and method
-    private String getCallingClassAndMethod() {
-        StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
-        // Index 0: getStackTrace(), Index 1: getCallingClassAndMethod(), Index 2: this method (infoLog, etc.)
-        // Index 3: Caller method
-        StackTraceElement caller = stackTrace[3];
-        return caller.getClassName() + "::" + caller.getMethodName();
+    @Override
+    public void warningLog(String message) {
+        logger.log(Level.WARNING, getCallingClassAndMethod() + " :: " + message);
     }
-    ...
-}
-```
-This approach allows us to use the logger across the application in the following manner:
-```java
-ILogger logger = LoggerImpl.getInstance();
-```
-As it may be noticed, the method is called, not the constructor, and the instance is created and returned, in case it was never created 
-before at run-time, otherwise - returned the instance that was created already.
 
-  * [TransactionValidator](Utils/Validators/TransactionValidator.java) - is a class that implements the ITransactionValidator
-interface and is responsible for validating the Transaction operations. In this class, the constructor is private, there is a
-private field that holds the instance of the TransactionValidator class, and the getInstance() method that returns the instance.
-It follows the same mechanism as the LoggerImpl class and the same principle of usage too.
-```java
-public class TransactionValidator extends AccountStatusValidator implements ITransactionValidator {
-    private static TransactionValidator instance;
-
-    private TransactionValidator() {}
-    ...
-    public static TransactionValidator getInstance() {
-        ILogger logger = LoggerImpl.getInstance();
-
-        if (instance == null) {
-            instance = new TransactionValidator();
-            logger.infoLog("Transaction Validator Initialized using Singleton Pattern");
-        }
-        else {
-            logger.infoLog("Transaction Validator already initialized - Returning existing instance");
-        }
-        return instance;
+    @Override
+    public void errorLog(String message) {
+        logger.log(Level.SEVERE, getCallingClassAndMethod() + " :: " + message);
     }
 }
 ```
 
-  * [AccountStatusValidator](Utils/Validators/AccountStatusValidator.java) - is a class that implements the IAccountStatusValidator
-interface and is responsible for validating the Account Status. In this class, the constructor is private, there is a
-private field that holds the instance of the AccountStatusValidator class, and the getInstance() method that returns the instance.
-Again, the same principle of creation and usage is used as in the previous classes.
+  * At the same time, I implemented another Adapter for the Log4j Logger from apache library, in order to simulate
+the situation when the Client wants to use another Logger implementation, but the ILogger interface is already implemented,
+thus the Adapter will help to make the Log4j Logger compatible with ILogger interface.
+  * Similarly, I modelled the UML Diagram for the new Adapter implementation:
+
+<p align="center">
+    <img src="ReportUML/AdapterPattern2.png" alt="Adapter Pattern Diagram - Log4j Logger">
+</p>
+
+  * [Log4jLoggerAdapter](Utils/Adapters/Log4jAdapter.java) - is a class that implements the ILogger interface and binds the
+logic of this interface with the Logger from Apache library. It contains methods for message logging and for the configuration
+of the format of the log messages.
 ```java
-public class AccountStatusValidator implements IAccountStatusValidator {
-    private static AccountStatusValidator instance;
-    protected final ILogger logger = LoggerImpl.getInstance();
+public class Log4jAdapter implements ILogger {
+    private final Logger logger;
+    private static Log4jAdapter instance;
 
-    protected AccountStatusValidator() {}
+    private Log4jAdapter() {
+        this.logger = LogManager.getLogger(Log4jAdapter.class);
+    }
     ...
-    public static AccountStatusValidator getInstance() {
-        ILogger logger = LoggerImpl.getInstance();
+    @Override
+    public void infoLog(String message) {
+        logger.log(Level.INFO, getCallingClassAndMethod() + " :: " + message);
+    }
 
-        if (instance == null) {
-            instance = new AccountStatusValidator();
-            logger.infoLog("Account Status Validator Initialized using Singleton Pattern");
-        }
-        else {
-            logger.infoLog("Account Status Validator already initialized - Returning existing instance");
-        }
-        return instance;
+    @Override
+    public void warningLog(String message) {
+        logger.log(Level.WARN, getCallingClassAndMethod() + " :: " + message);
+    }
+
+    @Override
+    public void errorLog(String message) {
+        logger.log(Level.ERROR, getCallingClassAndMethod() + " :: " + message);
     }
 }
 ```
+  * The configuration of the Logger is presented in a XML file places in resources, ensuring that it will be automatically
+read at the instantiation of the Logger object.
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{EEE MMM dd HH:mm:ss Z yyyy} :: [%level] :: %M :: %msg%n"/>
+        </Console>
+        <File name="File" fileName="src/main/java/Laboratory_Work_3_Structural_Patterns/Utils/Logging/Logs/logs.log" append="true">
+            <PatternLayout pattern="%d{EEE MMM dd HH:mm:ss Z yyyy} :: [%level] :: %M :: %msg%n"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="File"/>
+        </Root>
+    </Loggers>
+</Configuration>
+```
+
+This approach allows us to use 2 types of logger across the application in the following manner:
+```java
+ILogger logger = LoggerUtil.getInstance();
+```
+As it may be noticed, the actual ILogger concrete implementation will depend on the spcefication in the
+LoggerUtil class, thus providing a way to switch between different Logger implementations without modifying the client code.
+At the same time, it will ensure that the Interfaces between the client Target class and Adaptee class, will be
+compatible and will work correctly, without breaking the existing client code.
+  * Here is presented the output of the Log files for both ILogger implementations:
+    * Java Util Logging:
+    ```text
+    Mon Nov 11 03:17:28 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_3_Structural_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+    Mon Nov 11 03:17:28 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_3_Structural_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+    Mon Nov 11 03:17:28 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_3_Structural_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+    Mon Nov 11 03:17:28 EET 2024 :: [WARNING] :: warningLog :: Laboratory_Work_3_Structural_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Insufficient funds in account 1. Available: 0.0, required: 100.0
+    Mon Nov 11 03:17:28 EET 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_3_Structural_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrawal Transaction failed for Account 1
+    ```
+    * Apache Log4j Logging:
+    ```text
+    Mon Nov 11 00:24:08 +0200 2024 :: [INFO] :: infoLog :: Laboratory_Work_3_Structural_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+    Mon Nov 11 00:24:08 +0200 2024 :: [INFO] :: infoLog :: Laboratory_Work_3_Structural_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+    Mon Nov 11 00:24:08 +0200 2024 :: [INFO] :: infoLog :: Laboratory_Work_3_Structural_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+    Mon Nov 11 00:24:08 +0200 2024 :: [WARN] :: warningLog :: Laboratory_Work_3_Structural_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Insufficient funds in account 1. Available: 0.0, required: 100.0
+    Mon Nov 11 00:24:08 +0200 2024 :: [ERROR] :: errorLog :: Laboratory_Work_3_Structural_Patterns.Transactions.WithdrawalTransaction::executeTransaction :: Withdrawal Transaction failed for Account 1
+    ```
+Both log messages display the same information about the operations in the application, the only difference being the 
+format of the log messages levels and the format for the time. Thus, by enabling the client access only the interface ILogger,
+the Adapter will handle the binding the methods between them so that they can work together, without affecting the client code.
 
 #### Abstract Factory Pattern
 
