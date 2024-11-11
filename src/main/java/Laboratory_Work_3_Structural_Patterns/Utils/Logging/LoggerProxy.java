@@ -13,7 +13,14 @@ public class LoggerProxy implements ILogger {
     ILogger logger;
 
     public LoggerProxy() {
-        this.logger = LoggingLoggerAdapter.getInstance();
+        if (checkRole()) {
+            this.logger = LoggingLoggerAdapter.getInstance();
+            logger.infoLog("Logger Proxy Initialized using ADMIN Role");
+        }
+        else {
+            this.logger = Log4jAdapter.getInstance();
+            logger.infoLog("Logger Proxy Initialized using USER Role");
+        }
     }
 
     private static boolean checkRole() {
@@ -32,26 +39,21 @@ public class LoggerProxy implements ILogger {
     }
 
     public static ILogger getInstance() {
-        if (checkRole()) {
-            ILogger logger = LoggingLoggerAdapter.getInstance();
-            logger.infoLog("Logger Proxy Initialized using ADMIN Role");
-            return logger;
-        }
-        return Log4jAdapter.getInstance();
+        return new LoggerProxy();
     }
 
     @Override
     public void infoLog(String message) {
-        getInstance().infoLog(message);
+        this.logger.infoLog(message);
     }
 
     @Override
     public void errorLog(String message) {
-        getInstance().errorLog(message);
+        this.logger.errorLog(message);
     }
 
     @Override
     public void warningLog(String message) {
-        getInstance().warningLog(message);
+        this.logger.warningLog(message);
     }
 }
