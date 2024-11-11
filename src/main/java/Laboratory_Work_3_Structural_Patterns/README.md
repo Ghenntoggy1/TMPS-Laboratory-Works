@@ -613,14 +613,9 @@ Both log messages display the same information about the operations in the appli
 format of the log messages levels and the format for the time. Thus, by enabling the client access only the interface ILogger,
 the Adapter will handle the binding the methods between them so that they can work together, without affecting the client code.
 
-#### Abstract Factory Pattern
+#### Proxy Pattern
 
-  * Abstract Factory Creational Design Pattern - lets us produce families of related objects without specifying their 
-concrete classes. The Abstract Factory pattern helps us control the classes of objects that an application creates. 
-Because a factory encapsulates the responsibility and the process of creating product objects, it isolates clients from
-implementation classes. It promotes consistency among products. When product objects in a family are designed to work 
-together, it's important that an application use objects from only one family at a time. AbstractFactory makes this easy 
-to enforce.
+  * Proxy Structural Design Pattern - lets us provide a placeholder for the 
 
   * For this pattern, I decided to implement Abstract Factory that will group families of ITerminal and ITransaction
 implementations, since they are related to cooperative tasks (POSTerminal can perform only WithdrawalTransaction, 

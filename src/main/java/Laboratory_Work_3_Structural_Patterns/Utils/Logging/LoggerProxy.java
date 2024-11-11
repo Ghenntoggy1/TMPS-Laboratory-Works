@@ -9,13 +9,7 @@ import org.json.JSONObject;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
-public class LoggerProxy {
-    ILogger logger;
-
-    public LoggerProxy() {
-        this.logger = LoggingLoggerAdapter.getInstance();
-    }
-
+public class LoggerProxy implements ILogger {
     private static boolean checkRole() {
         String content;
         try {
@@ -31,8 +25,6 @@ public class LoggerProxy {
         return false;
     }
 
-
-
     public static ILogger getInstance() {
         if (checkRole()) {
             ILogger logger = LoggingLoggerAdapter.getInstance();
@@ -40,5 +32,20 @@ public class LoggerProxy {
             return logger;
         }
         return Log4jAdapter.getInstance();
+    }
+
+    @Override
+    public void infoLog(String message) {
+        getInstance().infoLog(message);
+    }
+
+    @Override
+    public void errorLog(String message) {
+        getInstance().errorLog(message);
+    }
+
+    @Override
+    public void warningLog(String message) {
+        getInstance().warningLog(message);
     }
 }
