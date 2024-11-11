@@ -621,152 +621,85 @@ of the service object, but at the same time, will provide additional functionali
   * For this pattern, I decided to model first of all the UML Diagram. I followed the structure of a protection proxy pattern
 diagram (method for access control to ILogger implementation):
 
+<p align="center">
+    <img src="ReportUML/ProxyPattern.png" alt="Proxy Pattern Diagram - Logger">
+</p>
 
-
-  * [IAbstractTerminalTransactionFactory](Interfaces/IAbstractTerminalTransactionFactory.java) - is an interface that
-specifies methods should be present in concrete implementations of the Abstract Factory. In our case, the methods are
-createTransaction(...) and createTerminal(). 
-```java
-public interface IAbstractTerminalTransactionFactory {
-    ITransaction createTransaction(List<IAccount> accounts, double amount, TransactionTypeEnum transactionType);
-    ITerminal createTerminal();
+  * As described in the diagram above, I adjusted the LoggerProxy class, that will handle the access to the logger adapter
+based on the user role specified in access.json. This is just a simple example of access handling, in order to show the implementation
+of this pattern.
+```json
+{
+  "UserRole": "ADMIN"
 }
 ```
 
-  * [POSFactory](Utils/Factories/POSFactory.java) - is a class that implements the IAbstractTerminalTransactionFactory
-interface and is responsible for creating the POSTerminal and WithdrawalTransaction objects. In this class, the methods
-are implemented to create the objects and return them. The Transaction is of type Withdrawal, since POSTerminal can only
-perform Withdrawal operations, and, at the same time, the POSTerminal is created and returned.
+  * [LoggerProxy](Utils/Logging/LoggerProxy.java) - is the Protection Proxy for the actual Logger that should be used in the
+application. It contains a reference to a specific ILogger implementation, that will be used based on the user role specified in
+access.json file from above. It also contains a method that will check the role and return True if Client is ADMIN and False,
+otherwise. 
 ```java
-public class POSFactory implements IAbstractTerminalTransactionFactory {
-    @Override
-    public ITransaction createTransaction(List<IAccount> accounts, double amount, TransactionTypeEnum transactionType) {
-        if (transactionType != TransactionTypeEnum.WITHDRAWAL) {
-            return null;
+public class LoggerProxy implements ILogger {
+    ILogger logger;
+    
+    public LoggerProxy() {
+        if (checkRole()) {
+          this.logger = LoggingLoggerAdapter.getInstance();
+          logger.infoLog("Logger Proxy Initialized using ADMIN Role");
         }
-        ITransactionBuilder withdrawalTransactionBuilder = new WithdrawalTransactionBuilder();
-        withdrawalTransactionBuilder.setAccounts(accounts);
-        withdrawalTransactionBuilder.setAmount(amount);
-        return withdrawalTransactionBuilder.getResult();
-    }
-
-    @Override
-    public ITerminal createTerminal() {
-        return new POSTerminal();
-    }
-}
-```
-This approach allows us to use the POSFactory across the application in the following manner:
-
-```java
-IAbstractTerminalTransactionFactory factory = new POSFactory();
-ITerminal atmTerminal = factory.createTerminal();
-ITransaction atmTransaction = factory.createTransaction(accounts, amount, transactionType);
-```
-As it may be noticed, the implementation requires only the concrete type of Factory to be specified. The Factory will 
-handle the creation of products by itself, thus providing a possibility to create a family of related objects without
-specifying their concrete classes.
-
-  * [ATMFactory](Utils/Factories/ATMFactory.java) - is a class that implements the IAbstractTerminalTransactionFactory
-interface and is responsible for creating the ATMTerminal and all 3 types of Transactions objects, since this type of 
-terminal may perform multiple types of transactions. In this class, the methods are implemented to create different
-Transactions and the ATMTerminal and return them.
-```java
-public class ATMFactory implements IAbstractTerminalTransactionFactory {
-    @Override
-    public ITransaction createTransaction(List<IAccount> accounts, double amount, TransactionTypeEnum transactionType) {
-        switch (transactionType) {
-            case DEPOSIT:
-                try {
-                    ITransactionBuilder depositTransactionBuilder = new DepositTransactionBuilder();
-                    depositTransactionBuilder.setAccounts(accounts);
-                    depositTransactionBuilder.setAmount(amount);
-                    return depositTransactionBuilder.getResult();
-                }
-                catch(IllegalArgumentException e) {
-                    return null;
-                }
-            case WITHDRAWAL:
-                try {
-                    ITransactionBuilder withdrawalTransactionBuilder = new WithdrawalTransactionBuilder();
-                    withdrawalTransactionBuilder.setAccounts(accounts);
-                    withdrawalTransactionBuilder.setAmount(amount);
-                    return withdrawalTransactionBuilder.getResult();
-                }
-                catch(IllegalArgumentException e) {
-                    return null;
-                }
-            case EXCHANGE:
-                try {
-                    ITransactionBuilder exchangeTransactionBuilder = new ExchangeTransactionBuilder();
-                    exchangeTransactionBuilder.setAccounts(accounts);
-                    exchangeTransactionBuilder.setAmount(amount);
-                    return exchangeTransactionBuilder.getResult();
-                }
-                catch(IllegalArgumentException e) {
-                    return null;
-                }
-            default:
-                return null;
+        else {
+          this.logger = Log4jAdapter.getInstance();
+          logger.infoLog("Logger Proxy Initialized using USER Role");
         }
     }
-
-    @Override
-    public ITerminal createTerminal() {
-        return new ATMTerminal();
-    }
-}
-```
-This approach permit us to use the ATMFactory across the application in the following manner:
-```java
-IAbstractTerminalTransactionFactory ATMFactory = new ATMFactory();
-ITerminal atmTerminal = ATMFactory.createTerminal();
-ITransaction depositTransaction = ATMFactory.createTransaction(List.of(userAccount1), 100.0, TransactionTypeEnum.WITHDRAWAL);
-ITransaction withdrawalTransaction = ATMFactory.createTransaction(List.of(userAccount1), 100.0, TransactionTypeEnum.DEPOSIT);
-ITransaction exchangeTransaction = ATMFactory.createTransaction(List.of(userAccount1, userAccount2), 100.0, TransactionTypeEnum.EXCHANGE);
-```
-As it may be noticed, the transactions are created via the same method, but with different parameters. This allows us to
-create different types of transactions without specifying their concrete classes, thus providing a possibility to create
-a family of related objects without specifying their concrete classes.
-
-  * [CashInFactory](Utils/Factories/CashInFactory.java) - is a class that implements the IAbstractTerminalTransactionFactory
-interface and is responsible for creating the CashInTerminal and DepositTransaction objects. In this class, the methods
-are implemented to create the objects and return them.
-
-```java
-public class CashInFactory implements IAbstractTerminalTransactionFactory {
-    @Override
-    public ITransaction createTransaction(List<IAccount> accounts, double amount, TransactionTypeEnum transactionType) {
-        if (transactionType != TransactionTypeEnum.DEPOSIT) {
-            return null;
+    
+    private static boolean checkRole() {
+        String content;
+        try {
+          content = Files.readString(Paths.get("src/main/resources/access.json"));
         }
-        ITransactionBuilder depositTransactionBuilder = new DepositTransactionBuilder();
-        depositTransactionBuilder.setAccounts(accounts);
-        depositTransactionBuilder.setAmount(amount);
-        return depositTransactionBuilder.getResult();
+        catch (Exception e) {
+          return false;
+        }
+        String userRole = new JSONObject(content).getString("UserRole");
+        if (userRole.equals(UserRoleEnum.ADMIN.toString())) {
+          return true;
+        }
+        return false;
+    }
+    ...
+}
+```
+
+Also, it implements methods for the ILogger interface and will handle them by the use of the real service object -
+of the real ILogger implementation.
+```java
+public class LoggerProxy implements ILogger {
+    ...
+    @Override
+    public void infoLog(String message) {
+        this.logger.infoLog(message);
     }
 
     @Override
-    public ITerminal createTerminal() {
-        return new CashInTerminal();
+    public void errorLog(String message) {
+        this.logger.errorLog(message);
+    }
+
+    @Override
+    public void warningLog(String message) {
+        this.logger.warningLog(message);
     }
 }
 ```
-As in previous examples, this approach allows us to use the CashInFactory across the application in the following manner:
-```java
-IAbstractTerminalTransactionFactory CashInFactory = new CashInFactory();
-ITerminal cashInTerminal = CashInFactory.createTerminal();
-ITransaction depositTransaction2 = CashInFactory.createTransaction(List.of(userAccount1), 100.0, TransactionTypeEnum.DEPOSIT);
-``` 
-
 
 ## Conclusions / Screenshots / Results
-In conclusion, I want to emphasize that through the implementation of the Creational Design Patterns, I have managed to
+In conclusion, I want to emphasize that through the implementation of the Structural Design Patterns, I have managed to
 understand better how the mechanisms behind those patterns work, how they make code easier to maintain and extend, and how
-to use them in practice. The Builder Pattern allowed me to create complex objects step by step, the Singleton Pattern
-to use single instance of an object across the project and reuse it easily and the Abstract Factory Pattern taught me how
-to group families of related objects and create them as a batch without specifying their concrete classes. At the end,
-those patterns, alongside with other Creational Design Patterns make the creation of objects easier, more flexible and
+to use them in practice. The Adapter Pattern allowed me to handle incompatible interfaces between each other, the Proxy Pattern
+to provide a placeholder/substitution object to restrict access to the real object, in my case, and the Bridge Pattern taught me how
+to decouple Abstraction or High-Level logic from the Implementation or Low-Level Logic, so that they can evolve independently, 
+alongside with other Structural Design Patterns make the structure of classes easier, more flexible and
 more maintainable, thus improving the overall quality of the code.
 
 
