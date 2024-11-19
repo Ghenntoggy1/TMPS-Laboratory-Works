@@ -35,7 +35,6 @@ public class DepositTransaction implements ITransaction {
     public void executeTransaction() {
         IAccount account = this.account.getFirst();
         int userAccountId = account.getAccountId();
-        // TODO: Implement FACADE pattern
         this.logger.infoLog("Initiated Deposit Transaction for Account " + userAccountId);
         if (!this.validator.validateAccountStatus(account)) {
             this.logger.errorLog("Deposit Transaction Failed for Account " + userAccountId + " - Account is not active");
