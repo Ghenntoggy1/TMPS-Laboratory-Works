@@ -1,7 +1,0 @@
-package Laboratory_Work_4_Behavioral_Patterns.Transactions;
-
-import Laboratory_Work_4_Behavioral_Patterns.Interfaces.ITransactionState;
-
-public class InProcessTransactionState implements ITransactionState {
-
-}

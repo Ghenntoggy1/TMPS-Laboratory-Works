@@ -1,10 +1,8 @@
 package Laboratory_Work_4_Behavioral_Patterns.Transactions;
 
 import Laboratory_Work_4_Behavioral_Patterns.Enums.TransactionTypeEnum;
-import Laboratory_Work_4_Behavioral_Patterns.Interfaces.IAccount;
-import Laboratory_Work_4_Behavioral_Patterns.Interfaces.ILogger;
-import Laboratory_Work_4_Behavioral_Patterns.Interfaces.ITransaction;
-import Laboratory_Work_4_Behavioral_Patterns.Interfaces.ITransactionValidator;
+import Laboratory_Work_4_Behavioral_Patterns.Interfaces.*;
+import Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState;
 import Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy;
 import Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator;
 
@@ -15,6 +13,7 @@ public class WithdrawalTransaction implements ITransaction {
     private Double amount;
     private ILogger logger;
     private ITransactionValidator validator;
+    private ITransactionState currentTransactionState;
 
     public WithdrawalTransaction(List<IAccount> account, double amount) {
         this.logger = LoggerProxy.getInstance();
@@ -29,22 +28,14 @@ public class WithdrawalTransaction implements ITransaction {
             throw new IllegalArgumentException("Invalid amount");
         }
         this.validator = TransactionValidator.getInstance();
+        this.currentTransactionState = new InProcessTransactionState();
+        this.currentTransactionState.setTransactionContext(this);
     }
 
     @Override
     public void executeTransaction() {
-        IAccount account = this.account.getFirst();
-        int userAccountId = account.getAccountId();
-        this.logger.infoLog("Initiated Withdrawal Transaction for Account " + userAccountId);
-
-        if (!this.validator.validateTransaction(account, this.amount)) {
-            this.logger.errorLog("Withdrawal Transaction failed for Account " + userAccountId);
-            return;
-        }
-
-        account.withdraw(this.amount);
-        double newBalance = account.getBalance();
-        this.logger.infoLog("Withdrew " + this.amount + " from account " + userAccountId + " - New balance: " + newBalance);
+        this.currentTransactionState.setTransactionContext(this);
+        this.currentTransactionState.executeTransaction();
     }
 
     @Override
@@ -60,5 +51,15 @@ public class WithdrawalTransaction implements ITransaction {
     @Override
     public Double getAmount() {
         return this.amount;
+    }
+
+    @Override
+    public ITransactionValidator getValidator() {
+        return this.validator;
+    }
+
+    @Override
+    public void changeTransactionState(ITransactionState transactionState) {
+        this.currentTransactionState = transactionState;
     }
 }

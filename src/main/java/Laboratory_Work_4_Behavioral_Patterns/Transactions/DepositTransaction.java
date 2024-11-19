@@ -1,10 +1,8 @@
 package Laboratory_Work_4_Behavioral_Patterns.Transactions;
 
 import Laboratory_Work_4_Behavioral_Patterns.Enums.TransactionTypeEnum;
-import Laboratory_Work_4_Behavioral_Patterns.Interfaces.IAccount;
-import Laboratory_Work_4_Behavioral_Patterns.Interfaces.IAccountStatusValidator;
-import Laboratory_Work_4_Behavioral_Patterns.Interfaces.ILogger;
-import Laboratory_Work_4_Behavioral_Patterns.Interfaces.ITransaction;
+import Laboratory_Work_4_Behavioral_Patterns.Interfaces.*;
+import Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState;
 import Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy;
 import Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator;
 
@@ -15,6 +13,7 @@ public class DepositTransaction implements ITransaction {
     private Double amount;
     private ILogger logger;
     private IAccountStatusValidator validator;
+    private ITransactionState currentTransactionState;
 
     public DepositTransaction(List<IAccount> account, Double amount) {
         this.account = account;
@@ -29,22 +28,15 @@ public class DepositTransaction implements ITransaction {
             throw new IllegalArgumentException("Amount cannot be 0");
         }
         this.validator = AccountStatusValidator.getInstance();
+
+        this.currentTransactionState = new InProcessTransactionState();
+        this.currentTransactionState.setTransactionContext(this);
     }
 
     @Override
     public void executeTransaction() {
-        IAccount account = this.account.getFirst();
-        int userAccountId = account.getAccountId();
-        // TODO: Implement FACADE pattern
-        this.logger.infoLog("Initiated Deposit Transaction for Account " + userAccountId);
-        if (!this.validator.validateAccountStatus(account)) {
-            this.logger.errorLog("Deposit Transaction Failed for Account " + userAccountId + " - Account is not active");
-            return;
-        }
-
-        account.deposit(this.amount);
-        double newBalance = account.getBalance();
-        this.logger.infoLog("Deposited " + this.amount + " to Account " + userAccountId + " - New Balance: " + newBalance);
+        this.currentTransactionState.setTransactionContext(this);
+        this.currentTransactionState.executeTransaction();
     }
 
     @Override
@@ -57,9 +49,18 @@ public class DepositTransaction implements ITransaction {
         return account;
     }
 
-
     @Override
     public Double getAmount() {
         return amount;
+    }
+
+    @Override
+    public IAccountStatusValidator getValidator() {
+        return validator;
+    }
+
+    @Override
+    public void changeTransactionState(ITransactionState transactionState) {
+        this.currentTransactionState = transactionState;
     }
 }

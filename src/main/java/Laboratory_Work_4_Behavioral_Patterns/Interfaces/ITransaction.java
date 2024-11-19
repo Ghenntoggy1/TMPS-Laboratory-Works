@@ -9,4 +9,6 @@ public interface ITransaction {
     List<IAccount> getAccounts();
     Double getAmount();
     void executeTransaction();
+    IAccountStatusValidator getValidator();
+    void changeTransactionState(ITransactionState transactionState);
 }
