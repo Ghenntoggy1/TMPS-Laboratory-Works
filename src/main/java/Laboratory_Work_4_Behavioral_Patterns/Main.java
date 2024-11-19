@@ -85,7 +85,7 @@ public class Main {
 //        atmTerminal.performTransaction(depositTransaction);
 
         // NEW WAY
-//        ATMTerminalClient.initiateTransaction(List.of(userAccount1), 100.0, TransactionTypeEnum.WITHDRAWAL);
+        ATMTerminalClient.initiateTransaction(List.of(userAccount1), 100.0, TransactionTypeEnum.WITHDRAWAL);
 
         // OLD WAY
         // ERROR - User 1 tries to withdraw negative amount
@@ -93,7 +93,7 @@ public class Main {
 //        atmTerminal.performTransaction(depositTransaction);
 
         // NEW WAY
-//        ATMTerminalClient.initiateTransaction(List.of(userAccount1), -100.0, TransactionTypeEnum.WITHDRAWAL);
+        ATMTerminalClient.initiateTransaction(List.of(userAccount1), -100.0, TransactionTypeEnum.WITHDRAWAL);
 
         // OLD WAY
         // User 1 deposits and withdraws money
@@ -103,125 +103,125 @@ public class Main {
         // NEW WAY
         ATMTerminalClient.initiateTransaction(List.of(userAccount1), 200.0, TransactionTypeEnum.DEPOSIT);
 
-//        // OLD WAY
-////        ITransaction withdrawalTransaction = ATMFactory.createTransaction(List.of(userAccount1), 50.0, TransactionTypeEnum.WITHDRAWAL);
-////        atmTerminal.performTransaction(withdrawalTransaction);
-//
-//        // NEW WAY
+        // OLD WAY
+//        ITransaction withdrawalTransaction = ATMFactory.createTransaction(List.of(userAccount1), 50.0, TransactionTypeEnum.WITHDRAWAL);
+//        atmTerminal.performTransaction(withdrawalTransaction);
+
+        // NEW WAY
         ATMTerminalClient.initiateTransaction(List.of(userAccount1), 50.0, TransactionTypeEnum.WITHDRAWAL);
-//
-//        // OLD WAY
-//        // User 1 exchanges money with User 2
-////        ITransaction exchangeTransaction = ATMFactory.createTransaction(List.of(userAccount1, userAccount2), 50.0, TransactionTypeEnum.EXCHANGE);
-////        atmTerminal.performTransaction(exchangeTransaction);
-//
-//        // NEW WAY
+
+        // OLD WAY
+        // User 1 exchanges money with User 2
+//        ITransaction exchangeTransaction = ATMFactory.createTransaction(List.of(userAccount1, userAccount2), 50.0, TransactionTypeEnum.EXCHANGE);
+//        atmTerminal.performTransaction(exchangeTransaction);
+
+        // NEW WAY
         ATMTerminalClient.initiateTransaction(List.of(userAccount1, userAccount2), 50.0, TransactionTypeEnum.EXCHANGE);
-//
-//        // OLD WAY
-//        // User 1 deposits money
-////        ITransaction depositTransaction2 = CashInFactory.createTransaction(List.of(userAccount1), 100.0, TransactionTypeEnum.DEPOSIT);
-////        cashInTerminal.performTransaction(depositTransaction2);
-//
-//        // NEW WAY
-//        CashInTerminalClient.initiateTransaction(List.of(userAccount1), 100.0, TransactionTypeEnum.DEPOSIT);
-//
-//        // OLD WAY
-//        // User 1 pays via POS
-////        ITransaction withdrawalTransaction1 = POSFactory.createTransaction(List.of(userAccount1), 20.0, TransactionTypeEnum.WITHDRAWAL);
-////        posTerminal.performTransaction(withdrawalTransaction1);
-//
-//        // NEW WAY
-//        POSTerminalClient.initiateTransaction(List.of(userAccount1), 20.0, TransactionTypeEnum.WITHDRAWAL);
-//
-//        // OLD WAY
-//        // User 1 tries to pay via POS with insufficient balance
-////        ITransaction withdrawalTransaction2 = POSFactory.createTransaction(List.of(userAccount1), 500.0, TransactionTypeEnum.WITHDRAWAL);
-////        posTerminal.performTransaction(withdrawalTransaction2);
-//
-//        // NEW WAY
-//        POSTerminalClient.initiateTransaction(List.of(userAccount1), 500.0, TransactionTypeEnum.WITHDRAWAL);
-//
-//        // OLD WAY
-//        // User 2 deposits money
-////        ITransaction depositTransaction3 = CashInFactory.createTransaction(List.of(userAccount2), 200.0, TransactionTypeEnum.DEPOSIT);
-////        cashInTerminal.performTransaction(depositTransaction3);
-//
-//        // NEW WAY
-//        CashInTerminalClient.initiateTransaction(List.of(userAccount2), 200.0, TransactionTypeEnum.DEPOSIT);
-//
-//        // OLD WAY
-//        // User 2 pays via POS
-////        ITransaction withdrawalTransaction3 = POSFactory.createTransaction(List.of(userAccount2), 50.0, TransactionTypeEnum.WITHDRAWAL);
-////        posTerminal.performTransaction(withdrawalTransaction3);
-//
-//        // NEW WAY
-//        POSTerminalClient.initiateTransaction(List.of(userAccount2), 50.0, TransactionTypeEnum.WITHDRAWAL);
-//
-//        // OLD WAY
-//        // User 2 tries to exchange via ATM with insufficient balance
-////        ITransaction exchangeTransaction1 = ATMFactory.createTransaction(List.of(userAccount2, userAccount1), 500.0, TransactionTypeEnum.EXCHANGE);
-////        atmTerminal.performTransaction(exchangeTransaction1);
-//
-//        // NEW WAY
-//        ATMTerminalClient.initiateTransaction(List.of(userAccount2, userAccount1), 500.0, TransactionTypeEnum.EXCHANGE);
-//
-//        // OLD WAY
-//        // User 3 tries to deposit money
-////        ITransaction depositTransaction4 = CashInFactory.createTransaction(List.of(userAccount3), 100.0, TransactionTypeEnum.DEPOSIT);
-////        cashInTerminal.performTransaction(depositTransaction4);
-//
-//        // NEW WAY
-//        CashInTerminalClient.initiateTransaction(List.of(userAccount3), 100.0, TransactionTypeEnum.DEPOSIT);
-//
-//        // OLD WAY
-//        // User 3 tries to withdraw money
-////        ITransaction withdrawalTransaction4 = ATMFactory.createTransaction(List.of(userAccount3), 50.0, TransactionTypeEnum.WITHDRAWAL);
-////        atmTerminal.performTransaction(withdrawalTransaction4);
-//
-//        // NEW WAY
-//        ATMTerminalClient.initiateTransaction(List.of(userAccount3), 50.0, TransactionTypeEnum.WITHDRAWAL);
-//
-//        // OLD WAY
-//        // User 3 tries to exchange money
-////        ITransaction exchangeTransaction2 = ATMFactory.createTransaction(List.of(userAccount3, userAccount1), 50.0, TransactionTypeEnum.EXCHANGE);
-////        atmTerminal.performTransaction(exchangeTransaction2);
-//
-//        // NEW WAY
-//        ATMTerminalClient.initiateTransaction(List.of(userAccount3, userAccount1), 50.0, TransactionTypeEnum.EXCHANGE);
-//
-//
-//        userAccount3.setAccountStatus(AccountStatusEnum.ACTIVE);
-//        // OLD WAY
-//        // User 3 tries to deposit money
-////        ITransaction depositTransaction5 = CashInFactory.createTransaction(List.of(userAccount3), 100.0, TransactionTypeEnum.DEPOSIT);
-////        cashInTerminal.performTransaction(depositTransaction5);
-//
-//        // NEW WAY
-//        CashInTerminalClient.initiateTransaction(List.of(userAccount3), 100.0, TransactionTypeEnum.DEPOSIT);
-//
-//        // OLD WAY
-//        // User 3 tries to withdraw money
-////        ITransaction withdrawalTransaction5 = ATMFactory.createTransaction(List.of(userAccount3), 50.0, TransactionTypeEnum.WITHDRAWAL);
-////        atmTerminal.performTransaction(withdrawalTransaction5);
-//
-//        // NEW WAY
-//        ATMTerminalClient.initiateTransaction(List.of(userAccount3), 50.0, TransactionTypeEnum.WITHDRAWAL);
-//
-//        // OLD WAY
-//        // User 3 tries to exchange money
-////        ITransaction exchangeTransaction3 = ATMFactory.createTransaction(List.of(userAccount3, userAccount1), 50.0, TransactionTypeEnum.EXCHANGE);
-////        atmTerminal.performTransaction(exchangeTransaction3);
-//
-//        // NEW WAY
-//        ATMTerminalClient.initiateTransaction(List.of(userAccount3, userAccount1), 50.0, TransactionTypeEnum.EXCHANGE);
-//
-//        // OLD WAY
-//        // User 3 tries to exchange money in POS
-////        ITransaction withdrawalTransaction6 = POSFactory.createTransaction(List.of(userAccount3, userAccount1), 5.0, TransactionTypeEnum.WITHDRAWAL);
-////        atmTerminal.performTransaction(withdrawalTransaction6);
-//
-//        // NEW WAY
-//        ATMTerminalClient.initiateTransaction(List.of(userAccount3, userAccount1), 5.0, TransactionTypeEnum.WITHDRAWAL);
+
+        // OLD WAY
+        // User 1 deposits money
+//        ITransaction depositTransaction2 = CashInFactory.createTransaction(List.of(userAccount1), 100.0, TransactionTypeEnum.DEPOSIT);
+//        cashInTerminal.performTransaction(depositTransaction2);
+
+        // NEW WAY
+        CashInTerminalClient.initiateTransaction(List.of(userAccount1), 100.0, TransactionTypeEnum.DEPOSIT);
+
+        // OLD WAY
+        // User 1 pays via POS
+//        ITransaction withdrawalTransaction1 = POSFactory.createTransaction(List.of(userAccount1), 20.0, TransactionTypeEnum.WITHDRAWAL);
+//        posTerminal.performTransaction(withdrawalTransaction1);
+
+        // NEW WAY
+        POSTerminalClient.initiateTransaction(List.of(userAccount1), 20.0, TransactionTypeEnum.WITHDRAWAL);
+
+        // OLD WAY
+        // User 1 tries to pay via POS with insufficient balance
+//        ITransaction withdrawalTransaction2 = POSFactory.createTransaction(List.of(userAccount1), 500.0, TransactionTypeEnum.WITHDRAWAL);
+//        posTerminal.performTransaction(withdrawalTransaction2);
+
+        // NEW WAY
+        POSTerminalClient.initiateTransaction(List.of(userAccount1), 500.0, TransactionTypeEnum.WITHDRAWAL);
+
+        // OLD WAY
+        // User 2 deposits money
+//        ITransaction depositTransaction3 = CashInFactory.createTransaction(List.of(userAccount2), 200.0, TransactionTypeEnum.DEPOSIT);
+//        cashInTerminal.performTransaction(depositTransaction3);
+
+        // NEW WAY
+        CashInTerminalClient.initiateTransaction(List.of(userAccount2), 200.0, TransactionTypeEnum.DEPOSIT);
+
+        // OLD WAY
+        // User 2 pays via POS
+//        ITransaction withdrawalTransaction3 = POSFactory.createTransaction(List.of(userAccount2), 50.0, TransactionTypeEnum.WITHDRAWAL);
+//        posTerminal.performTransaction(withdrawalTransaction3);
+
+        // NEW WAY
+        POSTerminalClient.initiateTransaction(List.of(userAccount2), 50.0, TransactionTypeEnum.WITHDRAWAL);
+
+        // OLD WAY
+        // User 2 tries to exchange via ATM with insufficient balance
+//        ITransaction exchangeTransaction1 = ATMFactory.createTransaction(List.of(userAccount2, userAccount1), 500.0, TransactionTypeEnum.EXCHANGE);
+//        atmTerminal.performTransaction(exchangeTransaction1);
+
+        // NEW WAY
+        ATMTerminalClient.initiateTransaction(List.of(userAccount2, userAccount1), 500.0, TransactionTypeEnum.EXCHANGE);
+
+        // OLD WAY
+        // User 3 tries to deposit money
+//        ITransaction depositTransaction4 = CashInFactory.createTransaction(List.of(userAccount3), 100.0, TransactionTypeEnum.DEPOSIT);
+//        cashInTerminal.performTransaction(depositTransaction4);
+
+        // NEW WAY
+        CashInTerminalClient.initiateTransaction(List.of(userAccount3), 100.0, TransactionTypeEnum.DEPOSIT);
+
+        // OLD WAY
+        // User 3 tries to withdraw money
+//        ITransaction withdrawalTransaction4 = ATMFactory.createTransaction(List.of(userAccount3), 50.0, TransactionTypeEnum.WITHDRAWAL);
+//        atmTerminal.performTransaction(withdrawalTransaction4);
+
+        // NEW WAY
+        ATMTerminalClient.initiateTransaction(List.of(userAccount3), 50.0, TransactionTypeEnum.WITHDRAWAL);
+
+        // OLD WAY
+        // User 3 tries to exchange money
+//        ITransaction exchangeTransaction2 = ATMFactory.createTransaction(List.of(userAccount3, userAccount1), 50.0, TransactionTypeEnum.EXCHANGE);
+//        atmTerminal.performTransaction(exchangeTransaction2);
+
+        // NEW WAY
+        ATMTerminalClient.initiateTransaction(List.of(userAccount3, userAccount1), 50.0, TransactionTypeEnum.EXCHANGE);
+
+
+        userAccount3.setAccountStatus(AccountStatusEnum.ACTIVE);
+        // OLD WAY
+        // User 3 tries to deposit money
+//        ITransaction depositTransaction5 = CashInFactory.createTransaction(List.of(userAccount3), 100.0, TransactionTypeEnum.DEPOSIT);
+//        cashInTerminal.performTransaction(depositTransaction5);
+
+        // NEW WAY
+        CashInTerminalClient.initiateTransaction(List.of(userAccount3), 100.0, TransactionTypeEnum.DEPOSIT);
+
+        // OLD WAY
+        // User 3 tries to withdraw money
+//        ITransaction withdrawalTransaction5 = ATMFactory.createTransaction(List.of(userAccount3), 50.0, TransactionTypeEnum.WITHDRAWAL);
+//        atmTerminal.performTransaction(withdrawalTransaction5);
+
+        // NEW WAY
+        ATMTerminalClient.initiateTransaction(List.of(userAccount3), 50.0, TransactionTypeEnum.WITHDRAWAL);
+
+        // OLD WAY
+        // User 3 tries to exchange money
+//        ITransaction exchangeTransaction3 = ATMFactory.createTransaction(List.of(userAccount3, userAccount1), 50.0, TransactionTypeEnum.EXCHANGE);
+//        atmTerminal.performTransaction(exchangeTransaction3);
+
+        // NEW WAY
+        ATMTerminalClient.initiateTransaction(List.of(userAccount3, userAccount1), 50.0, TransactionTypeEnum.EXCHANGE);
+
+        // OLD WAY
+        // User 3 tries to exchange money in POS
+//        ITransaction withdrawalTransaction6 = POSFactory.createTransaction(List.of(userAccount3, userAccount1), 5.0, TransactionTypeEnum.WITHDRAWAL);
+//        atmTerminal.performTransaction(withdrawalTransaction6);
+
+        // NEW WAY
+        ATMTerminalClient.initiateTransaction(List.of(userAccount3, userAccount1), 5.0, TransactionTypeEnum.WITHDRAWAL);
     }
 }

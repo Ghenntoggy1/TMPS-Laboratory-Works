@@ -128,3 +128,661 @@ Tue Nov 19 20:58:54 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behaviora
 Tue Nov 19 20:58:54 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 2
 Tue Nov 19 20:58:54 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Exchange Transaction completed successfully. New Balance for Sender: 100.0 and Receiver: 100.0
 Tue Nov 19 20:58:54 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Exchange Transaction Status changed to Completed
+Tue Nov 19 23:37:49 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger Initialized using Singleton Pattern
+Tue Nov 19 23:37:49 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:49 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:49 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:49 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.User::<init> :: User John Doe created with ID 1
+Tue Nov 19 23:37:49 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:49 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:49 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.User::getName :: Requested name for user 1
+Tue Nov 19 23:37:49 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.User::getUserId :: Requested ID for user 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::<init> :: Account 1 with status ACTIVE created for user John Doe (1)
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.User::<init> :: User Jane Doe created with ID 2
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.User::getName :: Requested name for user 2
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.User::getUserId :: Requested ID for user 2
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::<init> :: Account 2 with status ACTIVE created for user Jane Doe (2)
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.User::<init> :: User John Smith created with ID 3
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.User::getName :: Requested name for user 3
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.User::getUserId :: Requested ID for user 3
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::<init> :: Account 3 with status INACTIVE created for user John Smith (3)
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::getInstance :: Account Status Validator Initialized using Singleton Pattern
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 1 on Amount 200.0
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Deposit Transaction for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Transaction Status changed to Validated
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Deposited 200.0 to Account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Transaction Status changed to Completed
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Deposit Transaction completed successfully. New Balance: 200.0 for Account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Deposit Transaction Status changed to Completed
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator Initialized using Singleton Pattern
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 1 on Amount 50.0
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Withdrawal Transaction for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 1 has sufficient funds
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Transaction Status changed to Validated
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Withdrew 50.0 from Account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Transaction Status changed to Completed
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Withdrawal Transaction completed successfully. New Balance: 150.0 for Account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Withdrawal Transaction Status changed to Completed
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 1 on Amount 50.0
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Exchange Transaction from Account 1 to Account 2
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 1 has sufficient funds
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 2
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 2 is ACTIVE
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Transaction Status changed to Validated
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Successfully Exchanged 50.0 from Account 1 to Account 2
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Transaction Status changed to Completed
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 2
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Exchange Transaction completed successfully. New Balance for Sender: 100.0 and Receiver: 100.0
+Tue Nov 19 23:37:50 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Exchange Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger Initialized using Singleton Pattern
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.User::<init> :: User John Doe created with ID 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.User::getName :: Requested name for user 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.User::getUserId :: Requested ID for user 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::<init> :: Account 1 with status ACTIVE created for user John Doe (1)
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.User::<init> :: User Jane Doe created with ID 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.User::getName :: Requested name for user 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.User::getUserId :: Requested ID for user 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::<init> :: Account 2 with status ACTIVE created for user Jane Doe (2)
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.User::<init> :: User John Smith created with ID 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.User::getName :: Requested name for user 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.User::getUserId :: Requested ID for user 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::<init> :: Account 3 with status INACTIVE created for user John Smith (3)
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator Initialized using Singleton Pattern
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 1 on Amount 100.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Withdrawal Transaction for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [WARNING] :: warningLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Insufficient funds in account 1. Available: 0.0, required: 100.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.FailedTransactionState::executeTransaction :: Transaction Status changed to Failed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.FailedTransactionState::executeTransaction :: Failed Withdrawal Transaction for Account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.WithdrawalTransaction::<init> :: Withdrawal Transaction failed due to invalid amount - Amount is less than or equal to 0
+Tue Nov 19 23:38:36 EET 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Factories.ATMFactory::createTransaction :: Failed ATM Transaction: Invalid amount
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.ATMTerminal::performTransaction :: Failed ATM Transaction: Transaction is Null - Cannot invoke "Laboratory_Work_4_Behavioral_Patterns.Interfaces.ITransaction.getAccounts()" because "transaction" is null
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::getInstance :: Account Status Validator Initialized using Singleton Pattern
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 1 on Amount 200.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Deposit Transaction for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Transaction Status changed to Validated
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Deposited 200.0 to Account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Deposit Transaction completed successfully. New Balance: 200.0 for Account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Deposit Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 1 on Amount 50.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Withdrawal Transaction for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 1 has sufficient funds
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Transaction Status changed to Validated
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Withdrew 50.0 from Account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Withdrawal Transaction completed successfully. New Balance: 150.0 for Account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Withdrawal Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 1 on Amount 50.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Exchange Transaction from Account 1 to Account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 1 has sufficient funds
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 2 is ACTIVE
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Transaction Status changed to Validated
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Successfully Exchanged 50.0 from Account 1 to Account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Exchange Transaction completed successfully. New Balance for Sender: 100.0 and Receiver: 100.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Exchange Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::getInstance :: Account Status Validator already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.CashInTerminal::performTransaction :: Initiated Cash-In Transaction to Account1 on Amount 100.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Deposit Transaction for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Transaction Status changed to Validated
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Deposited 100.0 to Account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Deposit Transaction completed successfully. New Balance: 200.0 for Account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Deposit Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.POSTerminal::performTransaction :: Initiated POS Transaction from Account 1 on Amount 20.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Withdrawal Transaction for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 1 has sufficient funds
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Transaction Status changed to Validated
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Withdrew 20.0 from Account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Withdrawal Transaction completed successfully. New Balance: 180.0 for Account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Withdrawal Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.POSTerminal::performTransaction :: Initiated POS Transaction from Account 1 on Amount 500.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Withdrawal Transaction for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [WARNING] :: warningLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Insufficient funds in account 1. Available: 180.0, required: 500.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.FailedTransactionState::executeTransaction :: Transaction Status changed to Failed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.FailedTransactionState::executeTransaction :: Failed Withdrawal Transaction for Account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::getInstance :: Account Status Validator already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.CashInTerminal::performTransaction :: Initiated Cash-In Transaction to Account2 on Amount 200.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Deposit Transaction for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 2 is ACTIVE
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Transaction Status changed to Validated
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Deposited 200.0 to Account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Deposit Transaction completed successfully. New Balance: 300.0 for Account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Deposit Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.POSTerminal::performTransaction :: Initiated POS Transaction from Account 2 on Amount 50.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Withdrawal Transaction for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 2 is ACTIVE
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 2 has sufficient funds
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Transaction Status changed to Validated
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Withdrew 50.0 from Account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Withdrawal Transaction completed successfully. New Balance: 250.0 for Account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Withdrawal Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 2 on Amount 500.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Exchange Transaction from Account 2 to Account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 2 is ACTIVE
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [WARNING] :: warningLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Insufficient funds in account 2. Available: 250.0, required: 500.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.FailedTransactionState::executeTransaction :: Transaction Status changed to Failed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 2
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.FailedTransactionState::executeTransaction :: Failed Exchange Transaction from Account 2 to Account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::getInstance :: Account Status Validator already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.CashInTerminal::performTransaction :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Deposit Transaction for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [WARNING] :: warningLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is INACTIVE and cannot perform transactions
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.FailedTransactionState::executeTransaction :: Transaction Status changed to Failed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.FailedTransactionState::executeTransaction :: Failed Deposit Transaction for Account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 3 on Amount 50.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Withdrawal Transaction for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [WARNING] :: warningLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is INACTIVE and cannot perform transactions
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.FailedTransactionState::executeTransaction :: Transaction Status changed to Failed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.FailedTransactionState::executeTransaction :: Failed Withdrawal Transaction for Account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 3 on Amount 50.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Exchange Transaction from Account 3 to Account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [WARNING] :: warningLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is INACTIVE and cannot perform transactions
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.FailedTransactionState::executeTransaction :: Transaction Status changed to Failed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.FailedTransactionState::executeTransaction :: Failed Exchange Transaction from Account 3 to Account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::setAccountStatus :: Account 3 status changed to ACTIVE
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::getInstance :: Account Status Validator already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.CashInTerminal::performTransaction :: Initiated Cash-In Transaction to Account3 on Amount 100.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Deposit Transaction for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is ACTIVE
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Transaction Status changed to Validated
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Deposited 100.0 to Account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Deposit Transaction completed successfully. New Balance: 100.0 for Account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Deposit Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 3 on Amount 50.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Withdrawal Transaction for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is ACTIVE
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 3 has sufficient funds
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Transaction Status changed to Validated
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Withdrew 50.0 from Account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Withdrawal Transaction completed successfully. New Balance: 50.0 for Account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Withdrawal Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 3 on Amount 50.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Exchange Transaction from Account 3 to Account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is ACTIVE
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Account 3 has sufficient funds
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 1 is ACTIVE
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Transaction Status changed to Validated
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.ValidatedTransactionState::executeTransaction :: Successfully Exchanged 50.0 from Account 3 to Account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 1
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Exchange Transaction completed successfully. New Balance for Sender: 0.0 and Receiver: 230.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.CompletedTransactionState::executeTransaction :: Exchange Transaction Status changed to Completed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::getInstance :: Transaction Validator already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Terminals.ATMTerminal::performTransaction :: Initiated ATM Transaction from Account 3 on Amount 5.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Transaction Status changed to In Process
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.InProcessTransactionState::executeTransaction :: Start Processing Withdrawal Transaction for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountStatus :: Checking account status for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.AccountStatusValidator::validateAccountStatus :: Account 3 is ACTIVE
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getBalance :: Checking balance for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [WARNING] :: warningLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Validators.TransactionValidator::validateSufficientFunds :: Insufficient funds in account 3. Available: 0.0, required: 5.0
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::<init> :: Java Logging Logger already initialized - Returning existing instance
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Utils.Logging.LoggerProxy::getInstance :: Logger Proxy Initialized using ADMIN Role
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.FailedTransactionState::executeTransaction :: Transaction Status changed to Failed
+Tue Nov 19 23:38:36 EET 2024 :: [INFO] :: infoLog :: Laboratory_Work_4_Behavioral_Patterns.User.UserAccount::getAccountId :: Requested account ID for account 3
+Tue Nov 19 23:38:36 EET 2024 :: [SEVERE] :: errorLog :: Laboratory_Work_4_Behavioral_Patterns.Transactions.TransactionStates.FailedTransactionState::executeTransaction :: Failed Withdrawal Transaction for Account 3
