@@ -19,3 +19,4 @@ The reports in markdown file and code for each task can be accessed via the link
 - [Submission for Laboratory Work 0](src/main/java/Laboratory_Work_1_SOLID_Principles)
 - [Submission for Laboratory Work 1](src/main/java/Laboratory_Work_2_Creational_Patterns)
 - [Submission for Laboratory Work 2](src/main/java/Laboratory_Work_3_Structural_Patterns)
+- [Submission for Laboratory Work 3](src/main/java/Laboratory_Work_4_Behavioral_Patterns)
