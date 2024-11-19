@@ -31,7 +31,7 @@ public class Log4jAdapter implements ILogger {
         StackTraceElement[] stackTrace = Thread.currentThread().getStackTrace();
         // Index 0: getStackTrace(), Index 1: getCallingClassAndMethod(), Index 2: this method (infoLog, etc.)
         // Index 3: Caller method
-        StackTraceElement caller = stackTrace[3];
+        StackTraceElement caller = stackTrace[4];
         return caller.getClassName() + "::" + caller.getMethodName();
     }
 
